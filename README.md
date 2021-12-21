@@ -1,1 +1,0 @@
-# Fatih ÇELİK tarafından hazırlanmıştır!
