@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function doMath() {
+    var sayi1 = parseInt(document.getElementById('sayi1_input').value);
+    var sayi2 = parseInt(document.getElementById('sayi2_input').value);
+	var subtotal = 0;
+	
+	if( isNaN(sayi1) ){sayi1 = 0;}
+	if( isNaN(sayi2) ){sayi2 = 0;}
+	
+    var subtotal = sayi1 + sayi2;
+
+	document.getElementById('subtotal_input').innerHTML = subtotal;
+	
+
+
+}
+</script>
+
+<input type="text" id="sayi1_input" value="0" onBlur="doMath();" />
+<input type="text" id="sayi2_input" value="0"  onBlur="doMath();" />
+
+<div id="subtotal_input"></div>
+</body>
+</html>

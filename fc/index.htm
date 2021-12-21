@@ -1,0 +1,175 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:image" content="https://rollercoin.com/static/fav/favicon.svg">
+<meta http-equiv="Content-Language" content="EN" data-react-helmet="true">
+<link rel="icon" href="static/fav/rollercoin_favicon_48x48.png" sizes="48x48">
+<link rel="icon" href="static/fav/rollercoin_favicon_96x96.png" sizes="96x96">
+<link rel="icon" href="static/fav/rollercoin_favicon_144x144.png" sizes="144x144">
+<link rel="mask-icon" href="static/fav/rollercoin_favicon_144x144.svg" color="#ffffff">
+<style>
+        .loader-main-page {
+            display: none;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9998;
+        }
+
+        .dom-loading, .content-loading {
+            height: 100%;
+            overflow: hidden
+        }
+
+        .dom-loading > .loader-main-page, .content-loading > .loader-main-page {
+            display: block;
+        }
+
+        .content-loading > .loader-main-page {
+            background-color: transparent;
+        }
+
+        .content-loading > .loader-main-page:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #000;
+            opacity: 0.7;
+        }
+
+        .loader-main-page > .loader-img {
+            display: block;
+            position: absolute;
+            top: calc(50% - 45px);
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: auto;
+            z-index: 9999;
+        }
+
+        .container-loader.dom-loading ~ .wrapper {
+            max-height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<script src="sdks/OneSignalSDK.js" async="" type="1da9be73c74e132b1d9b15ca-text/javascript"></script>
+<script async="" src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="calculateGoalPower(), blockAmount()" style="font-family: 'Permanent Marker', cursive;">
+<script type="1da9be73c74e132b1d9b15ca-text/javascript">
+    document.body.classList.add("loader-visible");
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.getElementById('preLoader').classList.remove('dom-loading');
+            document.body.classList.remove("loader-visible");
+        }, 550);
+    });
+</script>
+
+
+
+<h1 style="text-align: left;"><div style="text-align: center;">ROLLERCOİN HESAPLAMA SİSTEMİ</div><span><!--more--></span></h1>
+
+
+    <div class="edger row no-gutters" style="font-family: 'Permanent Marker', cursive;">
+        <div class="col-md-6 no-gutters inputWrapper">
+            <!-- Network power input and select -->
+            <div class="inputlabel" style="font-family: 'Permanent Marker', cursive;">
+                <label class="spacing" for="network-power">
+				<img src="https://rollercoin.com/static/images/globe.ed0a54962cd5d90f5bda48a27bbce9fd.svg" width="15" height="15" alt="globe"> Ağ Gücü (Network power)</label>
+                <br class="spacerInput">
+                <input class="inputCalc" type="number" step="any" id="network-power" oninput="calculateGoalPower()">
+                <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()">
+                    <option value="ghs">GH/s</option>
+                    <option value="ths">TH/s</option>
+                    <option value="phs">PH/s</option>
+                    <option selected value="ehs">EH/s</option>
+                </select>
+            </div>
+            <!-- Goal power input and select -->
+            <div class="inputlabel" style="font-family: 'Permanent Marker', cursive;">
+                <label for="goal-power" class="spacing"><img src="https://rollercoin.com/static/images/monitor.745f3138c7bb755ad0345941009d9b28.svg" width="15" height="15" alt="monitor"> Senin Gücün (My Power)</label>
+                <br class="spacerInput">
+                <input class="inputCalc" type="number" name="goal-power-hash" id="goal-power"
+                    oninput="calculateGoalPower()">
+                <select name="goal-power-prefix" id="goal-power-selector" onchange="calculateGoalPower()">
+                    <option value="ghs">GH/s</option>
+                    <option selected value="ths">TH/s</option>
+                    <option value="phs">PH/s</option>
+                    <option value="ehs">EH/s</option>
+                </select>
+            </div>
+            <!-- Block type input and select -->
+            <div class="inputlabel" style="font-family: 'Permanent Marker', cursive;">
+                <label for="block-reward" class="spacing"><img src="https://rollercoin.com/static/images/cup.e96641cf5b0e21fd426798541c6c4804.svg" width="15" height="15" alt="cup"> Blok Ödülü (Block Reward)</label>
+                <br class="spacerInput">
+                <input class="inputCalc inputBlock" type="number" name="block-reward" id="block-reward"
+                    oninput="calculateGoalPower()">
+                <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()">
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="DOGE">Doge (DOGE)</option>
+                    <option value="ETH">Etherium (ETH)</option>
+                    <option value="BNB">Binance Coin (BNB)</option>
+                    <option value="RLT">RollerToken (RLT)</option>
+                </select>
+            </div>
+            <button id="calcbtn" class="spacing" onclick="calculateGoalPower()">Hesapla (Calculate)</button>
+        </div>
+
+        <div class="spacing col-md-6" style="font-family: 'Permanent Marker', cursive;">
+            <span>Anlık Ödül (Expected Reward): <b><span style="color: red;" id="exp_reward"></span></b></span>
+            <br>
+            <span>Günlük Ödül (Daily Reward): <b><span style="color: red;" id="daily"></span></b></span>
+            <br>
+            <span>Haftalık Ödül (Weekly Reward): <b><span style="color: red;" id="weekly"></span></b></span>
+            <br>
+            <span>Aylık Ödül (Monthly Reward): <b><span style="color: red;" id="monthly"></span></b></span>
+        </div>
+        <footer class="page-footer spacing" style="font-family: 'Concert One', cursive;">
+            <div class="text-center">
+                <p>Bu site hiç bir şekilde RollerCoin tarafından desteklenmemektedir. Bilgilendirmek amaçlıdır.</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+<div class="container-loader dom-loading gray-bg" id="preLoader">
+<div class="loader-main-page">
+<img src="https://rollercoin.com/static/img/icon/hamster_loader.gif?v=1.0.5" class="loader-img" alt="hamster loader">
+</div>
+</div>
+
+
+<div id="root"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://tolgshow2021.000webhostapp.com/js/js.js"></script>
+
+<script default="" src="static/js/bundle.js?v=a9e5576" type="1da9be73c74e132b1d9b15ca-text/javascript"></script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1da9be73c74e132b1d9b15ca-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6b586acfcccb3140',m:'7fyOmd05jGCSIxjayU7EhYXvD8gsJi30fe8PV4UDzYM-1638153059-0-ASgy+cvunW9c9fyArGzXuKiJ3SlOfNu23t8ieQT+MV6MCRRES16fqxXDroPqm6ZsW+vQOU0cSf4pQNEwt9ERjuE0lITpFtBKNSYwUwnYgruVHjjySRMheSy8yL7eYUKvdA==',s:[0xaad56c4154,0x1f2c80ba4a],}})();</script><script defer="" src="beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597" integrity="sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==" data-cf-beacon='{"rayId":"6b586acfcccb3140","token":"e52d7e1eae9a4e748bfdffca25cd701c","version":"2021.11.0","si":100}' crossorigin="anonymous"></script>
+<style > img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display:none!important; } </style>
+</body>
+</html>

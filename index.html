@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta property="og:image" content="https://rollercoin.com/static/fav/favicon.svg">
+    <title>RollerCoin - Hesaplayıcı (2022)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="calculateGoalPower(), blockAmount()">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row no-gutters">
+            <div class="col-lg-2 col-4">
+                <img class="img-fluid header-margin" src="https://rollercoin.com/static/images/hamster_loader.8aab58a4290178ad3bfb65b767f69cd3.gif" id="hamsterpirate" alt="">
+            </div>
+            <div class="col-lg-10 col-8 header-margin">
+                <!-- <div class="container"> -->
+                <h1>HESAPLAYICI</h1>
+                <p>Yeni nesil hesaplama sistemi!</p>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+ <!--// ./img/hamsterpirate.png !-->
+ 
+    <div class="edger row no-gutters">
+        <div class="col-md-6 no-gutters inputWrapper">
+            <!-- Network power input and select -->
+            <div class="inputlabel">
+                <label class="spacing" for="network-power">
+				<img src="https://rollercoin.com/static/images/globe.ed0a54962cd5d90f5bda48a27bbce9fd.svg" width="15" height="15" alt="globe"> Ağ Gücü (Network power)</label>
+                <br class="spacerInput">
+                <input class="inputCalc" type="number" step="any" id="network-power" oninput="calculateGoalPower()">
+                <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()">
+                    <option value="ghs">GH/s</option>
+                    <option value="ths">TH/s</option>
+                    <option value="phs">PH/s</option>
+                    <option selected value="ehs">EH/s</option>
+                </select>
+            </div>
+            <!-- Goal power input and select -->
+            <div class="inputlabel">
+                <label for="goal-power" class="spacing"><img src="https://rollercoin.com/static/images/monitor.745f3138c7bb755ad0345941009d9b28.svg" width="15" height="15" alt="monitor"> Senin Gücün (My Power)</label>
+                <br class="spacerInput">
+                <input class="inputCalc" type="number" name="goal-power-hash" id="goal-power"
+                    oninput="calculateGoalPower()">
+                <select name="goal-power-prefix" id="goal-power-selector" onchange="calculateGoalPower()">
+                    <option value="ghs">GH/s</option>
+                    <option selected value="ths">TH/s</option>
+                    <option value="phs">PH/s</option>
+                    <option value="ehs">EH/s</option>
+                </select>
+            </div>
+            <!-- Block type input and select -->
+            <div class="inputlabel">
+                <label for="block-reward" class="spacing"><img src="https://rollercoin.com/static/images/cup.e96641cf5b0e21fd426798541c6c4804.svg" width="15" height="15" alt="cup"> Blok Ödülü (Block Reward)</label>
+                <br class="spacerInput">
+                <input class="inputCalc inputBlock" type="number" name="block-reward" id="block-reward"
+                    oninput="calculateGoalPower()">
+                <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()">
+                    <option value="BTC">Bitcoin (BTC)</option>
+                    <option value="DOGE">Doge (DOGE)</option>
+                    <option value="ETH">Etherium (ETH)</option>
+                    <option value="BNB">Binance Coin (BNB)</option>
+                    <option value="RLT">RollerToken (RLT)</option>
+                </select>
+            </div>
+            <button id="calcbtn" style="margin-top: 10px;" class="spacing" onclick="calculateGoalPower()">Hesapla (Calculate)</button>
+        </div>
+
+        <div class="spacing col-md-6">
+            <span>Anlık Ödül (Expected Reward): <b><span id="exp_reward"></span></b></span>
+            <br>
+            <span>Günlük Ödül (Daily Reward): <b><span id="daily"></span></b></span>
+            <br>
+            <span>Haftalık Ödül (Weekly Reward): <b><span id="weekly"></span></b></span>
+            <br>
+            <span>Aylık Ödül (Monthly Reward): <b><span id="monthly"></span></b></span>
+        </div>
+        <footer class="page-footer spacing font-small gray">
+            <div class="text-center">
+                <p>Bu site hiç bir şekilde RollerCoin tarafından desteklenmemektedir. Bilgilendirmek amaçlıdır.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="./js/js.js"></script>
+	
+	<style > img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display:none!important; } </style>
+	
+</body>
+
+</html>
