@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rollerbuddy</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- Arc.io script -->
-    <script async src="https://arc.io/widget.min.js#WshjZRki"></script>
 </head>
 
 <body onload="calculateGoalPower(), blockAmount()">
@@ -20,8 +18,8 @@
             </div>
             <div class="col-lg-10 col-8 header-margin">
                 <!-- <div class="container"> -->
-                <h1>Rollerbuddy</h1>
-                <p>Your personal Rollercoin calculator</p>
+                <h1>RCHesapla</h1>
+                <p>Kişisel Rollercoin hesaplayıcınız</p>
                 <!-- </div> -->
             </div>
         </div>
@@ -69,24 +67,23 @@
                     <option value="RLT">RollerToken (RLT)</option>
                 </select>
             </div>
-            <button id="calcbtn" style="margin-top: 10px;" class="spacing" onclick="calculateGoalPower()">Calculate</button>
+            <button id="calcbtn" style="margin-top: 10px;" class="spacing" onclick="calculateGoalPower()">Hesapla</button>
         </div>
 
         <div class="spacing col-md-6">
-            <span>Expected Reward: <span id="exp_reward"></span></span>
+            <span>Anlık Ödül > Expected Reward: <span id="exp_reward"></span></span>
             <br>
-            <span>Daily Reward: <span id="daily"></span></span>
+            <span>Günlük Ödül > Daily Reward: <span id="daily"></span></span>
             <br>
-            <span>Weekly Reward: <span id="weekly"></span></span>
+            <span>Haftalık Ödül > Weekly Reward: <span id="weekly"></span></span>
             <br>
-            <span>Monthly Reward: <span id="monthly"></span></span>
+            <span>Aylık Ödül > Monthly Reward: <span id="monthly"></span></span>
         </div>
         <footer class="page-footer spacing font-small gray">
             <div class="text-center">
-                <p>Rollerbuddy isn't endorsed by Rollercoin and does not reflect the views or opinions of anyone
-                    officially
-                    involved in producing and managing Rollercoin and their service(s).</p>
-                <!-- <a id="changelog">Changelog</a> -->
+                <p>Rollerbuddy, Rollercoin tarafından desteklenmemektedir ve Rollercoin
+				ve hizmet(ler)inin üretimi ve
+				yönetimine resmi olarak dahil olan hiç kimsenin görüşlerini veya fikirlerini yansıtmamaktadır.</p>
             </div>
         </footer>
     </div>
