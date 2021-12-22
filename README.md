@@ -1,3 +1,1 @@
-# Rollerbuddy
-
-Check your expected earnings
+Beklenen kazançlarınızı kontrol edin!
