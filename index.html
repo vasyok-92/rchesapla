@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rollerbuddy</title>
+    <title>RCHesapla - Kişisel Kazım Gücünü Öğren!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -29,7 +29,7 @@
         <div class="col-md-6 no-gutters inputWrapper">
             <!-- Network power input and select -->
             <div class="inputlabel">
-                <label class="spacing" for="network-power">Enter Network Power For Desired Coin</label>
+                <label class="spacing" for="network-power">Ağ Gücü</label>
                 <br class="spacerInput">
                 <input class="inputCalc" type="number" step="any" id="network-power" oninput="calculateGoalPower()">
                 <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()">
@@ -41,7 +41,7 @@
             </div>
             <!-- Goal power input and select -->
             <div class="inputlabel">
-                <label for="goal-power" class="spacing">Enter Your Desired Goal Power</label>
+                <label for="goal-power" class="spacing">Senin Gücün</label>
                 <br class="spacerInput">
                 <input class="inputCalc" type="number" name="goal-power-hash" id="goal-power"
                     oninput="calculateGoalPower()">
@@ -54,7 +54,7 @@
             </div>
             <!-- Block type input and select -->
             <div class="inputlabel">
-                <label for="block-reward" class="spacing">Enter Block Reward For Desired Coin</label>
+                <label for="block-reward" class="spacing">Blok Ödülü</label>
                 <br class="spacerInput">
                 <input class="inputCalc inputBlock" type="number" name="block-reward" id="block-reward" step="any"
                     oninput="calculateGoalPower()">
@@ -71,13 +71,13 @@
         </div>
 
         <div class="spacing col-md-6">
-            <span>Anlık Ödül > Expected Reward: <span id="exp_reward"></span></span>
+            <span>Beklenen Ödül: <span id="exp_reward"></span></span>
             <br>
-            <span>Günlük Ödül > Daily Reward: <span id="daily"></span></span>
+            <span>Günlük Ödül: <span id="daily"></span></span>
             <br>
-            <span>Haftalık Ödül > Weekly Reward: <span id="weekly"></span></span>
+            <span>Haftalık Ödül: <span id="weekly"></span></span>
             <br>
-            <span>Aylık Ödül > Monthly Reward: <span id="monthly"></span></span>
+            <span>Aylık Ödül: <span id="monthly"></span></span>
         </div>
         <footer class="page-footer spacing font-small gray">
             <div class="text-center">
