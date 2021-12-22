@@ -151,11 +151,11 @@ function calculateGoalPower() {
             document.getElementById("monthly").innerHTML = (dogeResult * 30).toFixed(4) + " Doge";
             break;
         case 2:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Ethereum";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " ETH";
             var ethResult = (exp_reward * dailyEthBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = ethResult + " Etherium";
-            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " Ethereum";
-            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " Ethereum";
+            document.getElementById("daily").innerHTML = ethResult + " ETH";
+            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " ETH";
+            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " ETH";
             break;
         case 3:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " BNB";
@@ -172,11 +172,11 @@ function calculateGoalPower() {
             document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC";
             break;
         default:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Rollertoken";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " RLT";
             var rltResult = (exp_reward * dailyEthBlocks).toFixed(4);
-            document.getElementById("daily").innerHTML = rltResult + " Rollertoken";
-            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " Rollertoken";
-            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " Rollertoken";
+            document.getElementById("daily").innerHTML = rltResult + " RLT";
+            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " RLT";
+            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " RLT";
             break;
     }
 }
