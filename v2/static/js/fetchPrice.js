@@ -33,13 +33,15 @@ getResults = function(fetch_data){
     btcPrice = fetch_data.bitcoin.usd
     dogePrice = fetch_data.dogecoin.usd
     ethPrice = fetch_data.ethereum.usd
-    return [btcPrice, dogePrice, ethPrice]
+	maticPrice = fetch_data.polygon.usd
+    return [btcPrice, dogePrice, ethPrice, maticPrice]
 }
 
 postResults = function(prices){
     document.getElementById("btc-price-api").innerHTML = "$" + prices[0];
     document.getElementById("doge-price-api").innerHTML = "$" + prices[1];
     document.getElementById("eth-price-api").innerHTML = "$" + prices[2];
+	document.getElementById("matic-price-api").innerHTML = "$" + prices[3];
 }
 
 //////////////////////////////
@@ -47,6 +49,7 @@ calculate = function(prices){
     var btcPrice = prices[0]
         dogePrice = prices[1]
         ethPrice = prices[2]
+		maticPrice = prices[3]
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
     minBtc = document.getElementById("minBtc").innerHTML;
