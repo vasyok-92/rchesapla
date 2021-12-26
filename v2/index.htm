@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Calculator for Roller Coin with BTC, DOGE and ETH live price.">
+		<link rel="stylesheet" href="static/css/base.css">
+		
+<link rel="stylesheet" href="static/css/home.css">
+
+		<title>RCHesaplaV2 - Kendi Kazım Gücünü Hesapla!</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="container-nav">
+				<a class="logo" href="index.htm">RC<span>Hesapla</span></a>
+				<a class="link-calc" href="season2.html">Season 3: Christmas time!</a>
+			</div>
+		</div>
+
+		<!-- PROGRAMAR MENSAGENS FLASH -->
+		  
+
+		<section class="hero">
+
+<div class="container">
+	<div class="crypto-price">
+		<div class="price-title">Döviz</div>
+		<div class="price-content">
+			<ul>
+				<li class="price-btc">BTC:</li>
+				<li id="btc-price-api" class="price-btc-price">$00000</li>
+				<li class="price-doge">DOGE:</li>
+				<li id="doge-price-api" class="price-doge-price">$0.0000</li>
+				<li class="price-eth">ETH:</li>
+				<li id="eth-price-api" class="price-eth-price">$0000.00</li>
+				<li class="price-rlt">RLT:</li>
+				<li class="price-rlt-price">$1</li>
+			</ul>
+		</div>
+	</div>
+	<div class="tabs-layout">
+		<div class="tabs-header">
+			<button onclick="changeTab('data')" id="data-tab-btn" class="data-tab-btn">
+				Data
+			</button>
+			<button onclick="changeTab('results')" id="results-tab-btn" class="results-tab-btn">
+				Results
+			</button>
+		</div>
+		<div id="tab1-content" class="tab1-content">
+			<div class="box">
+				<div class="box-title">Gücüm</div>
+				<div class="box-content">
+					<table>
+						<tr>
+							<td>Rigler</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="minerRate" class="input-box" type="number" onchange="calc(), getData('minerRate')">
+									
+								</form>
+							</td>
+							<td>TH/s</td>
+						</tr>
+						<tr>
+							<td>Oyun</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="gamesRate" class="input-box" type="number" onchange="calc(), getData('gamesRate')">
+									
+								</form>
+							</td>
+							<td>TH/s</td>
+						</tr>
+						<tr>
+							<td>Toplam</td>
+							<td class="no-input" id="totalRate">-</td>
+							<td>TH/s</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Bölünmüş Güç</div>
+				<div class="box-content">
+					<table>
+						<tr>
+							<td class="td-btc">BTC:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="distBtc" class="input-box" type="number" onchange="calc(), getData('distBtc')">
+									
+								</form>
+							</td>
+							<td>%</td>
+						</tr>
+						<tr>
+							<td class="td-doge">DOGE:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="distDoge" class="input-box" type="number" onchange="calc(), getData('distDoge')">
+									
+								</form>
+							</td>
+							<td>%</td>
+						</tr>
+						<tr>
+							<td class="td-eth">ETH:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="distEth" class="input-box" type="number" onchange="calc(), getData('distEth')">
+									
+								</form>
+							</td>
+							<td>%</td>
+						</tr>
+						<tr>
+							<td class="td-rlt">RLT:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="distRlt" class="input-box" type="number" onchange="calc(), getData('distRlt')">
+									
+								</form>
+							</td>
+							<td>%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Ağ Gücün</div>
+				<div class="box-content">
+					<table>
+						<tr>
+							<td class="td-btc">BTC:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="netBtc" class="input-box" type="number" onchange="calc(), getData('netBtc')">
+									
+								</form>
+							</td>
+							<td>EH/s</td>
+						</tr>
+						<tr>
+							<td class="td-doge">DOGE:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="netDoge" class="input-box" type="number" onchange="calc(), getData('netDoge')">
+									
+								</form>
+							</td>
+							<td>EH/s</td>
+						</tr>
+						<tr>
+							<td class="td-eth">ETH:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="netEth" class="input-box" type="number" onchange="calc(), getData('netEth')">
+									
+								</form>
+							</td>
+							<td>EH/s</td>
+						</tr>
+						<tr>
+							<td class="td-rlt">RLT:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="netRlt" class="input-box" type="number" onchange="calc(), getData('netRlt')">
+									
+								</form>
+							</td>
+							<td>EH/s</td>
+						</tr>
+						<tr>
+							<td>Toplam</td>
+							<td class="no-input" id="totalNet">-</td>
+							<td>EH/s</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-title">Blok Ödülü</div>
+				<div class="box-content">
+					<table>
+						<tr>
+							<td class="td-btc">BTC:</td>
+							<td class="no-input" id="blockBtc">30000</td>
+							<td>Satoshi</td>
+						</tr>
+						<tr>
+							<td class="td-doge">DOGE:</td>
+							<td class="no-input" id="blockDoge">20</td>
+							<td>DOGE</td>
+						</tr>
+						<tr>
+							<td class="td-eth">ETH:</td>
+							<td class="no-input" id="blockEth">0.005</td>
+							<td>ETH</td>
+						</tr>
+						<tr>
+							<td class="td-rlt">RLT:</td>
+							<td class="no-input" id="blockRlt">30</td>
+							<td>RLT</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="tab2-content" class="tab2-content">
+			<div class="coin-box btc-box">
+				<div class="box-title">Bitcoin</div>
+				<div class="tab-content">
+					<table>
+						<tr>
+							<td class="table-headers">10 Dk.</td>
+							<td class="table-headers">Saatlik</td>
+							<td class="table-headers">Günlük</td>
+						</tr>
+						<tr>
+							<td id="minBtc">-</td>
+							<td id="hourBtc">-</td>
+							<td id="dayBtc">-</td>
+						</tr>
+						<tr>
+							<td id="minBtcD">-</td>
+							<td id="hourBtcD">-</td>
+							<td id="dayBtcD">-</td>
+						</tr>
+						<tr>
+							<td class="table-headers">Haftalık</td>
+							<td class="table-headers">Aylık</td>
+							<td class="table-headers">Yıllık</td>
+						</tr>
+						<tr>
+							<td id="weekBtc">-</td>
+							<td id="monthBtc">-</td>
+							<td id="yearBtc">-</td>
+						</tr>
+						<tr>
+							<td id="weekBtcD">-</td>
+							<td id="monthBtcD">-</td>
+							<td id="yearBtcD">-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="coin-box doge-box">
+				<div class="box-title">Doge</div>
+				<div class="tab-content">
+					<table>
+						<tr>
+							<td class="table-headers">10 Dk.</td>
+							<td class="table-headers">Saatlik</td>
+							<td class="table-headers">Günlük</td>
+						</tr>
+						<tr>
+							<td id="minDoge">-</td>
+							<td id="hourDoge">-</td>
+							<td id="dayDoge">-</td>
+						</tr>
+						<tr>
+							<td id="minDogeD">-</td>
+							<td id="hourDogeD">-</td>
+							<td id="dayDogeD">-</td>
+						</tr>
+						<tr>
+							<td class="table-headers">Haftalık</td>
+							<td class="table-headers">Aylık</td>
+							<td class="table-headers">Yıllık</td>
+						</tr>
+						<tr>
+							<td id="weekDoge">-</td>
+							<td id="monthDoge">-</td>
+							<td id="yearDoge">-</td>
+						</tr>
+						<tr>
+							<td id="weekDogeD">-</td>
+							<td id="monthDogeD">-</td>
+							<td id="yearDogeD">-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="coin-box eth-box">
+				<div class="box-title">Ethereum</div>
+				<div class="tab-content">
+					<table>
+						<tr>
+							<td class="table-headers">10 Dk.</td>
+							<td class="table-headers">Saatlik</td>
+							<td class="table-headers">Günlük</td>
+						</tr>
+						<tr>
+							<td id="minEth">-</td>
+							<td id="hourEth">-</td>
+							<td id="dayEth">-</td>
+						</tr>
+						<tr>
+							<td id="minEthD">-</td>
+							<td id="hourEthD">-</td>
+							<td id="dayEthD">-</td>
+						</tr>
+						<tr>
+							<td class="table-headers">Haftalık</td>
+							<td class="table-headers">Aylık</td>
+							<td class="table-headers">Yıllık</td>
+						</tr>
+						<tr>
+							<td id="weekEth">-</td>
+							<td id="monthEth">-</td>
+							<td id="yearEth">-</td>
+						</tr>
+						<tr>
+							<td id="weekEthD">-</td>
+							<td id="monthEthD">-</td>
+							<td id="yearEthD">-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="coin-box rlt-box">
+				<div class="box-title">RLT</div>
+				<div class="tab-content">
+					<table>
+						<tr>
+							<td class="table-headers">10 Dk.</td>
+							<td class="table-headers">Saatlik</td>
+							<td class="table-headers">Günlük</td>
+						</tr>
+						<tr>
+							<td id="minRlt">-</td>
+							<td id="hourRlt">-</td>
+							<td id="dayRlt">-</td>
+						</tr>
+						<tr>
+							<td id="minRltD">-</td>
+							<td id="hourRltD">-</td>
+							<td id="dayRltD">-</td>
+						</tr>
+						<tr>
+							<td class="table-headers">Haftalık</td>
+							<td class="table-headers">Aylık</td>
+							<td class="table-headers">Yıllık</td>
+						</tr>
+						<tr>
+							<td id="weekRlt">-</td>
+							<td id="monthRlt">-</td>
+							<td id="yearRlt">-</td>
+						</tr>
+						<tr>
+							<td id="weekRltD">-</td>
+							<td id="monthRltD">-</td>
+							<td id="yearRltD">-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info">
+		<p>
+		RCHesaplaV2 olarak sizlere 4 ana kazım türlerini eklemiş bulunmaktayız.
+		</p>
+		<p>
+		Diğer kazım türleri niçin eklenmedi diye sorar olursanız sürekli güncelleme fırsatımız olmadığı için sabit fiyatlı türleri eklemiş bulunmaktayız.
+		</p>
+	</div>
+</div>
+</section>
+		<script src="static/js/alerts.js"></script>
+		
+<script src="static/js/activateTab.js"></script>
+<script src="static/js/calculator.js"></script>
+<script>
+	// self executing function here
+	(function () {
+		// your page initialization code here
+		// the DOM will be available here
+		calc();
+	})();
+</script>
+<script src="static/js/fetchPrice.js"></script>
+<script src="static/js/inputPost.js"></script>
+
+
+	</body>
+</html>
