@@ -8,20 +8,23 @@ calc = function(){
     var distBtc = document.getElementById("distBtc").value,
         distDoge = document.getElementById("distDoge").value,
         distEth = document.getElementById("distEth").value,
-        distRlt = document.getElementById("distRlt").value;
+        distRlt = document.getElementById("distRlt").value,
+		distMatic = document.getElementById("distMatic").value;
 
     var netBtc = document.getElementById("netBtc").value,
         netDoge = document.getElementById("netDoge").value,
         netEth = document.getElementById("netEth").value,
-        netRlt = document.getElementById("netRlt").value;
+        netRlt = document.getElementById("netRlt").value,
+		netMatic = document.getElementById("netMatic").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netRlt);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netRlt) + Number(netMatic);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
         blockDoge = document.getElementById("blockDoge").innerText,
         blockEth = document.getElementById("blockEth").innerText,
-        blockRlt = document.getElementById("blockRlt").innerText;
+        blockRlt = document.getElementById("blockRlt").innerText,
+		blockMatic = document.getElementById("blockMatic").innerText;
     
         // Calc Results
     var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
@@ -327,6 +330,69 @@ calc = function(){
         else {
             document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
             document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
+        }
+		
+    var MaticPower = ((Number(totalRate)/1000) * Number(distMatic))/100
+        minMatic = (Number(MaticPower)*blockMatic)/(Number(netMatic)*1000)
+        minMaticD = Number(minMatic) * 1
+        hourMatic = Number(minMatic) * 6
+        hourMaticD = Number(hourMatic) * 1
+        dayMatic = Number(hourMatic) * 24 
+        dayMaticD = Number(dayMatic) * 1
+        weekMatic = Number(dayMatic) * 7
+        weekMaticD = Number(weekMatic) * 1
+        monthMatic = Number(dayMatic) * 30
+        monthMaticD = Number(monthMatic) * 1
+        yearMatic = Number(dayMatic) * 365
+        yearMaticD = Number(yearMatic) * 1
+
+    if ((isNaN(minMatic))||!(isFinite(minMatic))) {
+        document.getElementById("minMatic").innerText = "-";
+        document.getElementById("minMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("minMatic").innerText = minMatic.toFixed(10);
+            document.getElementById("minMaticD").innerText = "$" + minMaticD.toFixed(5);
+        }
+    if ((isNaN(hourMatic))||!(isFinite(hourMatic))) {
+        document.getElementById("hourMatic").innerText = "-";
+        document.getElementById("hourMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("hourMatic").innerText = hourMatic.toFixed(10);
+            document.getElementById("hourMaticD").innerText = "$" + hourMaticD.toFixed(5);
+        }
+    if ((isNaN(dayMatic))||!(isFinite(dayMatic))) {
+        document.getElementById("dayMatic").innerText = "-";
+        document.getElementById("dayMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("dayMatic").innerText = dayMatic.toFixed(10);
+            document.getElementById("dayMaticD").innerText = "$" + dayMaticD.toFixed(5);
+        }
+    if ((isNaN(weekMatic))||!(isFinite(weekMatic))) {
+        document.getElementById("weekMatic").innerText = "-";
+        document.getElementById("weekMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("weekMatic").innerText = weekMatic.toFixed(10);
+            document.getElementById("weekMaticD").innerText = "$" + weekMaticD.toFixed(5);
+        }
+    if ((isNaN(monthMatic))||!(isFinite(monthMatic))) {
+        document.getElementById("monthMatic").innerText = "-";
+        document.getElementById("monthMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("monthMatic").innerText = monthMatic.toFixed(10);
+            document.getElementById("monthMaticD").innerText = "$" + monthMaticD.toFixed(5);
+        }
+    if ((isNaN(yearMatic))||!(isFinite(yearMatic))) {
+        document.getElementById("yearMatic").innerText = "-";
+        document.getElementById("yearMaticD").innerText = "-"}
+
+        else {
+            document.getElementById("yearMatic").innerText = yearMatic.toFixed(10);
+            document.getElementById("yearMaticD").innerText = "$" + yearMaticD.toFixed(5);
         }
     }
     

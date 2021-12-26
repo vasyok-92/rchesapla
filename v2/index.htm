@@ -35,6 +35,8 @@
 				<li id="doge-price-api" class="price-doge-price">$0.0000</li>
 				<li class="price-eth">ETH:</li>
 				<li id="eth-price-api" class="price-eth-price">$0000.00</li>
+				<li class="price-Matic">MATIC:</li>
+				<li class="price-Matic-price">$3</li>
 				<li class="price-rlt">RLT:</li>
 				<li class="price-rlt-price">$1</li>
 			</ul>
@@ -122,6 +124,17 @@
 							<td>%</td>
 						</tr>
 						<tr>
+							<td class="td-Matic">MATIC:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="distMatic" class="input-box" type="number" onchange="calc(), getData('distMatic')">
+									
+								</form>
+							</td>
+							<td>%</td>
+						</tr>
+						<tr>
 							<td class="td-rlt">RLT:</td>
 							<td>
 								<form action="text" onsubmit="return false">
@@ -173,6 +186,17 @@
 							<td>EH/s</td>
 						</tr>
 						<tr>
+							<td class="td-Matic">MATIC:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input id="netMatic" class="input-box" type="number" onchange="calc(), getData('netMatic')">
+									
+								</form>
+							</td>
+							<td>EH/s</td>
+						</tr>
+						<tr>
 							<td class="td-rlt">RLT:</td>
 							<td>
 								<form action="text" onsubmit="return false">
@@ -209,6 +233,11 @@
 							<td class="td-eth">ETH:</td>
 							<td class="no-input" id="blockEth">0.005</td>
 							<td>ETH</td>
+						</tr>
+						<tr>
+							<td class="td-Matic">MATIC:</td>
+							<td class="no-input" id="blockMatic">3</td>
+							<td>MATIC</td>
 						</tr>
 						<tr>
 							<td class="td-rlt">RLT:</td>
@@ -327,6 +356,43 @@
 							<td id="weekEthD">-</td>
 							<td id="monthEthD">-</td>
 							<td id="yearEthD">-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="coin-box Matic-box">
+				<div class="box-title">MATIC</div>
+				<div class="tab-content">
+					<table>
+						<tr>
+							<td class="table-headers">10 Dk.</td>
+							<td class="table-headers">Saatlik</td>
+							<td class="table-headers">Günlük</td>
+						</tr>
+						<tr>
+							<td id="minMatic">-</td>
+							<td id="hourMatic">-</td>
+							<td id="dayMatic">-</td>
+						</tr>
+						<tr>
+							<td id="minMaticD">-</td>
+							<td id="hourMaticD">-</td>
+							<td id="dayMaticD">-</td>
+						</tr>
+						<tr>
+							<td class="table-headers">Haftalık</td>
+							<td class="table-headers">Aylık</td>
+							<td class="table-headers">Yıllık</td>
+						</tr>
+						<tr>
+							<td id="weekMatic">-</td>
+							<td id="monthMatic">-</td>
+							<td id="yearMatic">-</td>
+						</tr>
+						<tr>
+							<td id="weekMaticD">-</td>
+							<td id="monthMaticD">-</td>
+							<td id="yearMaticD">-</td>
 						</tr>
 					</table>
 				</div>
