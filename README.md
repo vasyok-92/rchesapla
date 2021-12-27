@@ -1,3 +1,6 @@
-# RCHesapla
-<a href="./v2"><img name="sasdasd"src="https://fatihcelikofficialtr.github.io/rchesapla/img/rchesaplav2.png" width="35" height="35"></a>
-<a href="./v3"><img name="sasdasd"src="https://fatihcelikofficialtr.github.io/rchesapla/img/rchesaplav3.png" width="35" height="35"></a>
+# RCHesapla - Güncelleme Listesi! (27.12.2021)
+
+- V2 | Daha ayrıntılı şekilde sizlere sunulmuştur.
+- V3 | Basit şekilde ayarlanıp aynı zamanda kazım gücünüze göre hangisi daha iyi sizlere gösteriyor.
+
+Sadece web sitemizden tıklayarak ulaşabilirsiniz.
