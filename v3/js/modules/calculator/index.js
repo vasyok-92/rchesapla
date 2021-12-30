@@ -101,7 +101,7 @@ export class Calculator {
                             <p>${bestCoinsToMine.data[coinResult].name}</p>
                         </td>
                         <td>
-                            <p>$${bestCoinsToMine.data[coinResult].monthlyRewardUSD} / Month</p>
+                            <p>$${bestCoinsToMine.data[coinResult].monthlyRewardUSD} / Aylık</p>
                         </td>
                     </tr>`
             }
