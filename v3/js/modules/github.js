@@ -1,6 +1,6 @@
 const githubApi = 'https://api.github.com'
-const owner = 'lmendev'
-const repo = 'rollercoin-calculator'
+const owner = 'FatihCelikOfficialTR'
+const repo = 'rchesapla'
 
 const contributors  = `${githubApi}/repos/${owner}/${repo}/contributors`
 const latestRelease = `${githubApi}/repos/${owner}/${repo}/releases/latest`
