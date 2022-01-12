@@ -1,6 +1,6 @@
 fetchData = function(){
 
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum&vs_currencies=USD', {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbitcoin%2Cdogecoin%2Cbinancecoin%2Cmatic-network&vs_currencies=USD', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -33,13 +33,15 @@ getResults = function(fetch_data){
     btcPrice = fetch_data.bitcoin.usd
     dogePrice = fetch_data.dogecoin.usd
     ethPrice = fetch_data.ethereum.usd
-    return [btcPrice, dogePrice, ethPrice]
+	bnbPrice = fetch_data.binancecoin.usd
+    return [btcPrice, dogePrice, ethPrice, bnbPrice]
 }
 
 postResults = function(prices){
     document.getElementById("btc-price-api").innerHTML = "$" + prices[0];
     document.getElementById("doge-price-api").innerHTML = "$" + prices[1];
     document.getElementById("eth-price-api").innerHTML = "$" + prices[2];
+	document.getElementById("bnb-price-api").innerHTML = "$" + prices[3];
 }
 
 //////////////////////////////
@@ -47,6 +49,8 @@ calculate = function(prices){
     var btcPrice = prices[0]
         dogePrice = prices[1]
         ethPrice = prices[2]
+		bnbPrice = prices[3]
+		
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
     minBtc = document.getElementById("minBtc").innerHTML;
@@ -144,8 +148,8 @@ calculate = function(prices){
         document.getElementById("yearDogeD").innerText = "-"}
         else {
             document.getElementById("yearDogeD").innerText = "$" + yearDogeD.toFixed(5);
-        } 
-    /////////////////////////////////////////////////
+        }
+	/////////////////////////////////////////////////
     // ETH CALC 10 MIN
     minEth = document.getElementById("minEth").innerHTML;
     minEthD = Number(minEth) * ethPrice
@@ -193,9 +197,106 @@ calculate = function(prices){
         document.getElementById("yearEthD").innerText = "-"}
         else {
             document.getElementById("yearEthD").innerText = "$" + yearEthD.toFixed(5);
+        }
+    /////////////////////////////////////////////////
+    // bnb CALC 10 MIN
+    minbnb = document.getElementById("minbnb").innerHTML;
+    minbnbD = Number(minbnb) * bnbPrice
+    if (isNaN(minbnbD)) {
+        document.getElementById("minbnbD").innerText = "-"}
+        else {
+            document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
+        }
+    // bnb CALC HOUR
+    hourbnb = document.getElementById("hourbnb").innerHTML;
+    hourbnbD = Number(hourbnb) * bnbPrice
+    if (isNaN(hourbnbD)) {
+        document.getElementById("hourbnbD").innerText = "-"}
+        else {
+            document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
+        }
+    // bnb CALC DAY
+    daybnb = document.getElementById("daybnb").innerHTML;
+    daybnbD = Number(daybnb) * bnbPrice
+    if (isNaN(daybnbD)) {
+        document.getElementById("daybnbD").innerText = "-"}
+        else {
+            document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
+        }
+    // bnb CALC WEEK
+    weekbnb = document.getElementById("weekbnb").innerHTML;
+    weekbnbD = Number(weekbnb) * bnbPrice
+    if (isNaN(weekbnbD)) {
+        document.getElementById("weekbnbD").innerText = "-"}
+        else {
+            document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
+        }    
+    // bnb CALC MONTH
+    monthbnb = document.getElementById("monthbnb").innerHTML;
+    monthbnbD = Number(monthbnb) * bnbPrice
+    if (isNaN(minbnbD)) {
+        document.getElementById("monthbnbD").innerText = "-"}
+        else {
+            document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
+        }    
+    // bnb CALC YEAR
+    yearbnb = document.getElementById("yearbnb").innerHTML;
+    yearbnbD = Number(yearbnb) * bnbPrice
+    if (isNaN(yearbnbD)) {
+        document.getElementById("yearbnbD").innerText = "-"}
+        else {
+            document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
         } 
 
-
+/////////////////////////////////////////////////
+    // matic CALC 10 MIN
+    minmatic = document.getElementById("minmatic").innerHTML;
+    minmaticD = Number(minmatic) * maticPrice
+    if (isNaN(minmaticD)) {
+        document.getElementById("minmaticD").innerText = "-"}
+        else {
+            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
+        }
+    // matic CALC HOUR
+    hourmatic = document.getElementById("hourmatic").innerHTML;
+    hourmaticD = Number(hourmatic) * maticPrice
+    if (isNaN(hourmaticD)) {
+        document.getElementById("hourmaticD").innerText = "-"}
+        else {
+            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
+        }
+    // matic CALC DAY
+    daymatic = document.getElementById("daymatic").innerHTML;
+    daymaticD = Number(daymatic) * maticPrice
+    if (isNaN(daymaticD)) {
+        document.getElementById("daymaticD").innerText = "-"}
+        else {
+            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
+        }
+    // matic CALC WEEK
+    weekmatic = document.getElementById("weekmatic").innerHTML;
+    weekmaticD = Number(weekmatic) * maticPrice
+    if (isNaN(weekmaticD)) {
+        document.getElementById("weekmaticD").innerText = "-"}
+        else {
+            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
+        }    
+    // matic CALC MONTH
+    monthmatic = document.getElementById("monthmatic").innerHTML;
+    monthmaticD = Number(monthmatic) * maticPrice
+    if (isNaN(minmaticD)) {
+        document.getElementById("monthmaticD").innerText = "-"}
+        else {
+            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
+        }    
+    // matic CALC YEAR
+    yearmatic = document.getElementById("yearmatic").innerHTML;
+    yearmaticD = Number(yearmatic) * maticPrice
+    if (isNaN(yearmaticD)) {
+        document.getElementById("yearmaticD").innerText = "-"}
+        else {
+            document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
+        }
 
 
 
