@@ -9,24 +9,21 @@ calc = function(){
         distDoge = document.getElementById("distDoge").value,
         distEth = document.getElementById("distEth").value,
         distRlt = document.getElementById("distRlt").value,
-		distbnb = document.getElementById("distbnb").value,
 		distMatic = document.getElementById("distMatic").value;
 
     var netBtc = document.getElementById("netBtc").value,
         netDoge = document.getElementById("netDoge").value,
         netEth = document.getElementById("netEth").value,
         netRlt = document.getElementById("netRlt").value,
-		netbnb = document.getElementById("netbnb").value,
 		netMatic = document.getElementById("netMatic").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netRlt) + Number(netMatic) + Number(netbnb);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netRlt) + Number(netMatic);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
         blockDoge = document.getElementById("blockDoge").innerText,
         blockEth = document.getElementById("blockEth").innerText,
         blockRlt = document.getElementById("blockRlt").innerText,
-		blockbnb = document.getElementById("blockbnb").innerText,
 		blockMatic = document.getElementById("blockMatic").innerText;
     
         // Calc Results
@@ -397,68 +394,5 @@ calc = function(){
             document.getElementById("yearMatic").innerText = yearMatic.toFixed(10);
             document.getElementById("yearMaticD").innerText = "$" + yearMaticD.toFixed(5);
         }
-		
-	var bnbPower = ((Number(totalRate)/1000) * Number(distbnb))/100
-        minbnb = (Number(bnbPower)*blockbnb)/(Number(netbnb)*1000)
-        minbnbD = Number(minbnb) * 1
-        hourbnb = Number(minbnb) * 6
-        hourbnbD = Number(hourbnb) * 1
-        daybnb = Number(hourbnb) * 24 
-        daybnbD = Number(daybnb) * 1
-        weekbnb = Number(daybnb) * 7
-        weekbnbD = Number(weekbnb) * 1
-        monthbnb = Number(daybnb) * 30
-        monthbnbD = Number(monthbnb) * 1
-        yearbnb = Number(daybnb) * 365
-        yearbnbD = Number(yearbnb) * 1
-
-    if ((isNaN(minbnb))||!(isFinite(minbnb))) {
-        document.getElementById("minbnb").innerText = "-";
-        document.getElementById("minbnbD").innerText = "-"}
-
-        else {
-            document.getElementById("minbnb").innerText = minbnb.toFixed(10);
-            document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
-        }
-    if ((isNaN(hourbnb))||!(isFinite(hourbnb))) {
-        document.getElementById("hourbnb").innerText = "-";
-        document.getElementById("hourbnbD").innerText = "-"}
-
-        else {
-            document.getElementById("hourbnb").innerText = hourbnb.toFixed(10);
-            document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
-        }
-    if ((isNaN(daybnb))||!(isFinite(daybnb))) {
-        document.getElementById("daybnb").innerText = "-";
-        document.getElementById("daybnbD").innerText = "-"}
-
-        else {
-            document.getElementById("daybnb").innerText = daybnb.toFixed(10);
-            document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
-        }
-    if ((isNaN(weekbnb))||!(isFinite(weekbnb))) {
-        document.getElementById("weekbnb").innerText = "-";
-        document.getElementById("weekbnbD").innerText = "-"}
-
-        else {
-            document.getElementById("weekbnb").innerText = weekbnb.toFixed(10);
-            document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
-        }
-    if ((isNaN(monthbnb))||!(isFinite(monthbnb))) {
-        document.getElementById("monthbnb").innerText = "-";
-        document.getElementById("monthbnbD").innerText = "-"}
-
-        else {
-            document.getElementById("monthbnb").innerText = monthbnb.toFixed(10);
-            document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
-        }
-    if ((isNaN(yearbnb))||!(isFinite(yearbnb))) {
-        document.getElementById("yearbnb").innerText = "-";
-        document.getElementById("yearbnbD").innerText = "-"}
-
-        else {
-            document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
-            document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
-        }	
     }
     
