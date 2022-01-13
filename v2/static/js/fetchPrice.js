@@ -42,6 +42,7 @@ postResults = function(prices){
     document.getElementById("doge-price-api").innerHTML = "$" + prices[1];
     document.getElementById("eth-price-api").innerHTML = "$" + prices[2];
 	document.getElementById("bnb-price-api").innerHTML = "$" + prices[3];
+	document.getElementById("matic-price-api").innerHTML = "$" + prices[4];
 }
 
 //////////////////////////////
@@ -297,9 +298,6 @@ calculate = function(prices){
         else {
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
-
-
-
     }
 
 fetchData()
