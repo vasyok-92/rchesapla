@@ -268,67 +268,130 @@ calc = function(){
             document.getElementById("yearEthD").innerText = "$" + yearEthD.toFixed(5);
         }
 
+    var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
+        btcPrice1 = document.getElementById('btc-price-api').innerHTML
+        btcPrice = Number(btcPrice1.substring(1))
+        minBtc = (Number(btcPower)*blockBtc)/(Number(netBtc)*1000)
+        minBtcD = Number(minBtc) * btcPrice
+        hourBtc = Number(minBtc) * 6
+        hourBtcD = Number(hourBtc) * btcPrice
+        dayBtc = Number(hourBtc) * 24 
+        dayBtcD = Number(dayBtc) * btcPrice
+        weekBtc = Number(dayBtc) * 7
+        weekBtcD = Number(weekBtc) * btcPrice
+        monthBtc = Number(dayBtc) * 30
+        monthBtcD = Number(monthBtc) * btcPrice
+        yearBtc = Number(dayBtc) * 365
+        yearBtcD = Number(yearBtc) * btcPrice
+
+    if ((isNaN(minBtc))||!(isFinite(minBtc))) {
+        document.getElementById("minBtc").innerText = "-"}
+        else {
+            document.getElementById("minBtc").innerText = minBtc.toFixed(10);
+        }
+    if ((isNaN(hourBtc))||!(isFinite(hourBtc))) {
+        document.getElementById("hourBtc").innerText = "-"}
+        else {
+            document.getElementById("hourBtc").innerText = hourBtc.toFixed(10);
+        }
+    if ((isNaN(dayBtc))||!(isFinite(dayBtc))) {
+        document.getElementById("dayBtc").innerText = "-"}
+        else {
+            document.getElementById("dayBtc").innerText = dayBtc.toFixed(10);
+        }
+    if ((isNaN(weekBtc))||!(isFinite(weekBtc))) {
+        document.getElementById("weekBtc").innerText = "-"}
+        else {
+            document.getElementById("weekBtc").innerText = weekBtc.toFixed(10);
+        }
+    if ((isNaN(monthBtc))||!(isFinite(monthBtc))) {
+        document.getElementById("monthBtc").innerText = "-"}
+        else {
+            document.getElementById("monthBtc").innerText = monthBtc.toFixed(10);
+        }
+    if ((isNaN(yearBtc))||!(isFinite(yearBtc))) {
+        document.getElementById("yearBtc").innerText = "-"}
+        else {
+            document.getElementById("yearBtc").innerText = yearBtc.toFixed(10);
+        }
+
+    if ((isNaN(minBtcD))||!(isFinite(minBtcD))) {
+        document.getElementById("minBtcD").innerText = "-"}
+        else {
+            document.getElementById("minBtcD").innerText = "$" + minBtcD.toFixed(5);
+        }
+    if ((isNaN(hourBtcD))||!(isFinite(hourBtcD))) {
+        document.getElementById("hourBtcD").innerText = "-"}
+        else {
+            document.getElementById("hourBtcD").innerText = "$" + hourBtcD.toFixed(5);
+        }
+    if ((isNaN(dayBtcD))||!(isFinite(dayBtcD))) {
+        document.getElementById("dayBtcD").innerText = "-"}
+        else {
+            document.getElementById("dayBtcD").innerText = "$" + dayBtcD.toFixed(5);
+        }
+    if ((isNaN(weekBtcD))||!(isFinite(weekBtcD))) {
+        document.getElementById("weekBtcD").innerText = "-"}
+        else {
+            document.getElementById("weekBtcD").innerText = "$" + weekBtcD.toFixed(5);
+        }
+    if ((isNaN(monthBtcD))||!(isFinite(monthBtcD))) {
+        document.getElementById("monthBtcD").innerText = "-"}
+        else {
+            document.getElementById("monthBtcD").innerText = "$" + monthBtcD.toFixed(5);
+        }
+    if ((isNaN(yearBtcD))||!(isFinite(yearBtcD))) {
+        document.getElementById("yearBtcD").innerText = "-"}
+        else {
+            document.getElementById("yearBtcD").innerText = "$" + yearBtcD.toFixed(5);
+        }
+
+    
     var bnbPower = ((Number(totalRate)/1000) * Number(distbnb))/100
+        bnbPrice1 = document.getElementById('bnb-price-api').innerHTML
+        bnbPrice = Number(bnbPrice1.substring(1))
         minbnb = (Number(bnbPower)*blockbnb)/(Number(netbnb)*1000)
-        minbnbD = Number(minbnb) * 1
+        minbnbD = Number(minbnb) * bnbPrice
         hourbnb = Number(minbnb) * 6
-        hourbnbD = Number(hourbnb) * 1
+        hourbnbD = Number(hourbnb) * bnbPrice
         daybnb = Number(hourbnb) * 24 
-        daybnbD = Number(daybnb) * 1
+        daybnbD = Number(daybnb) * bnbPrice
         weekbnb = Number(daybnb) * 7
-        weekbnbD = Number(weekbnb) * 1
+        weekbnbD = Number(weekbnb) * bnbPrice
         monthbnb = Number(daybnb) * 30
-        monthbnbD = Number(monthbnb) * 1
+        monthbnbD = Number(monthbnb) * bnbPrice
         yearbnb = Number(daybnb) * 365
-        yearbnbD = Number(yearbnb) * 1
+        yearbnbD = Number(yearbnb) * bnbPrice
 
     if ((isNaN(minbnb))||!(isFinite(minbnb))) {
-        document.getElementById("minbnb").innerText = "-";
-        document.getElementById("minbnbD").innerText = "-"}
-
+        document.getElementById("minbnb").innerText = "-"}
         else {
             document.getElementById("minbnb").innerText = minbnb.toFixed(10);
-            document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
         }
     if ((isNaN(hourbnb))||!(isFinite(hourbnb))) {
-        document.getElementById("hourbnb").innerText = "-";
-        document.getElementById("hourbnbD").innerText = "-"}
-
+        document.getElementById("hourbnb").innerText = "-"}
         else {
             document.getElementById("hourbnb").innerText = hourbnb.toFixed(10);
-            document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
         }
     if ((isNaN(daybnb))||!(isFinite(daybnb))) {
-        document.getElementById("daybnb").innerText = "-";
-        document.getElementById("daybnbD").innerText = "-"}
-
+        document.getElementById("daybnb").innerText = "-"}
         else {
             document.getElementById("daybnb").innerText = daybnb.toFixed(10);
-            document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
         }
     if ((isNaN(weekbnb))||!(isFinite(weekbnb))) {
-        document.getElementById("weekbnb").innerText = "-";
-        document.getElementById("weekbnbD").innerText = "-"}
-
+        document.getElementById("weekbnb").innerText = "-"}
         else {
             document.getElementById("weekbnb").innerText = weekbnb.toFixed(10);
-            document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
         }
     if ((isNaN(monthbnb))||!(isFinite(monthbnb))) {
-        document.getElementById("monthbnb").innerText = "-";
-        document.getElementById("monthbnbD").innerText = "-"}
-
+        document.getElementById("monthbnb").innerText = "-"}
         else {
             document.getElementById("monthbnb").innerText = monthbnb.toFixed(10);
-            document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
         }
     if ((isNaN(yearbnb))||!(isFinite(yearbnb))) {
-        document.getElementById("yearbnb").innerText = "-";
-        document.getElementById("yearbnbD").innerText = "-"}
-
+        document.getElementById("yearbnb").innerText = "-"}
         else {
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
-            document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
         }
 		
 	var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
