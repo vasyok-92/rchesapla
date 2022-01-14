@@ -67,8 +67,8 @@ dcountup.prototype.start=function(){
 }
 </script>	
 <!--===============================================================================================-->
-<link rel="stylesheet" media="screen, print, handheld" type="text/css" href="https://www.eniyisozler.net/Html-Kodlari/duyuru-panosu-ekle-7.css">
-<!--<div class="css3droppanel">
+<!--<link rel="stylesheet" media="screen, print, handheld" type="text/css" href="https://www.eniyisozler.net/Html-Kodlari/duyuru-panosu-ekle-7.css">
+<div class="css3droppanel">
 <input type="checkbox" id="paneltoggle" />
 <label for="paneltoggle"></label>
 <div class="content">
@@ -218,11 +218,14 @@ refrClock();
 			<img src="img/bnb.png" width="25" height="25">
 			<img src="img/matic.png" width="25" height="25">
 			<img src="img/doge.png" width="25" height="25">
+			<br>
 <!--===============================================================================================-->
 <p><a href="./v2"><img src="img/rchesaplav2.png" width="25" height="25"></a>
 <a href="./v3"><img src="img/rchesaplav3.png" width="25" height="25"></a></p>
 <!--===============================================================================================-->
-<!-- Güncelleme Listesi -->
+			<a href="satoshihesapla"> <button class="button"><span>Satoshi Hesapla </span></button></a>
+<!--===============================================================================================-->
+<!-- Güncelleme Listesi
 <div id="pencerekodu">
 <label for="pencere" class="dugme">
 <a><img src="https://yunti.files.wordpress.com/2019/01/turk_bayragi_02_tam35blog.gif" width="20" height="20"></a> Güncelleme <a><img name="sasdasd"src="https://yunti.files.wordpress.com/2019/01/turk_bayragi_02_tam35blog.gif" width="20" height="20"></a>
@@ -261,5 +264,47 @@ transition:opacity 0.6s ease-out; z-index:-1; padding:10px; -webkit-border-radiu
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="./js/js.js"></script>
+<!--===============================================================================================-->
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<!--===============================================================================================-->
 </body>
 </html>
