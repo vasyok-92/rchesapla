@@ -82,21 +82,15 @@
     <div class="col-12" id="left-handles">
         <div class="card mb-1">
             <div class="card-header pb-1">
-                <h1 class="card-title text-uppercase"><img width="16" height="16" src="../../img/coins/16/bitcoin.png" alt="Bitcoin BTC" class="db fl mr5"><b>Satoshi'yi USD Dolarına Dönüştür</b> - <b>Satoshi Doları Hesaplayıcı</b></h1>
+                <h1 class="card-title text-uppercase"><img width="16" height="16" src="https://awebanalysis.com/img/coins/16/bitcoin.png" alt="Bitcoin BTC" class="db fl mr5"><b>Satoshi'yi USD Dolarına Dönüştür</b> - <b>Satoshi Doları Hesaplayıcı</b></h1>
                 <a class="heading-elements-toggle"><i class="fas fa-ellipsis-v font-medium-3"></i></a>
-                <div class="heading-elements">
-                    <ul class="list-inline mb-0">
-                                                <li data-toggle="tooltip" class="hide_fs" data-original-title="Kapat"><a data-action="close"><i class="fal fa-times"></i></a></li>
-                        <li data-toggle="tooltip" data-original-title="Tam ekran"><a data-action="expand"><i class="far fa-expand"></i></a></li>
-                    </ul>
-                </div>
             </div>
             <div class="card-content">
                 <div class="card-text">
                     <hr class="mt-0 mb-0">
                 </div>
                 <div class="card-body">
-                    <form class="form-inline">
+                    <form class="form-inline"><center>
                         <div class="row d-flex no-gutters">
                             <div class="col-12 col-sm-12 col-md-5">
                                 <div class="form-group w-100">
@@ -109,8 +103,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-1 align-self-center align-middle">
-                                <i class="fas fa-arrow-alt-right transfbtn d-none d-sm-block ml-0 ml-md-1 ml-lg-0"></i>
-                                <i class="fas fa-chevron-down transfbtnDown d-block d-sm-none"></i>
+
                             </div>
                             <div class="col-12 col-sm-5 col-md-5">
                                 <div class="form-group mb-0 w-100">
@@ -125,7 +118,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div></center>
                     </form>
                 </div>
             </div>
@@ -135,9 +128,6 @@
                 <div class="card-body p-1">
                     <div class="bs-callout-success">
                         <div class="media align-items-stretch">
-                            <div class="media-left media-middle bg-success p-1 rounded no-border-top-right-radius no-border-bottom-right-radius">
-                                <i class="fas fa-info-circle white font-medium-5 mt-1"></i>
-                            </div>
                             <div class="media-body p-1">
                                 <strong>Önemli:</strong>
                                 <p>Sistemimiz yeni eklenmiştir!</p>
@@ -150,7 +140,7 @@
 		
         <div class="card">
             <div class="card-header pb-1">
-                <h2 class="card-title text-uppercase"><i class="fas fa-info-circle icon_title mt1"></i>Satoshi nedir?</h2>
+                <h2 class="card-title text-uppercase">Satoshi nedir?</h2>
             </div>
             <div class="card-text">
                 <hr class="mt-0 mb-0">
@@ -166,19 +156,8 @@
     </div>
 </div>
 </div> 
-
-<script src="../../ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous"></script>
-<script>WebFont.load({ google: { families: [ 'Montserrat:400,500,600', 'Open+Sans:300,400,600', 'Poppins:300,400,500,600&display=swap' ] } });</script>
-<script src="../../app-assets/vendors/js/vendors.min.js?36" type="text/javascript"></script>
-<script src="../../app-assets/js/app.min.js?36" type="text/javascript"></script>
-<script type="text/javascript"> $(document).ready(function () {$('#show-crypto-live').click(function () {$.ajax({ type: 'GET', url: 'https://awebanalysis.com/app-assets/sockets/js/app2.min.js?36', dataType: 'script', async: true, cache: false, beforeSend: function () { $('#hide-show-crypto-live').html('<div class="col-12 mt-2 mb-2"><div class="text-center"><i class="far fa-3x fa-sync-alt fa-spin"></i></div></div>') }, success: function () {gtag('event', 'display-crypto-live', { 'event_category': 'UX', 'event_label': 'display-crypto-live' });$('#hide-show-crypto-live, .hide-crypto-live-block').hide();$('#crypto-live').show();return false;} })})})</script>
-<script type="text/javascript"> $(document).ready(function(){dragula([document.getElementById('card-drag-area')]);dragula([document.getElementById('card-move')]).on('drag', function (el) {el.className = el.className.replace('card-moved', '');}).on('drop', function (el) {el.className += ' card-moved';}).on('over', function (el, container) {container.className += ' card-over';}).on('out', function (el, container) {container.className = container.className.replace('card-over', '');});dragula([document.getElementById("left-handles"), document.getElementById("right-handles")], {moves: function (el, container, handle) {return handle.classList.contains('handle');}});});</script>
-<script type="text/javascript" src="../../app-assets/vendors/js/typehead/typeahead.bundle.min.js"></script>
-<script type="text/javascript"> $(document).ready(function(){var dataSource = new Bloodhound({datumTokenizer: Bloodhound.tokenizers.obj.whitespace('n'), queryTokenizer: Bloodhound.tokenizers.whitespace, prefetch: { url: "https://awebanalysis.com/includes/data/coins.json?1642120205" }});dataSource.initialize();$('#search_coins').typeahead({hint: true, highlight: true, minLength: 1}, {displayKey: 'n', limit: 10, source: dataSource.ttAdapter()}).bind('typeahead:select', function(ev, coinlist) {location.href = "https://awebanalysis.com/en/coin-details/"+coinlist.i+"/";});});</script>
-<script type="text/javascript" src="../../js/300/addthis_widget.js#pubid=ra-58864a188ce4ac44" async="async"></script>
-<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"20036855"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-<script type="text/javascript">var sc_project=11137165; var sc_invisible=1;  var sc_security="fa6488d3";</script>
-<script type="text/javascript" src="../../counter/counter.js"></script>
-<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter67594087 = new Ya.Metrika({ id:67594087, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="../../watch/67594087/1.gif" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<script src="https://awebanalysis.com/app-assets/vendors/js/vendors.min.js?36" type="text/javascript"></script>
+<script src="https://awebanalysis.com/app-assets/js/app.min.js?36" type="text/javascript"></script>
+<script type="text/javascript" src="https://awebanalysis.com/app-assets/vendors/js/typehead/typeahead.bundle.min.js"></script>
 </body>
 </html>
