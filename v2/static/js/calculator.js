@@ -29,7 +29,7 @@ calc = function(){
 		blockmatic = document.getElementById("blockmatic").innerText,
         blockRlt = document.getElementById("blockRlt").innerText;
     
-        // Calc Results
+//BITCOIN HESAPLAMA ARACI//
     var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
         btcPrice1 = document.getElementById('btc-price-api').innerHTML
         btcPrice = Number(btcPrice1.substring(1))
@@ -76,7 +76,6 @@ calc = function(){
         else {
             document.getElementById("yearBtc").innerText = yearBtc.toFixed(10);
         }
-
     if ((isNaN(minBtcD))||!(isFinite(minBtcD))) {
         document.getElementById("minBtcD").innerText = "-"}
         else {
@@ -107,8 +106,7 @@ calc = function(){
         else {
             document.getElementById("yearBtcD").innerText = "$" + yearBtcD.toFixed(5);
         }
-
-    
+//DOGECOIN HESAPLAMA ARACI//
     var dogePower = ((Number(totalRate)/1000) * Number(distDoge))/100
         dogePrice1 = document.getElementById('doge-price-api').innerHTML
         dogePrice = Number(dogePrice1.substring(1))
@@ -156,8 +154,6 @@ calc = function(){
             document.getElementById("yearDoge").innerText = yearDoge.toFixed(10);
         }
     
-
-
     if ((isNaN(minDogeD))||!(isFinite(minDogeD))) {
         document.getElementById("minDogeD").innerText = "-"}
         else {
@@ -188,7 +184,7 @@ calc = function(){
         else {
             document.getElementById("yearDogeD").innerText = "$" + yearDogeD.toFixed(5);
         }
-
+//ETHEREUM HESAPLAMA ARACI//
     var ethPower = ((Number(totalRate)/1000) * Number(distEth))/100
         ethPrice1 = document.getElementById('eth-price-api').innerHTML
         ethPrice = Number(ethPrice1.substring(1))
@@ -236,7 +232,6 @@ calc = function(){
             document.getElementById("yearEth").innerText = yearEth.toFixed(10);
         }
     
-
     if ((isNaN(minEthD))||!(isFinite(minEthD))) {
         document.getElementById("minEthD").innerText = "-"}
         else {
@@ -267,86 +262,7 @@ calc = function(){
         else {
             document.getElementById("yearEthD").innerText = "$" + yearEthD.toFixed(5);
         }
-
-    var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
-        btcPrice1 = document.getElementById('btc-price-api').innerHTML
-        btcPrice = Number(btcPrice1.substring(1))
-        minBtc = (Number(btcPower)*blockBtc)/(Number(netBtc)*1000)
-        minBtcD = Number(minBtc) * btcPrice
-        hourBtc = Number(minBtc) * 6
-        hourBtcD = Number(hourBtc) * btcPrice
-        dayBtc = Number(hourBtc) * 24 
-        dayBtcD = Number(dayBtc) * btcPrice
-        weekBtc = Number(dayBtc) * 7
-        weekBtcD = Number(weekBtc) * btcPrice
-        monthBtc = Number(dayBtc) * 30
-        monthBtcD = Number(monthBtc) * btcPrice
-        yearBtc = Number(dayBtc) * 365
-        yearBtcD = Number(yearBtc) * btcPrice
-
-    if ((isNaN(minBtc))||!(isFinite(minBtc))) {
-        document.getElementById("minBtc").innerText = "-"}
-        else {
-            document.getElementById("minBtc").innerText = minBtc.toFixed(10);
-        }
-    if ((isNaN(hourBtc))||!(isFinite(hourBtc))) {
-        document.getElementById("hourBtc").innerText = "-"}
-        else {
-            document.getElementById("hourBtc").innerText = hourBtc.toFixed(10);
-        }
-    if ((isNaN(dayBtc))||!(isFinite(dayBtc))) {
-        document.getElementById("dayBtc").innerText = "-"}
-        else {
-            document.getElementById("dayBtc").innerText = dayBtc.toFixed(10);
-        }
-    if ((isNaN(weekBtc))||!(isFinite(weekBtc))) {
-        document.getElementById("weekBtc").innerText = "-"}
-        else {
-            document.getElementById("weekBtc").innerText = weekBtc.toFixed(10);
-        }
-    if ((isNaN(monthBtc))||!(isFinite(monthBtc))) {
-        document.getElementById("monthBtc").innerText = "-"}
-        else {
-            document.getElementById("monthBtc").innerText = monthBtc.toFixed(10);
-        }
-    if ((isNaN(yearBtc))||!(isFinite(yearBtc))) {
-        document.getElementById("yearBtc").innerText = "-"}
-        else {
-            document.getElementById("yearBtc").innerText = yearBtc.toFixed(10);
-        }
-
-    if ((isNaN(minBtcD))||!(isFinite(minBtcD))) {
-        document.getElementById("minBtcD").innerText = "-"}
-        else {
-            document.getElementById("minBtcD").innerText = "$" + minBtcD.toFixed(5);
-        }
-    if ((isNaN(hourBtcD))||!(isFinite(hourBtcD))) {
-        document.getElementById("hourBtcD").innerText = "-"}
-        else {
-            document.getElementById("hourBtcD").innerText = "$" + hourBtcD.toFixed(5);
-        }
-    if ((isNaN(dayBtcD))||!(isFinite(dayBtcD))) {
-        document.getElementById("dayBtcD").innerText = "-"}
-        else {
-            document.getElementById("dayBtcD").innerText = "$" + dayBtcD.toFixed(5);
-        }
-    if ((isNaN(weekBtcD))||!(isFinite(weekBtcD))) {
-        document.getElementById("weekBtcD").innerText = "-"}
-        else {
-            document.getElementById("weekBtcD").innerText = "$" + weekBtcD.toFixed(5);
-        }
-    if ((isNaN(monthBtcD))||!(isFinite(monthBtcD))) {
-        document.getElementById("monthBtcD").innerText = "-"}
-        else {
-            document.getElementById("monthBtcD").innerText = "$" + monthBtcD.toFixed(5);
-        }
-    if ((isNaN(yearBtcD))||!(isFinite(yearBtcD))) {
-        document.getElementById("yearBtcD").innerText = "-"}
-        else {
-            document.getElementById("yearBtcD").innerText = "$" + yearBtcD.toFixed(5);
-        }
-
-    
+//BINANCECOIN HESAPLAMA ARACI//
     var bnbPower = ((Number(totalRate)/1000) * Number(distbnb))/100
         bnbPrice1 = document.getElementById('bnb-price-api').innerHTML
         bnbPrice = Number(bnbPrice1.substring(1))
@@ -393,70 +309,7 @@ calc = function(){
         else {
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
         }
-		
-	var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
-        minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
-        minmaticD = Number(minmatic) * 1
-        hourmatic = Number(minmatic) * 6
-        hourmaticD = Number(hourmatic) * 1
-        daymatic = Number(hourmatic) * 24 
-        daymaticD = Number(daymatic) * 1
-        weekmatic = Number(daymatic) * 7
-        weekmaticD = Number(weekmatic) * 1
-        monthmatic = Number(daymatic) * 30
-        monthmaticD = Number(monthmatic) * 1
-        yearmatic = Number(daymatic) * 365
-        yearmaticD = Number(yearmatic) * 1
-
-    if ((isNaN(minmatic))||!(isFinite(minmatic))) {
-        document.getElementById("minmatic").innerText = "-";
-        document.getElementById("minmaticD").innerText = "-"}
-
-        else {
-            document.getElementById("minmatic").innerText = minmatic.toFixed(10);
-            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
-        }
-    if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
-        document.getElementById("hourmatic").innerText = "-";
-        document.getElementById("hourmaticD").innerText = "-"}
-
-        else {
-            document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
-            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
-        }
-    if ((isNaN(daymatic))||!(isFinite(daymatic))) {
-        document.getElementById("daymatic").innerText = "-";
-        document.getElementById("daymaticD").innerText = "-"}
-
-        else {
-            document.getElementById("daymatic").innerText = daymatic.toFixed(10);
-            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
-        }
-    if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
-        document.getElementById("weekmatic").innerText = "-";
-        document.getElementById("weekmaticD").innerText = "-"}
-
-        else {
-            document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
-            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
-        }
-    if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
-        document.getElementById("monthmatic").innerText = "-";
-        document.getElementById("monthmaticD").innerText = "-"}
-
-        else {
-            document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
-            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
-        }
-    if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
-        document.getElementById("yearmatic").innerText = "-";
-        document.getElementById("yearmaticD").innerText = "-"}
-
-        else {
-            document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
-            document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
-        }
-		
+//ROLLERTOKEN HESAPLAMA ARACI//
 	var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
         minRlt = (Number(RltPower)*blockRlt)/(Number(netRlt)*1000)
         minRltD = Number(minRlt) * 1
@@ -518,6 +371,69 @@ calc = function(){
         else {
             document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
             document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
+        }
+//POLYGON (MATIC) HESAPLAMA ARACI//
+	var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
+        minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
+        minmaticD = Number(minmatic) * 1
+        hourmatic = Number(minmatic) * 6
+        hourmaticD = Number(hourmatic) * 1
+        daymatic = Number(hourmatic) * 24 
+        daymaticD = Number(daymatic) * 1
+        weekmatic = Number(daymatic) * 7
+        weekmaticD = Number(weekmatic) * 1
+        monthmatic = Number(daymatic) * 30
+        monthmaticD = Number(monthmatic) * 1
+        yearmatic = Number(daymatic) * 365
+        yearmaticD = Number(yearmatic) * 1
+
+    if ((isNaN(minmatic))||!(isFinite(minmatic))) {
+        document.getElementById("minmatic").innerText = "-";
+        document.getElementById("minmaticD").innerText = "-"}
+
+        else {
+            document.getElementById("minmatic").innerText = minmatic.toFixed(10);
+            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
+        }
+    if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
+        document.getElementById("hourmatic").innerText = "-";
+        document.getElementById("hourmaticD").innerText = "-"}
+
+        else {
+            document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
+            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
+        }
+    if ((isNaN(daymatic))||!(isFinite(daymatic))) {
+        document.getElementById("daymatic").innerText = "-";
+        document.getElementById("daymaticD").innerText = "-"}
+
+        else {
+            document.getElementById("daymatic").innerText = daymatic.toFixed(10);
+            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
+        }
+    if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
+        document.getElementById("weekmatic").innerText = "-";
+        document.getElementById("weekmaticD").innerText = "-"}
+
+        else {
+            document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
+            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
+        }
+    if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
+        document.getElementById("monthmatic").innerText = "-";
+        document.getElementById("monthmaticD").innerText = "-"}
+
+        else {
+            document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
+            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
+        }
+    if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
+        document.getElementById("yearmatic").innerText = "-";
+        document.getElementById("yearmaticD").innerText = "-"}
+
+        else {
+            document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
+            document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
     }
     
