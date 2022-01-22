@@ -28,7 +28,7 @@ fetchData = function(){
       });
       
   }
-  
+
 getResults = function(fetch_data){
     btcPrice = fetch_data.bitcoin.usd
     dogePrice = fetch_data.dogecoin.usd
@@ -252,8 +252,5 @@ calculate = function(prices){
 
 fetchData()
 setInterval(fetchData, 5000)
-
-
-  
     // console.log('updated')
     // console.log(dogePrice)
