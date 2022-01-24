@@ -374,79 +374,65 @@ calc = function(){
         }
 //POLYGON (MATIC) HESAPLAMA ARACI//
     var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
-        maticPrice1 = document.getElementById('matic-price-api').innerHTML
-        maticPrice = Number(maticPrice1.substring(1))
         minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
-        minmaticD = Number(minmatic) * maticPrice
+        minmaticD = Number(minmatic) * 1
         hourmatic = Number(minmatic) * 6
-        hourmaticD = Number(hourmatic) * maticPrice
+        hourmaticD = Number(hourmatic) * 1
         daymatic = Number(hourmatic) * 24 
-        daymaticD = Number(daymatic) * maticPrice
+        daymaticD = Number(daymatic) * 1
         weekmatic = Number(daymatic) * 7
-        weekmaticD = Number(weekmatic) * maticPrice
+        weekmaticD = Number(weekmatic) * 1
         monthmatic = Number(daymatic) * 30
-        monthmaticD = Number(monthmatic) * maticPrice
+        monthmaticD = Number(monthmatic) * 1
         yearmatic = Number(daymatic) * 365
-        yearmaticD = Number(yearmatic) * maticPrice
+        yearmaticD = Number(yearmatic) * 1
 
     if ((isNaN(minmatic))||!(isFinite(minmatic))) {
-        document.getElementById("minmatic").innerText = "-"}
+        document.getElementById("minmatic").innerText = "-";
+        document.getElementById("minmaticD").innerText = "-"}
+
         else {
             document.getElementById("minmatic").innerText = minmatic.toFixed(10);
-        }
-    if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
-        document.getElementById("hourmatic").innerText = "-"}
-        else {
-            document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
-        }
-    if ((isNaN(daymatic))||!(isFinite(daymatic))) {
-        document.getElementById("daymatic").innerText = "-"}
-        else {
-            document.getElementById("daymatic").innerText = daymatic.toFixed(10);
-        }
-    if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
-        document.getElementById("weekmatic").innerText = "-"}
-        else {
-            document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
-        }
-    if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
-        document.getElementById("monthmatic").innerText = "-"}
-        else {
-            document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
-        }
-    if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
-        document.getElementById("yearmatic").innerText = "-"}
-        else {
-            document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
-        }
-    if ((isNaN(minmaticD))||!(isFinite(minmaticD))) {
-        document.getElementById("minmaticD").innerText = "-"}
-        else {
             document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
         }
-    if ((isNaN(hourmaticD))||!(isFinite(hourmaticD))) {
+    if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
+        document.getElementById("hourmatic").innerText = "-";
         document.getElementById("hourmaticD").innerText = "-"}
+
         else {
+            document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
             document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
         }
-    if ((isNaN(daymaticD))||!(isFinite(daymaticD))) {
+    if ((isNaN(daymatic))||!(isFinite(daymatic))) {
+        document.getElementById("daymatic").innerText = "-";
         document.getElementById("daymaticD").innerText = "-"}
+
         else {
+            document.getElementById("daymatic").innerText = daymatic.toFixed(10);
             document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
         }
-    if ((isNaN(weekmaticD))||!(isFinite(weekmaticD))) {
+    if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
+        document.getElementById("weekmatic").innerText = "-";
         document.getElementById("weekmaticD").innerText = "-"}
+
         else {
+            document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
             document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
         }
-    if ((isNaN(monthmaticD))||!(isFinite(monthmaticD))) {
+    if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
+        document.getElementById("monthmatic").innerText = "-";
         document.getElementById("monthmaticD").innerText = "-"}
+
         else {
+            document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
             document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
         }
-    if ((isNaN(yearmaticD))||!(isFinite(yearmaticD))) {
+    if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
+        document.getElementById("yearmatic").innerText = "-";
         document.getElementById("yearmaticD").innerText = "-"}
+
         else {
+            document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
     }
