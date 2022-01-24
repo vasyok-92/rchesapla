@@ -2,6 +2,7 @@
 
 - V2 | Daha ayrıntılı şekilde sizlere sunulmuştur.
 - Satoshi hesaplama aracı eklenmiştir.
+- 2m Çekiliş video tanıtımı eklendi! | [GitHub Pages](https://pages.github.com/)
 
 
 # İPTAL EDİLEN LİSTESİ
