@@ -1,5 +1,9 @@
-# RCHesapla - Güncelleme Listesi! (19.01.2021)
+# RCHESAPLA - GÜNCELLEME LİSTESİ (24.01.2022)
 
 - V2 | Daha ayrıntılı şekilde sizlere sunulmuştur.
-- V3 | Basit şekilde ayarlanıp aynı zamanda kazım gücünüze göre hangisi daha iyi sizlere gösteriyor.
 - Satoshi hesaplama aracı eklenmiştir.
+
+
+# İPTAL EDİLEN LİSTESİ
+
+- V3 sürümü çok işlem görmemesi nedeniyle kaldırıldı.
