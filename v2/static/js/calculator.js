@@ -19,7 +19,7 @@ calc = function(){
 		netmatic = document.getElementById("netmatic").value,
         netRlt = document.getElementById("netRlt").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netRlt) + Number(netbnb) + Number(netmatic);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netRlt);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
