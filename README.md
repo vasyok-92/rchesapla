@@ -2,7 +2,7 @@
 
 - V2 | Daha ayrıntılı şekilde sizlere sunulmuştur.
 - Satoshi hesaplama aracı eklenmiştir.
-- 2m Çekiliş video tanıtımı eklendi! | [GitHub Pages](https://pages.github.com/)
+- 2m Çekiliş video tanıtımı eklendi! | [Tıkla!](https://fatihcelikofficialtr.github.io/rchesapla/v2/2m/)
 
 
 # İPTAL EDİLEN LİSTESİ
