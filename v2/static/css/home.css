@@ -49,7 +49,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'title title title title title title title title title title title title' 'btc btc-price doge doge-price eth eth-price rlt rlt-price bnb bnb-price matic matic-price';
+      grid-template-areas: 'title title title title title title title title title title title title' 'btc btc-price doge doge-price eth eth-price bnb bnb-price matic matic-price rlt rlt-price';
   -ms-grid-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
       grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
 }
@@ -237,16 +237,16 @@ input::-webkit-inner-spin-button {
   color: #9782fa;
 }
 
-.hero .tabs-layout .tab1-content table .td-rlt {
-  color: #00e2e3;
-}
-
 .hero .tabs-layout .tab1-content table .td-bnb {
   color: #CCFF00;
 }
 
 .hero .tabs-layout .tab1-content table .td-matic {
   color: #5530ac;
+}
+
+.hero .tabs-layout .tab1-content table .td-rlt {
+  color: #00e2e3;
 }
 
 .hero .tabs-layout .tab1-content .no-input {
@@ -319,15 +319,6 @@ input::-webkit-inner-spin-button {
   color: #9782fa;
 }
 
-.hero .tabs-layout .tab2-content .rlt-box {
-  background: #173333;
-}
-
-.hero .tabs-layout .tab2-content .rlt-box .table-headers {
-  font-weight: bold;
-  color: #00e2e3;
-}
-
 .hero .tabs-layout .tab2-content .bnb-box {
   background: #515024;
 }
@@ -344,6 +335,15 @@ input::-webkit-inner-spin-button {
 .hero .tabs-layout .tab2-content .matic-box .table-headers {
   font-weight: bold;
   color: #2a1eee;
+}
+
+.hero .tabs-layout .tab2-content .rlt-box {
+  background: #173333;
+}
+
+.hero .tabs-layout .tab2-content .rlt-box .table-headers {
+  font-weight: bold;
+  color: #00e2e3;
 }
 
 .hero .tabs-layout .tab2-content table {
