@@ -16,14 +16,14 @@ input::-webkit-inner-spin-button {
 .hero .container .crypto-price {
   background: #2f3045;
   border-radius: 0.3rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   margin: auto;
 }
 
 .hero .container .crypto-price .price-title {
   color: white;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
@@ -36,16 +36,22 @@ input::-webkit-inner-spin-button {
 }
 
 .hero .container .crypto-price .price-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero .container .crypto-price .price-content ul {
-  padding: 0.3rem 0.5rem;
-  margin: auto;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
   display: grid;
       grid-template-areas: 'title title title title title title title title title title title title' 'btc btc-price doge doge-price eth eth-price bnb bnb-price matic matic-price rlt rlt-price';
-  -ms-grid-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
-      grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
+  -ms-grid-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
+      grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
 }
 
 .hero .container .crypto-price .price-content ul li {
