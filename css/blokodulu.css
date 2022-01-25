@@ -1,0 +1,55 @@
+.hero .tabs-layout .tab1-content {
+  background: #6e6b8f;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'rate dis'
+ 'net blreward';
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.hero .tabs-layout .tab1-content .box {
+  padding: 0.5rem;
+}
+
+.hero .tabs-layout .tab1-content .box-title {
+  background: #1f1f2c;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  border-radius: 0.3rem 0.3rem 0 0;
+  font-weight: bold;
+}
+
+.hero .tabs-layout .tab1-content table {
+  padding: 0.5rem;
+  color: white;
+  margin: auto;
+}
+
+.hero .tabs-layout .tab1-content table td {
+  padding: 0.2rem 0.2rem;
+}
+
+.hero .tabs-layout .tab1-content table .td-btc {
+  color: #fb9135;
+}
+
+.hero .tabs-layout .tab1-content table .td-doge {
+  color: #c4a443;
+}
+
+.hero .tabs-layout .tab1-content table .td-eth {
+  color: #9782fa;
+}
+
+.hero .tabs-layout .tab1-content table .td-bnb {
+  color: #CCFF00;
+}
+
+.hero .tabs-layout .tab1-content table .td-matic {
+  color: #5530ac;
+}
+
+.hero .tabs-layout .tab1-content table .td-rlt {
+  color: #00e2e3;
+}
