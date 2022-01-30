@@ -40,8 +40,9 @@ body {
 .navbar .container-nav .link-calc {
   color: white;
   text-decoration: none;
+  font-size: 0.9rem;
   font-family: 'Russo One', sans-serif;
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 
 .navbar .container-nav .season2info {
