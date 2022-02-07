@@ -5,33 +5,33 @@ function blockAmount() {
     // Update if updated on rollercoin
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            //bitcoin
+            // BITCOIN BLOK ÖDÜLÜ
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
             break;
         case 1:
-            //Doge
+            // DOGE BLOK ÖDÜLÜ
             var blockreward = 20;
             document.getElementById("block-reward").value = 20;
             break;
         case 2:
-            //eth
+            // ETH BLOK ÖDÜLÜ
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
-            //bnb
+            // BNB BLOK ÖDÜLÜ
             var blockreward = 0.012;
             document.getElementById("block-reward").value = 0.012;
             break;
         case 4: 
-            //matic
+            // MATIC BLOK ÖDÜLÜ
             var blockreward = 3;
             document.getElementById("block-reward").value = 3;
             console.log("matic end");
             break;
         default:
-            //RLT
+            // RLT BLOK ÖDÜLÜ
             console.log("rlt start");
             var blockreward = 30;
             document.getElementById("block-reward").value = 30;
