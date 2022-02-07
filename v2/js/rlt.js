@@ -1,4 +1,4 @@
-var text="<font size=2><b>RLT x2</b></font>" // Yazı //
+var text="<font size=2><b>60 RLT</b></font>" // Yazı //
 var speed="80" // Hız //
 
 if (document.all||document.getElementById){
