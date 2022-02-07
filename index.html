@@ -137,17 +137,17 @@ Resimlere tıklayarak yeni sürümlere ulaşabilirsiniz.!
             <!-- Block type input and select -->
             <div class="inputlabel">
                 <label for="block-reward" class="spacing"> 
-				<img src="img/blok_odulu.png" width="15" height="15"> Blok Ödülü</label>
+				<img src="img/blok_odulu.png" width="15" height="15"> Blok Ödülü (ETH: <script src="https://fatihcelikofficialtr.github.io/rchesapla/v2/js/x2.js"></script>)</label>
                 <br class="spacerInput">
                 <input class="inputCalc inputBlock" type="number" name="block-reward" id="block-reward" step="any"
                     oninput="calculateGoalPower()">
                 <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()">
-                    <option value="BTC">Bitcoin (BTC)</option>
-                    <option value="DOGE">Doge (DOGE)</option>
-                    <option value="ETH">Ethereum (ETH)</option>
-                    <option value="BNB">Binance Coin (BNB)</option>
-                    <option value="MATIC">Polygon (MATIC)</option>
-                    <option value="RLT">RollerToken (RLT)</option>
+                    <option value="BTC">BITCOIN (BTC)</option>
+                    <option value="DOGE">DOGECOIN (DOGE)</option>
+                    <option value="ETH">ETHEREUM (ETH)</option>
+                    <option value="BNB">BINANCECOIN (BNB)</option>
+                    <option value="MATIC">POLYGON (MATIC)</option>
+                    <option value="RLT">ROLLERTOKEN (RLT)</option>
                 </select>
             </div>
             <button id="calcbtn" style="margin-top: 10px;" class="spacing" onclick="calculateGoalPower()">Hesapla</button>
