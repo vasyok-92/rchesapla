@@ -53,4 +53,4 @@ function starteffect(){
 if (document.all||document.getElementById)
 flash=setInterval("change()",speed)
 }
-starteffect()
+starteffect();
