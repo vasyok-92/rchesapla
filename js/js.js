@@ -162,4 +162,3 @@ function calculateGoalPower() {
             break;
     }
 }
-
