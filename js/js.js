@@ -1,7 +1,5 @@
 const { Block } = require("strip-comments/lib/Node");
 
-console.log("Hello World");
-
 function blockAmount() {
     // Returns pre-set block rewards based on block selected
     // Update if updated on rollercoin
@@ -38,28 +36,6 @@ function blockAmount() {
             var blockreward = 30;
             document.getElementById("block-reward").value = 30;
             break;
-    }
-}
-
-function showHashpowerHelp() {
-    var x = document.querySelector("body > div.row.no-gutters.hashinput > div > div:nth-child(1) > img");
-    if (x.classList.contains("hide")) {
-        x.classList.remove("hide");
-    } else {
-        x.classList.add("hide");
-    }
-}
-
-function supportMeToggle() {
-    var x = document.querySelector("body > div.supportMe");
-    if (x.classList.contains("hidden")) {
-        x.classList.add("animate__animate", "animate__fadeInLeft");
-        x.classList.remove("hidden");
-        console.log("revealed SupportMe")
-        // x.classList.add("animate__animated", "animate__bounceOutLeft"); 
-    } else {
-        x.classList.add("hidden");
-        console.log("Hide SupportMe")
     }
 }
 
@@ -186,6 +162,4 @@ function calculateGoalPower() {
             break;
     }
 }
-
-// Arc.io Div appender
 
