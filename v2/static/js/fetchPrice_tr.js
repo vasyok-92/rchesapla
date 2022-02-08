@@ -1,6 +1,6 @@
 fetchData = function(){
 
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cbinancecoin%2Ctether%2Cmatic-network&vs_currencies=try', {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cbinancecoin%2Ctether%2Czelcash&vs_currencies=try', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,8 @@ getResults = function(fetch_data){
     ethPrice = fetch_data.ethereum.try
 	bnbPrice = fetch_data.binancecoin.try
 	rltPrice = fetch_data.tether.try
-    return [btcPrice, dogePrice, ethPrice, bnbPrice, rltPrice]
+	maticPrice = fetch_data.zelcash.try
+    return [btcPrice, dogePrice, ethPrice, bnbPrice, rltPrice , maticPrice]
 }
 
 postResults = function(prices){
@@ -44,6 +45,8 @@ postResults = function(prices){
     document.getElementById("eth-price-api").innerHTML = prices[2] + " ₺";
 	document.getElementById("bnb-price-api").innerHTML = prices[3] + " ₺";
 	document.getElementById("rlt-price-api").innerHTML = prices[4] + " ₺";
+	document.getElementById("matic-price-api").innerHTML = prices[5] + " ₺";
+	
 }
 
 //////////////////////////////
@@ -53,6 +56,7 @@ calculate = function(prices){
         ethPrice = prices[2]
 		bnbPrice = prices[3]
 		rltPrice = prices[4]
+		maticPrice = prices[5]
 		
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
@@ -250,11 +254,10 @@ calculate = function(prices){
         else {
             document.getElementById("yearbnbD").innerText = yearbnbD.toFixed(5) + " ₺";
         }
-		
-	/////////////////////////////////////////////////
+/////////////////////////////////////////////////
     // matic CALC 10 MIN
     minmatic = document.getElementById("minmatic").innerHTML;
-    minmaticD = Number(minmatic)
+    minmaticD = Number(minmatic) * maticPrice
     if (isNaN(minmaticD)) {
         document.getElementById("minmaticD").innerText = "-"}
         else {
@@ -262,7 +265,7 @@ calculate = function(prices){
         }
     // matic CALC HOUR
     hourmatic = document.getElementById("hourmatic").innerHTML;
-    hourmaticD = Number(hourmatic)
+    hourmaticD = Number(hourmatic) * maticPrice
     if (isNaN(hourmaticD)) {
         document.getElementById("hourmaticD").innerText = "-"}
         else {
@@ -270,7 +273,7 @@ calculate = function(prices){
         }
     // matic CALC DAY
     daymatic = document.getElementById("daymatic").innerHTML;
-    daymaticD = Number(daymatic)
+    daymaticD = Number(daymatic) * maticPrice
     if (isNaN(daymaticD)) {
         document.getElementById("daymaticD").innerText = "-"}
         else {
@@ -278,7 +281,7 @@ calculate = function(prices){
         }
     // matic CALC WEEK
     weekmatic = document.getElementById("weekmatic").innerHTML;
-    weekmaticD = Number(weekmatic)
+    weekmaticD = Number(weekmatic) * maticPrice
     if (isNaN(weekmaticD)) {
         document.getElementById("weekmaticD").innerText = "-"}
         else {
@@ -286,7 +289,7 @@ calculate = function(prices){
         }    
     // matic CALC MONTH
     monthmatic = document.getElementById("monthmatic").innerHTML;
-    monthmaticD = Number(monthmatic)
+    monthmaticD = Number(monthmatic) * maticPrice
     if (isNaN(minmaticD)) {
         document.getElementById("monthmaticD").innerText = "-"}
         else {
@@ -294,7 +297,7 @@ calculate = function(prices){
         }    
     // matic CALC YEAR
     yearmatic = document.getElementById("yearmatic").innerHTML;
-    yearmaticD = Number(yearmatic)
+    yearmaticD = Number(yearmatic) * maticPrice
     if (isNaN(yearmaticD)) {
         document.getElementById("yearmaticD").innerText = "-"}
         else {

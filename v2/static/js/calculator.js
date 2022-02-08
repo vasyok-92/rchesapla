@@ -310,67 +310,51 @@ calc = function(){
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
         }
 //POLYGON (MATIC) HESAPLAMA ARACI//
-    var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
+     var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
+        maticPrice1 = document.getElementById('matic-price-api').innerHTML
+        maticPrice = Number(maticPrice1.substring(1))
         minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
-        minmaticD = Number(minmatic) * 1
+        minmaticD = Number(minmatic) * maticPrice
         hourmatic = Number(minmatic) * 6
-        hourmaticD = Number(hourmatic) * 1
+        hourmaticD = Number(hourmatic) * maticPrice
         daymatic = Number(hourmatic) * 24 
-        daymaticD = Number(daymatic) * 1
+        daymaticD = Number(daymatic) * maticPrice
         weekmatic = Number(daymatic) * 7
-        weekmaticD = Number(weekmatic) * 1
+        weekmaticD = Number(weekmatic) * maticPrice
         monthmatic = Number(daymatic) * 30
-        monthmaticD = Number(monthmatic) * 1
+        monthmaticD = Number(monthmatic) * maticPrice
         yearmatic = Number(daymatic) * 365
-        yearmaticD = Number(yearmatic) * 1
+        yearmaticD = Number(yearmatic) * maticPrice
 
     if ((isNaN(minmatic))||!(isFinite(minmatic))) {
-        document.getElementById("minmatic").innerText = "-";
-        document.getElementById("minmaticD").innerText = "-"}
-
+        document.getElementById("minmatic").innerText = "-"}
         else {
             document.getElementById("minmatic").innerText = minmatic.toFixed(10);
-            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
         }
     if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
-        document.getElementById("hourmatic").innerText = "-";
-        document.getElementById("hourmaticD").innerText = "-"}
-
+        document.getElementById("hourmatic").innerText = "-"}
         else {
             document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
-            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
         }
     if ((isNaN(daymatic))||!(isFinite(daymatic))) {
-        document.getElementById("daymatic").innerText = "-";
-        document.getElementById("daymaticD").innerText = "-"}
-
+        document.getElementById("daymatic").innerText = "-"}
         else {
             document.getElementById("daymatic").innerText = daymatic.toFixed(10);
-            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
         }
     if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
-        document.getElementById("weekmatic").innerText = "-";
-        document.getElementById("weekmaticD").innerText = "-"}
-
+        document.getElementById("weekmatic").innerText = "-"}
         else {
             document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
-            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
         }
     if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
-        document.getElementById("monthmatic").innerText = "-";
-        document.getElementById("monthmaticD").innerText = "-"}
-
+        document.getElementById("monthmatic").innerText = "-"}
         else {
             document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
-            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
         }
     if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
-        document.getElementById("yearmatic").innerText = "-";
-        document.getElementById("yearmaticD").innerText = "-"}
-
+        document.getElementById("yearmatic").innerText = "-"}
         else {
             document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
-            document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
 //ROLLERTOKEN HESAPLAMA ARACI//
     var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
