@@ -198,8 +198,7 @@ calculate = function(prices){
         else {
             document.getElementById("yearEthD").innerText = yearEthD.toFixed(5) + " ₺";
         }
-		
-    /////////////////////////////////////////////////
+/////////////////////////////////////////////////
     // bnb CALC 10 MIN
     minbnb = document.getElementById("minbnb").innerHTML;
     minbnbD = Number(minbnb) * bnbPrice
@@ -247,6 +246,105 @@ calculate = function(prices){
         document.getElementById("yearbnbD").innerText = "-"}
         else {
             document.getElementById("yearbnbD").innerText = yearbnbD.toFixed(5) + " ₺";
+        }
+		
+	/////////////////////////////////////////////////
+    // matic CALC 10 MIN
+    minmatic = document.getElementById("minmatic").innerHTML;
+    minmaticD = Number(minmatic)
+    if (isNaN(minmaticD)) {
+        document.getElementById("minmaticD").innerText = "-"}
+        else {
+            document.getElementById("minmaticD").innerText = minmaticD.toFixed(5) + " ₺";
+        }
+    // matic CALC HOUR
+    hourmatic = document.getElementById("hourmatic").innerHTML;
+    hourmaticD = Number(hourmatic)
+    if (isNaN(hourmaticD)) {
+        document.getElementById("hourmaticD").innerText = "-"}
+        else {
+            document.getElementById("hourmaticD").innerText = hourmaticD.toFixed(5) + " ₺";
+        }
+    // matic CALC DAY
+    daymatic = document.getElementById("daymatic").innerHTML;
+    daymaticD = Number(daymatic)
+    if (isNaN(daymaticD)) {
+        document.getElementById("daymaticD").innerText = "-"}
+        else {
+            document.getElementById("daymaticD").innerText = daymaticD.toFixed(5) + " ₺";
+        }
+    // matic CALC WEEK
+    weekmatic = document.getElementById("weekmatic").innerHTML;
+    weekmaticD = Number(weekmatic)
+    if (isNaN(weekmaticD)) {
+        document.getElementById("weekmaticD").innerText = "-"}
+        else {
+            document.getElementById("weekmaticD").innerText = weekmaticD.toFixed(5) + " ₺";
+        }    
+    // matic CALC MONTH
+    monthmatic = document.getElementById("monthmatic").innerHTML;
+    monthmaticD = Number(monthmatic)
+    if (isNaN(minmaticD)) {
+        document.getElementById("monthmaticD").innerText = "-"}
+        else {
+            document.getElementById("monthmaticD").innerText = monthmaticD.toFixed(5) + " ₺";
+        }    
+    // matic CALC YEAR
+    yearmatic = document.getElementById("yearmatic").innerHTML;
+    yearmaticD = Number(yearmatic)
+    if (isNaN(yearmaticD)) {
+        document.getElementById("yearmaticD").innerText = "-"}
+        else {
+            document.getElementById("yearmaticD").innerText = yearmaticD.toFixed(5) + " ₺";
+        }
+/////////////////////////////////////////////////
+    // rlt CALC 10 MIN
+    minrlt = document.getElementById("minrlt").innerHTML;
+    minrltD = Number(minrlt)
+    if (isNaN(minrltD)) {
+        document.getElementById("minrltD").innerText = "-"}
+        else {
+            document.getElementById("minrltD").innerText = minrltD.toFixed(5) + " ₺";
+        }
+    // rlt CALC HOUR
+    hourrlt = document.getElementById("hourrlt").innerHTML;
+    hourrltD = Number(hourrlt)
+    if (isNaN(hourrltD)) {
+        document.getElementById("hourrltD").innerText = "-"}
+        else {
+            document.getElementById("hourrltD").innerText = hourrltD.toFixed(5) + " ₺";
+        }
+    // rlt CALC DAY
+    dayrlt = document.getElementById("dayrlt").innerHTML;
+    dayrltD = Number(dayrlt)
+    if (isNaN(dayrltD)) {
+        document.getElementById("dayrltD").innerText = "-"}
+        else {
+            document.getElementById("dayrltD").innerText = dayrltD.toFixed(5) + " ₺";
+        }
+    // rlt CALC WEEK
+    weekrlt = document.getElementById("weekrlt").innerHTML;
+    weekrltD = Number(weekrlt)
+    if (isNaN(weekrltD)) {
+        document.getElementById("weekrltD").innerText = "-"}
+        else {
+            document.getElementById("weekrltD").innerText = weekrltD.toFixed(5) + " ₺";
+        }    
+    // rlt CALC MONTH
+    monthrlt = document.getElementById("monthrlt").innerHTML;
+    monthrltD = Number(monthrlt)
+    if (isNaN(minrltD)) {
+        document.getElementById("monthrltD").innerText = "-"}
+        else {
+            document.getElementById("monthrltD").innerText = monthrltD.toFixed(5) + " ₺";
+        }    
+    // rlt CALC YEAR
+    yearrlt = document.getElementById("yearrlt").innerHTML;
+    yearrltD = Number(yearrlt)
+    if (isNaN(yearrltD)) {
+        document.getElementById("yearrltD").innerText = "-"}
+        else {
+            document.getElementById("yearrltD").innerText = yearrltD.toFixed(5) + " ₺";
         }
     }
 
