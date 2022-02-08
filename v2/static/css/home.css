@@ -104,24 +104,9 @@ input::-webkit-inner-spin-button {
   padding: 0.5rem 0.35rem 0.5rem 0.2rem;
 }
 
-.hero .container .crypto-price .price-content ul .price-rlt {
-  -ms-grid-row: 2;
-  -ms-grid-column: 7;
-  grid-area: rlt;
-  color: #00e2e3;
-  padding: 0.5rem 0.2rem 0.5rem 0.35rem;
-}
-
-.hero .container .crypto-price .price-content ul .price-rlt-price {
-  -ms-grid-row: 2;
-  -ms-grid-column: 8;
-  grid-area: rlt-price;
-  padding: 0.5rem 0.5rem 0.5rem 0.2rem;
-}
-
 .hero .container .crypto-price .price-content ul .price-bnb {
   -ms-grid-row: 2;
-  -ms-grid-column: 9;
+  -ms-grid-column: 7;
   grid-area: bnb;
   color: #CCFF00;
   padding: 0.5rem 0.2rem 0.5rem 0.35rem;
@@ -129,14 +114,14 @@ input::-webkit-inner-spin-button {
 
 .hero .container .crypto-price .price-content ul .price-bnb-price {
   -ms-grid-row: 2;
-  -ms-grid-column: 10;
+  -ms-grid-column: 8;
   grid-area: bnb-price;
   padding: 0.5rem 0.5rem 0.5rem 0.2rem;
 }
 
 .hero .container .crypto-price .price-content ul .price-matic {
   -ms-grid-row: 2;
-  -ms-grid-column: 11;
+  -ms-grid-column: 9;
   grid-area: matic;
   color: #5530ac;
   padding: 0.5rem 0.2rem 0.5rem 0.35rem;
@@ -144,8 +129,23 @@ input::-webkit-inner-spin-button {
 
 .hero .container .crypto-price .price-content ul .price-matic-price {
   -ms-grid-row: 2;
-  -ms-grid-column: 12;
+  -ms-grid-column: 10;
   grid-area: matic-price;
+  padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+}
+
+.hero .container .crypto-price .price-content ul .price-rlt {
+  -ms-grid-row: 2;
+  -ms-grid-column: 11;
+  grid-area: rlt;
+  color: #00e2e3;
+  padding: 0.5rem 0.2rem 0.5rem 0.35rem;
+}
+
+.hero .container .crypto-price .price-content ul .price-rlt-price {
+  -ms-grid-row: 2;
+  -ms-grid-column: 12;
+  grid-area: rlt-price;
   padding: 0.5rem 0.5rem 0.5rem 0.2rem;
 }
 
