@@ -309,69 +309,6 @@ calc = function(){
         else {
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
         }
-//ROLLERTOKEN HESAPLAMA ARACI//
-	var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
-        minRlt = (Number(RltPower)*blockRlt)/(Number(netRlt)*1000)
-        minRltD = Number(minRlt) * 1
-        hourRlt = Number(minRlt) * 6
-        hourRltD = Number(hourRlt) * 1
-        dayRlt = Number(hourRlt) * 24 
-        dayRltD = Number(dayRlt) * 1
-        weekRlt = Number(dayRlt) * 7
-        weekRltD = Number(weekRlt) * 1
-        monthRlt = Number(dayRlt) * 30
-        monthRltD = Number(monthRlt) * 1
-        yearRlt = Number(dayRlt) * 365
-        yearRltD = Number(yearRlt) * 1
-
-    if ((isNaN(minRlt))||!(isFinite(minRlt))) {
-        document.getElementById("minRlt").innerText = "-";
-        document.getElementById("minRltD").innerText = "-"}
-
-        else {
-            document.getElementById("minRlt").innerText = minRlt.toFixed(10);
-            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
-        }
-    if ((isNaN(hourRlt))||!(isFinite(hourRlt))) {
-        document.getElementById("hourRlt").innerText = "-";
-        document.getElementById("hourRltD").innerText = "-"}
-
-        else {
-            document.getElementById("hourRlt").innerText = hourRlt.toFixed(10);
-            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
-        }
-    if ((isNaN(dayRlt))||!(isFinite(dayRlt))) {
-        document.getElementById("dayRlt").innerText = "-";
-        document.getElementById("dayRltD").innerText = "-"}
-
-        else {
-            document.getElementById("dayRlt").innerText = dayRlt.toFixed(10);
-            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
-        }
-    if ((isNaN(weekRlt))||!(isFinite(weekRlt))) {
-        document.getElementById("weekRlt").innerText = "-";
-        document.getElementById("weekRltD").innerText = "-"}
-
-        else {
-            document.getElementById("weekRlt").innerText = weekRlt.toFixed(10);
-            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
-        }
-    if ((isNaN(monthRlt))||!(isFinite(monthRlt))) {
-        document.getElementById("monthRlt").innerText = "-";
-        document.getElementById("monthRltD").innerText = "-"}
-
-        else {
-            document.getElementById("monthRlt").innerText = monthRlt.toFixed(10);
-            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
-        }
-    if ((isNaN(yearRlt))||!(isFinite(yearRlt))) {
-        document.getElementById("yearRlt").innerText = "-";
-        document.getElementById("yearRltD").innerText = "-"}
-
-        else {
-            document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
-            document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
-        }
 //POLYGON (MATIC) HESAPLAMA ARACI//
     var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
         minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
@@ -434,6 +371,83 @@ calc = function(){
         else {
             document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
+        }
+//ROLLERTOKEN HESAPLAMA ARACI//
+    var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
+        rltPrice1 = document.getElementById('rlt-price-api').innerHTML
+        rltPrice = Number(rltPrice1.substring(1))
+        minRlt = (Number(RltPower)*blockRlt)/(Number(netRlt)*1000)
+        minRltD = Number(minRlt) * rltPrice
+        hourRlt = Number(minRlt) * 6
+        hourRltD = Number(hourRlt) * rltPrice
+        dayRlt = Number(hourRlt) * 24 
+        dayRltD = Number(dayRlt) * rltPrice
+        weekRlt = Number(dayRlt) * 7
+        weekRltD = Number(weekRlt) * rltPrice
+        monthRlt = Number(dayRlt) * 30
+        monthRltD = Number(monthRlt) * rltPrice
+        yearRlt = Number(dayRlt) * 365
+        yearRltD = Number(yearRlt) * rltPrice
+
+    if ((isNaN(minRlt))||!(isFinite(minRlt))) {
+        document.getElementById("minRlt").innerText = "-"}
+        else {
+            document.getElementById("minRlt").innerText = minRlt.toFixed(10);
+        }
+    if ((isNaN(hourRlt))||!(isFinite(hourRlt))) {
+        document.getElementById("hourRlt").innerText = "-"}
+        else {
+            document.getElementById("hourRlt").innerText = hourRlt.toFixed(10);
+        }
+    if ((isNaN(dayRlt))||!(isFinite(dayRlt))) {
+        document.getElementById("dayRlt").innerText = "-"}
+        else {
+            document.getElementById("dayRlt").innerText = dayRlt.toFixed(10);
+        }
+    if ((isNaN(weekRlt))||!(isFinite(weekRlt))) {
+        document.getElementById("weekRlt").innerText = "-"}
+        else {
+            document.getElementById("weekRlt").innerText = weekRlt.toFixed(10);
+        }
+    if ((isNaN(monthRlt))||!(isFinite(monthRlt))) {
+        document.getElementById("monthRlt").innerText = "-"}
+        else {
+            document.getElementById("monthRlt").innerText = monthRlt.toFixed(10);
+        }
+    if ((isNaN(yearRlt))||!(isFinite(yearRlt))) {
+        document.getElementById("yearRlt").innerText = "-"}
+        else {
+            document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
+        }
+    if ((isNaN(minRltD))||!(isFinite(minRltD))) {
+        document.getElementById("minRltD").innerText = "-"}
+        else {
+            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
+        }
+    if ((isNaN(hourRltD))||!(isFinite(hourRltD))) {
+        document.getElementById("hourRltD").innerText = "-"}
+        else {
+            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
+        }
+    if ((isNaN(dayRltD))||!(isFinite(dayRltD))) {
+        document.getElementById("dayRltD").innerText = "-"}
+        else {
+            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
+        }
+    if ((isNaN(weekRltD))||!(isFinite(weekRltD))) {
+        document.getElementById("weekRltD").innerText = "-"}
+        else {
+            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
+        }
+    if ((isNaN(monthRltD))||!(isFinite(monthRltD))) {
+        document.getElementById("monthRltD").innerText = "-"}
+        else {
+            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
+        }
+    if ((isNaN(yearRltD))||!(isFinite(yearRltD))) {
+        document.getElementById("yearRltD").innerText = "-"}
+        else {
+            document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
         }
     }
     
