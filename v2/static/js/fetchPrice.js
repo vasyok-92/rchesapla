@@ -1,6 +1,6 @@
 fetchData = function(){
 
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cbinancecoin%2Cdogecoin%2Ctether%2Cmatic-network&vs_currencies=usd', {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin%2Cbinancecoin%2Ctether%2Czelcash&vs_currencies=usd', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -34,7 +34,9 @@ getResults = function(fetch_data){
     dogePrice = fetch_data.dogecoin.usd
     ethPrice = fetch_data.ethereum.usd
 	bnbPrice = fetch_data.binancecoin.usd
-    return [btcPrice, dogePrice, ethPrice, bnbPrice]
+	rltPrice = fetch_data.tether.usd
+	maticPrice = fetch_data.zelcash.usd
+    return [btcPrice, dogePrice, ethPrice, bnbPrice, rltPrice , maticPrice]
 }
 
 postResults = function(prices){
@@ -42,6 +44,8 @@ postResults = function(prices){
     document.getElementById("doge-price-api").innerHTML = "$" + prices[1];
     document.getElementById("eth-price-api").innerHTML = "$" + prices[2];
 	document.getElementById("bnb-price-api").innerHTML = "$" + prices[3];
+	document.getElementById("matic-price-api").innerHTML = "$" + prices[4];
+	document.getElementById("rlt-price-api").innerHTML = "$" + prices[5];
 }
 
 //////////////////////////////
@@ -50,6 +54,8 @@ calculate = function(prices){
         dogePrice = prices[1]
         ethPrice = prices[2]
 		bnbPrice = prices[3]
+		maticPrice = prices[4]
+		rltPrice = prices[5]
 		
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
@@ -247,6 +253,104 @@ calculate = function(prices){
         document.getElementById("yearbnbD").innerText = "-"}
         else {
             document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
+        }
+	/////////////////////////////////////////////////
+    // matic CALC 10 MIN
+    minmatic = document.getElementById("minmatic").innerHTML;
+    minmaticD = Number(minmatic) * maticPrice
+    if (isNaN(minmaticD)) {
+        document.getElementById("minmaticD").innerText = "-"}
+        else {
+            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
+        }
+    // matic CALC HOUR
+    hourmatic = document.getElementById("hourmatic").innerHTML;
+    hourmaticD = Number(hourmatic) * maticPrice
+    if (isNaN(hourmaticD)) {
+        document.getElementById("hourmaticD").innerText = "-"}
+        else {
+            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
+        }
+    // matic CALC DAY
+    daymatic = document.getElementById("daymatic").innerHTML;
+    daymaticD = Number(daymatic) * maticPrice
+    if (isNaN(daymaticD)) {
+        document.getElementById("daymaticD").innerText = "-"}
+        else {
+            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
+        }
+    // matic CALC WEEK
+    weekmatic = document.getElementById("weekmatic").innerHTML;
+    weekmaticD = Number(weekmatic) * maticPrice
+    if (isNaN(weekmaticD)) {
+        document.getElementById("weekmaticD").innerText = "-"}
+        else {
+            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
+        }    
+    // matic CALC MONTH
+    monthmatic = document.getElementById("monthmatic").innerHTML;
+    monthmaticD = Number(monthmatic) * maticPrice
+    if (isNaN(minmaticD)) {
+        document.getElementById("monthmaticD").innerText = "-"}
+        else {
+            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
+        }    
+    // matic CALC YEAR
+    yearmatic = document.getElementById("yearmatic").innerHTML;
+    yearmaticD = Number(yearmatic) * maticPrice
+    if (isNaN(yearmaticD)) {
+        document.getElementById("yearmaticD").innerText = "-"}
+        else {
+            document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
+        }
+	/////////////////////////////////////////////////
+    // Rlt CALC 10 MIN
+    minRlt = document.getElementById("minRlt").innerHTML;
+    minRltD = Number(minRlt) * rltPrice
+    if (isNaN(minRltD)) {
+        document.getElementById("minRltD").innerText = "-"}
+        else {
+            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
+        }
+    // Rlt CALC HOUR
+    hourRlt = document.getElementById("hourRlt").innerHTML;
+    hourRltD = Number(hourRlt) * rltPrice
+    if (isNaN(hourRltD)) {
+        document.getElementById("hourRltD").innerText = "-"}
+        else {
+            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
+        }
+    // Rlt CALC DAY
+    dayRlt = document.getElementById("dayRlt").innerHTML;
+    dayRltD = Number(dayRlt) * rltPrice
+    if (isNaN(dayRltD)) {
+        document.getElementById("dayRltD").innerText = "-"}
+        else {
+            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
+        }
+    // Rlt CALC WEEK
+    weekRlt = document.getElementById("weekRlt").innerHTML;
+    weekRltD = Number(weekRlt) * rltPrice
+    if (isNaN(weekRltD)) {
+        document.getElementById("weekRltD").innerText = "-"}
+        else {
+            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
+        }    
+    // Rlt CALC MONTH
+    monthRlt = document.getElementById("monthRlt").innerHTML;
+    monthRltD = Number(monthRlt) * rltPrice
+    if (isNaN(minRltD)) {
+        document.getElementById("monthRltD").innerText = "-"}
+        else {
+            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
+        }    
+    // Rlt CALC YEAR
+    yearRlt = document.getElementById("yearRlt").innerHTML;
+    yearRltD = Number(yearRlt) * rltPrice
+    if (isNaN(yearRltD)) {
+        document.getElementById("yearRltD").innerText = "-"}
+        else {
+            document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
         }
     }
 
