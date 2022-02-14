@@ -16,8 +16,8 @@ function blockAmount() {
             break;
         case 2:
             // ETH BLOK ÖDÜLÜ
-            var blockreward = 0.01;
-            document.getElementById("block-reward").value = 0.01;
+            var blockreward = 0.005;
+            document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
             // BNB BLOK ÖDÜLÜ
