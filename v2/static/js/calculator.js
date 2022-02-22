@@ -264,65 +264,79 @@ calc = function(){
         }
 //BINANCECOIN HESAPLAMA ARACI//
     var bnbPower = ((Number(totalRate)/1000) * Number(distbnb))/100
+        bnbPrice1 = document.getElementById('bnb-price-api').innerHTML
+        bnbPrice = Number(bnbPrice1.substring(1))
         minbnb = (Number(bnbPower)*blockbnb)/(Number(netbnb)*1000)
-        minbnbD = Number(minbnb) * 1
+        minbnbD = Number(minbnb) * bnbPrice
         hourbnb = Number(minbnb) * 6
-        hourbnbD = Number(hourbnb) * 1
+        hourbnbD = Number(hourbnb) * bnbPrice
         daybnb = Number(hourbnb) * 24 
-        daybnbD = Number(daybnb) * 1
+        daybnbD = Number(daybnb) * bnbPrice
         weekbnb = Number(daybnb) * 7
-        weekbnbD = Number(weekbnb) * 1
+        weekbnbD = Number(weekbnb) * bnbPrice
         monthbnb = Number(daybnb) * 30
-        monthbnbD = Number(monthbnb) * 1
+        monthbnbD = Number(monthbnb) * bnbPrice
         yearbnb = Number(daybnb) * 365
-        yearbnbD = Number(yearbnb) * 1
+        yearbnbD = Number(yearbnb) * bnbPrice
 
     if ((isNaN(minbnb))||!(isFinite(minbnb))) {
-        document.getElementById("minbnb").innerText = "-";
-        document.getElementById("minbnbD").innerText = "-"}
-
+        document.getElementById("minbnb").innerText = "-"}
         else {
             document.getElementById("minbnb").innerText = minbnb.toFixed(10);
-            document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
         }
     if ((isNaN(hourbnb))||!(isFinite(hourbnb))) {
-        document.getElementById("hourbnb").innerText = "-";
-        document.getElementById("hourbnbD").innerText = "-"}
-
+        document.getElementById("hourbnb").innerText = "-"}
         else {
             document.getElementById("hourbnb").innerText = hourbnb.toFixed(10);
-            document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
         }
     if ((isNaN(daybnb))||!(isFinite(daybnb))) {
-        document.getElementById("daybnb").innerText = "-";
-        document.getElementById("daybnbD").innerText = "-"}
-
+        document.getElementById("daybnb").innerText = "-"}
         else {
             document.getElementById("daybnb").innerText = daybnb.toFixed(10);
-            document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
         }
     if ((isNaN(weekbnb))||!(isFinite(weekbnb))) {
-        document.getElementById("weekbnb").innerText = "-";
-        document.getElementById("weekbnbD").innerText = "-"}
-
+        document.getElementById("weekbnb").innerText = "-"}
         else {
             document.getElementById("weekbnb").innerText = weekbnb.toFixed(10);
-            document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
         }
     if ((isNaN(monthbnb))||!(isFinite(monthbnb))) {
-        document.getElementById("monthbnb").innerText = "-";
-        document.getElementById("monthbnbD").innerText = "-"}
-
+        document.getElementById("monthbnb").innerText = "-"}
         else {
             document.getElementById("monthbnb").innerText = monthbnb.toFixed(10);
-            document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
         }
     if ((isNaN(yearbnb))||!(isFinite(yearbnb))) {
-        document.getElementById("yearbnb").innerText = "-";
-        document.getElementById("yearbnbD").innerText = "-"}
-
+        document.getElementById("yearbnb").innerText = "-"}
         else {
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
+        }
+    if ((isNaN(minbnbD))||!(isFinite(minbnbD))) {
+        document.getElementById("minbnbD").innerText = "-"}
+        else {
+            document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
+        }
+    if ((isNaN(hourbnbD))||!(isFinite(hourbnbD))) {
+        document.getElementById("hourbnbD").innerText = "-"}
+        else {
+            document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
+        }
+    if ((isNaN(daybnbD))||!(isFinite(daybnbD))) {
+        document.getElementById("daybnbD").innerText = "-"}
+        else {
+            document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
+        }
+    if ((isNaN(weekbnbD))||!(isFinite(weekbnbD))) {
+        document.getElementById("weekbnbD").innerText = "-"}
+        else {
+            document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
+        }
+    if ((isNaN(monthbnbD))||!(isFinite(monthbnbD))) {
+        document.getElementById("monthbnbD").innerText = "-"}
+        else {
+            document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
+        }
+    if ((isNaN(yearbnbD))||!(isFinite(yearbnbD))) {
+        document.getElementById("yearbnbD").innerText = "-"}
+        else {
             document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
         }
 //POLYGON (MATIC) HESAPLAMA ARACI//
