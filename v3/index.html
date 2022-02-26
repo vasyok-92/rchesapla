@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<link rel="stylesheet" href="./css/halloween-theme.css">-->
+    <!--<link rel="stylesheet" href="./css/christmas-theme.css">-->
+<!--===============================================================================================-->
+    <title>RCHesapla - Kişisel Kazım Gücünü Hesapla!</title>
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://fatihcelikofficialtr.github.io/rchesapla/css/style.css">
+	<link rel="stylesheet" href="https://fatihcelikofficialtr.github.io/rchesapla/css/home.css">
+<!--===============================================================================================-->
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_144x144.png" sizes="144x144" />
+	<link rel="mask-icon" href="https://rollercoin.com//static/fav/rollercoin_favicon_144x144.svg" color="#ffffff" />
+	<meta name="author" content="Fatih ÇELİK">
+	<link rel="canonical" href="https://fatihcelikofficialtr.github.io/rchesapla/">
+	<meta name="keywords" content="rchesapla, turkcraft01, pb01adana, rollercoin, rollercoin hesapla, rollercoin calculator, rollercoin güç hesaplama"/>
+	<meta name="description" content="Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın! 🧮">
+<!--===============================================================================================-->
+	<img border="0" style="position: absolute; top: 0px;" alt="TÜRKİYE CANIM FEDA"
+	src="https://www.eniyisozler.net/Html-images/Sag-Sol-Kose-Bayrak/sol-bayrak-1.gif" />
+<!--===============================================================================================-->
+    <meta property="og:title" content="RCHesapla - Kişisel Kazım Gücünü Hesapla!">
+    <meta property="og:description" content="🧮 ► Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/FatihCelikOfficialTR/rchesapla/main/nasilkullanilir/rchesapla.png">
+    <meta property="og:url" content="https://fatihcelikofficialtr.github.io/rchesapla/">
+<!--===============================================================================================-->
+</head>
+<body id="index">
+    <header>
+        <h1>RCHesapla - Kişisel Kazım Gücünü Hesapla!</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <div class="form-content roller-section">
+                <h2>Hesapla</h2>
+                <form action="">
+                    <!-- Ağ değerini giriniz.. -->
+                    <div class="form-group">
+                        <label for="inputNetworkPower">Lütfen <span class="important">Network Power</span> giriniz..</label>
+                        <div class="roller-input-group">
+                            <input type="number" step="any" id="network-power" oninput="calculateGoalPower()" class="roller-input-number">
+                            <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected>EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+            <!-- Kendi kazım gücünüzü giriniz.. -->
+					<div class="form-group">
+                        <label for="inputUserPower">Lütfen <span class="important">Kazım Gücünüzü</span> giriniz..</label>
+                        <div class="roller-input-group">
+                            <input type="number" name="goal-power-hash" id="goal-power" oninput="calculateGoalPower()" class="roller-input-number">
+                            <select name="goal-power-prefix" id="goal-power-selector" onchange="calculateGoalPower()" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s" selected>TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+            <!-- Blok Ödülleri -->
+				<div class="form-group">
+                        <label for="inputBlockReward">Lütfen <span class="important">Blok Ödülü</span> giriniz.. (<script src="https://fatihcelikofficialtr.github.io/rchesapla/v2/js/btc.js"></script>)</label>
+                        <div class="roller-input-group">
+                            <input type="number" name="block-reward" id="block-reward" step="any" oninput="calculateGoalPower()" class="roller-input-number">
+                            <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()" class="roller-select">
+                                <option value="BTC" selected>BTC</option>
+                                <option value="DOGE">DOGE</option>
+                                <option value="ETH">ETH</option>
+                                <option value="BNB">BNB</option>
+                                <option value="MATIC">MATIC</option>
+                                <option value="RLT">RLT</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+				
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="calculated-reward roller-section">
+                <h2>Results</h2>
+                <div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Tahmini Kazançlar</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Beklenen Kazanç</p>
+                                </td>
+                                <td>
+                                    <span id="exp_reward"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Günlük</p>
+                                </td>
+                                <td>
+                                    <span id="daily"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Haftalık</p>
+                                </td>
+                                <td>
+                                    <span id="weekly"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Aylık</p>
+                                </td>
+                                <td>
+                                    <span id="monthly"></span>
+                                </td>
+                            </tr>
+							<tr>
+                                <td>
+                                    <p>Yıllık</p>
+                                </td>
+                                <td>
+                                    <span id="yearly"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="desired-coin">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/rlt.png" width="25" height="25">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/btc.png" width="25" height="25">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/eth.png" width="25" height="25">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/bnb.png" width="25" height="25">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/matic.png" width="25" height="25">
+			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/doge.png" width="25" height="25">
+                </div>
+
+            </div>
+        </div>
+    </main>
+<!--===============================================================================================-->
+    <script src="./js/index.js" type="module"></script>
+<!--===============================================================================================-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://fatihcelikofficialtr.github.io/rchesapla/js/js.js"></script>
+	<script src="https://fatihcelikofficialtr.github.io/rchesapla/js/saya%C3%A7.js"></script>
+<!--===============================================================================================-->
+</body>
+</html>
