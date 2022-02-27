@@ -71,6 +71,9 @@ h1 {
 h1::before {
     content: "🧮 ";
 }
+h1::after{
+    content: " 🌟";
+}
 
 h2, h3{
     display: none
