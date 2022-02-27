@@ -1,0 +1,76 @@
+Uri: https://i-invdn-com.akamaized.net/ce_flags_v9.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\ce_flags_v9.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.akamaized.net/invwidgets/androidIcon.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\androidIcon.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.akamaized.net/invwidgets/iosIcon.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\iosIcon.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.akamaized.net/invwidgets/wmtSprite_v3.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\wmtSprite_v3.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.akamaized.net/newSiteIconsSprite_v41i.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\newSiteIconsSprite_v41i.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.investing.com/invwidgets/css/cryptoCurrencyRatesMin_v4d.css
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\css\cryptoCurrencyRatesMin_v4d.css
+Content Type: text/css
+
+Uri: https://i-invdn-com.investing.com/invwidgets/darkThemeLogo.png
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\darkThemeLogo.png
+Content Type: image/png
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/components/sockjs/sockjs.min.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\components\sockjs\sockjs.min.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/internal-components/dest/fronter.min.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\internal-components\dest\fronter.min.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/modules/core/binds/app-config.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\modules\core\binds\app-config.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/modules/core/services/debounce.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\modules\core\services\debounce.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/modules/core/services/general-overlay.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\modules\core\services\general-overlay.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/89c0ab7319/modules/table-sorter/binds/table-sorter-bind.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\89c0ab7319\modules\table-sorter\binds\table-sorter-bind.js
+Content Type: text/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/fxindex.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\fxindex.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/general.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\general.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/jquery-1.9.1.min.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\jquery-1.9.1.min.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/sockjs.min.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\sockjs.min.js
+Content Type: application/javascript
+
+Uri: https://i-invdn-com.investing.com/invwidgets/js/utils.js
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\invwidgets\js\utils.js
+Content Type: application/javascript
+
+Uri: https://tr.widgets.investing.com/crypto-currency-rates?theme=darkTheme&hideTitle=true&pairs=945629,997650,1054919,1158819,1131278
+File Name: C:\Downloaded Web Sites\tr.widgets.investing.com\crypto-currency-rates.html
+Content Type: text/html
+
