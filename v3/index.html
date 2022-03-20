@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--===============================================================================================-->
     <link rel="stylesheet" href="./css/style.css">
-    <!--<link rel="stylesheet" href="./css/halloween-theme.css">-->
-    <!--<link rel="stylesheet" href="./css/christmas-theme.css">-->
-<!--===============================================================================================-->
     <title>RCHesapla - Kişisel Kazım Gücünü Hesapla!</title>
-<!--===============================================================================================-->
-	<link rel="stylesheet" href="https://fatihcelikofficialtr.github.io/rchesapla/css/style.css">
-	<link rel="stylesheet" href="https://fatihcelikofficialtr.github.io/rchesapla/css/home.css">
 <!--===============================================================================================-->
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
@@ -22,9 +17,6 @@
 	<meta name="keywords" content="rchesapla, turkcraft01, pb01adana, rollercoin, rollercoin hesapla, rollercoin calculator, rollercoin güç hesaplama"/>
 	<meta name="description" content="Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın! 🧮">
 <!--===============================================================================================-->
-	<img border="0" style="position: absolute; top: 0px;" alt="TÜRKİYE CANIM FEDA"
-	src="https://www.eniyisozler.net/Html-images/Sag-Sol-Kose-Bayrak/sol-bayrak-1.gif" />
-<!--===============================================================================================-->
     <meta property="og:title" content="RCHesapla - Kişisel Kazım Gücünü Hesapla!">
     <meta property="og:description" content="🧮 ► Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın!">
     <meta property="og:image" content="https://raw.githubusercontent.com/FatihCelikOfficialTR/rchesapla/main/nasilkullanilir/rchesapla.png">
@@ -33,19 +25,19 @@
 </head>
 <body id="index">
     <header>
-        <h1>RCHesapla - Kişisel Kazım Gücünü Hesapla!</h1>
+        <h1></h1>
     </header>
     <main>
         <div class="form-container">
             <div class="form-content roller-section">
-                <h2>Hesapla</h2>
+                <h2>Calculator</h2>
+
                 <form action="">
-                    <!-- Ağ değerini giriniz.. -->
                     <div class="form-group">
-                        <label for="inputNetworkPower">Lütfen <span class="important">Network Power</span> giriniz..</label>
+                        <label for="inputNetworkPower">Lütfen <span class="important">Ağ gücünü</span> giriniz</label>
                         <div class="roller-input-group">
-                            <input type="number" step="any" id="network-power" oninput="calculateGoalPower()" class="roller-input-number">
-                            <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()" class="roller-select">
+                            <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPower" name="" class="roller-select">
                                 <option value="GH/s">GH/s</option>
                                 <option value="TH/s">TH/s</option>
                                 <option value="PH/s">PH/s</option>
@@ -53,12 +45,12 @@
                             </select>
                         </div>
                     </div>
-            <!-- Kendi kazım gücünüzü giriniz.. -->
-					<div class="form-group">
-                        <label for="inputUserPower">Lütfen <span class="important">Kazım Gücünüzü</span> giriniz..</label>
+
+                    <div class="form-group">
+                        <label for="inputUserPower">Lütfen <span class="important">Kazım gücünü</span> giriniz</label>
                         <div class="roller-input-group">
-                            <input type="number" name="goal-power-hash" id="goal-power" oninput="calculateGoalPower()" class="roller-input-number">
-                            <select name="goal-power-prefix" id="goal-power-selector" onchange="calculateGoalPower()" class="roller-select">
+                            <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                            <select name="" id="selectUserPower" class="roller-select">
                                 <option value="GH/s">GH/s</option>
                                 <option value="TH/s" selected>TH/s</option>
                                 <option value="PH/s">PH/s</option>
@@ -66,12 +58,12 @@
                             </select>
                         </div>
                     </div>
-            <!-- Blok Ödülleri -->
-				<div class="form-group">
-                        <label for="inputBlockReward">Lütfen <span class="important">Blok Ödülü</span> giriniz.. <!--(<script src="js/x2.js"></script>)--></label>
+
+                    <div class="form-group">
+                        <label for="inputBlockReward">Lütfen <span class="important">Blok ödülünü</span> giriniz</label>
                         <div class="roller-input-group">
-                            <input value="30000" type="number" name="block-reward" id="block-reward" step="any" oninput="calculateGoalPower()" class="roller-input-number">
-                            <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()" class="roller-select">
+                            <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
+                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
                                 <option value="BTC" selected>BTC</option>
                                 <option value="DOGE">DOGE</option>
                                 <option value="ETH">ETH</option>
@@ -81,34 +73,35 @@
                             </select>
                         </div>
                     </div>
-                </form>
+
                     <div class="btn-submit-container">
                         <div class="tree-dimensional-button btn-default">
-                            <input style="margin-top: 10px;" onclick="calculateGoalPower()" id="calculateButton" type="button" class="" value="Hesapla">
+                            <input id="calculateButton" type="button" class="" value="Hesapla">
                         </div>
                     </div>
+                </form>
             </div>
         </div>
 
         <div class="result-container">
             <div class="calculated-reward roller-section">
-                <h2>Results</h2>
+                <h2>Sonuçlar</h2>
                 <div class="table-responsive">
                     <table class="roller-table">
                         <thead>
                             <tr>
                                 <th colspan="2">
-                                    <p>Tahmini Kazançlar</p>
+                                    <p>Blok Ödüllerin</p>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>Beklenen Kazanç</p>
+                                    <p>Beklenen</p>
                                 </td>
                                 <td>
-                                    <span id="exp_reward"></span>
+                                    <p id="resultExpectedReward"></p>
                                 </td>
                             </tr>
                             <tr>
@@ -116,7 +109,7 @@
                                     <p>Günlük</p>
                                 </td>
                                 <td>
-                                    <span id="daily"></span>
+                                    <p id="resultDailyReward"></p>
                                 </td>
                             </tr>
                             <tr>
@@ -124,7 +117,7 @@
                                     <p>Haftalık</p>
                                 </td>
                                 <td>
-                                    <span id="weekly"></span>
+                                    <p id="resultWeeklyReward"></p>
                                 </td>
                             </tr>
                             <tr>
@@ -132,35 +125,30 @@
                                     <p>Aylık</p>
                                 </td>
                                 <td>
-                                    <span id="monthly"></span>
-                                </td>
-                            </tr>
-							<tr>
-                                <td>
-                                    <p>Yıllık</p>
-                                </td>
-                                <td>
-                                    <span id="yearly"></span>
+                                    <p id="resultMonthlyReward"></p>
                                 </td>
                             </tr>
                         </tbody>
                         <tfoot></tfoot>
                     </table>
                 </div>
-
+<!--===============================================================================================-->
                 <div class="desired-coin">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/rlt.png" width="25" height="25">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/btc.png" width="25" height="25">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/eth.png" width="25" height="25">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/bnb.png" width="25" height="25">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/matic.png" width="25" height="25">
-			<img src="https://fatihcelikofficialtr.github.io/rchesapla/img/doge.png" width="25" height="25">
-			<a href="../"><img src="https://fatihcelikofficialtr.github.io/rchesapla/img/rchesaplav1.png" width="25" height="25"></a>
-			<a href="../v2"><img src="https://fatihcelikofficialtr.github.io/rchesapla/img/rchesaplav2.png" width="25" height="25"></a>
+                    <div class="desired-coin-container">
+                        <div class="icon">
+                            <img id="coinIcon" src="./img/btc.svg" alt="Bitcoin">
+                        </div>
+                        <div class="title-text">
+                            <p id="coinName">Bitcoin</p>
+                            <p id="coinTicker">BTC</p>
+                        </div>
+                    </div>
                 </div>
+<!--===============================================================================================-->
             </div>
         </div>
     </main>
+<!--===============================================================================================-->
     <footer>
         <section class="top-footer">
 <div id="cpcontainer">&nbsp;</div>
@@ -209,7 +197,7 @@ dcountup.prototype.start=function(){
 }
 </script>
 <!--===============================================================================================-->
-    <script src="./js/index.js" type="module"></script>
+    <script src="https://lmendev.github.io/rollercoin-calculator/js/index.js" type="module"></script>
 <!--===============================================================================================-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

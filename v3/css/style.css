@@ -39,8 +39,7 @@ input[type=number] {
 body {
     background-color: var(--black-russian);
     color: var(--white);
-    font-family: var(--font-family-sans-serif);
-    font-size: 1.1rem;
+	font-family: 'League Gothic', sans-serif;
 }
 
 a{
@@ -69,10 +68,10 @@ h1 {
 }
 
 h1::before {
-    content: "🧮 ";
+    content: "RCHesaplaV3";
 }
-h1::after{
-    content: " 🌟";
+h1::after {
+    content: " - Kişisel Hesaplama Aracı";
 }
 
 h2, h3{
