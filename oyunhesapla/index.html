@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="https://fatihcelikofficialtr.github.io/rchesaplabeta/js/rchesapla.js"></script>
+	<script src="https://fatihcelikofficialtr.github.io/rchesaplabeta/css/tabloba%C5%9Fl%C4%B1k.css"></script>
+    <title>RCHesapla - Kişisel Oyun Hesaplama Sitesi!</title>
+<!--===============================================================================================-->
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
+	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_144x144.png" sizes="144x144" />
+	<link rel="mask-icon" href="https://rollercoin.com//static/fav/rollercoin_favicon_144x144.svg" color="#ffffff" />
+	<meta name="author" content="Fatih ÇELİK">
+	<link rel="canonical" href="https://fatihcelikofficialtr.github.io/rchesapla/">
+	<meta name="keywords" content="rchesapla, turkcraft01, pb01adana, rollercoin, rollercoin hesapla, rollercoin calculator, rollercoin güç hesaplama"/>
+	<meta name="description" content="Kişisel oyun hesaplama aracı sizler için tasarlanmıştır!">
+<!--===============================================================================================-->
+    <meta property="og:title" content="RCHesapla - Kişisel Oyun Hesaplama Sitesi!">
+    <meta property="og:description" content="Kişisel oyun hesaplama aracı sizler için tasarlanmıştır!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/FatihCelikOfficialTR/rchesapla/main/nasilkullanilir/rchesapla.png">
+    <meta property="og:url" content="https://fatihcelikofficialtr.github.io/rchesapla/">
+<!--===============================================================================================-->
+</head>
+<body id="index">
+    <header>
+        <h1></h1>
+    </header>
+	<main>
+    <table id="table" class="display">
+      <tbody>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/coinclick.PNG" alt="Coinclick" width="206" height="100"><BR><A class="oyunaçıklama">6 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Coinclick-lvl" name="Coinclick-lvl" onclick="CoinSelect();TripleCoin();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value ="380"> 1 </option>
+          <option value ="400"> 2 </option>
+          <option value ="400"> 3 </option>
+          <option value ="440"> 4 </option>
+          <option value ="440"> 5 </option>
+          <option value ="480"> 6 </option>
+          </select></td>
+          <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CoinPoints" id="CoinPoints" DISABLED></td>
+          <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCoin" id="TripleCoin" DISABLED></td>
+        </tr> 
+      <tr> <!-- TAMAMLANDI -->
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/tokenblaster.PNG" alt="Token Blaster" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();TripleBlaster();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="784"> 1 </option>
+          <option value ="868"> 2 </option>
+          <option value ="924"> 3 </option>
+          <option value ="1008"> 4 </option>
+          <option value ="1073"> 5 </option>
+          <option value ="1147"> 6 </option>
+          <option value ="1204"> 7 </option>
+          <option value ="1274"> 8 </option>
+          <option value ="1344"> 9 </option>
+          <option value ="1680"> 10 </option>
+          </select></td>
+         <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="BlasterPoints" id="BlasterPoints" DISABLED></td>
+         <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleBlaster" id="TripleBlaster" DISABLED></td>
+        </tr>
+        <tr> <!-- TAMAMLANDI -->
+          <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/flappyrocket.PNG" alt="Flappy Rocket" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
+          <td><select class="roller-select" size="1" id="Flappy-lvl" name="Flappy-lvl" onclick="FlappySelect();TripleFlappy();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="495"> 1 </option>
+          <option value ="528"> 2 </option>
+          <option value ="572"> 3 </option>
+          <option value ="586"> 4 </option>
+          <option value ="660"> 5 </option>
+          <option value ="688"> 6 </option>
+          <option value ="731"> 7 </option>
+          <option value ="774"> 8 </option>
+          <option value ="798"> 9 </option>
+          <option value ="840"> 10 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlappyPoints" id="FlappyPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleFlappy" id="TripleFlappy" DISABLED></td>
+        </tr>
+        <tr> <!-- TAMAMLANDI -->
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/cryptonoid.PNG" alt="Cryptonoid" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Cryptonoid-lvl" name="Cryptonoid-lvl" onclick="CryptonoidSelect();TripleCryptonoid();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="1128"> 1 </option>
+          <option value ="1152"> 2 </option>
+          <option value ="1200"> 3 </option>
+          <option value ="1248"> 4 </option>
+          <option value ="1272"> 5 </option>
+          <option value ="1320"> 6 </option>
+          <option value ="1824"> 7 </option>
+          <option value ="1856"> 8 </option>
+          <option value ="1920"> 9 </option>
+          <option value ="1952"> 10 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptonoidPoints" id="CryptonoidPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCryptonoid" id="TripleCryptonoid" DISABLED></td>  
+        </tr>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/coinmatch.PNG" alt="Coin-Match" width="206" height="100"><BR><A class="oyunaçıklama">7 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Match-lvl" name="Match-lvl" onclick="MatchSelect();TripleMatch();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="360"> 1 </option>
+          <option value ="366"> 2 </option>
+          <option value ="385"> 3 </option>
+          <option value ="441"> 4 </option>
+          <option value ="448"> 5 </option>
+          <option value ="455"> 6 </option>
+		  <option value ="462"> 7 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="MatchPoints" id="MatchPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleMatch" id="TripleMatch" DISABLED></td>  
+        </tr>
+        <tr> <!-- TAMAMLANDI -->
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/cyptohamster.PNG" alt="Crypto Hamster" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Crypto-lvl" name="Crypto-lvl" onclick="CryptoSelect();TripleCrypto();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="1015"> 1 </option>
+          <option value ="1082"> 2 </option>
+          <option value ="1151"> 3 </option>
+          <option value ="1204"> 4 </option>
+          <option value ="1295"> 5 </option>
+          <option value ="1371"> 6 </option>
+          <option value ="1448"> 7 </option>
+          <option value ="1527"> 8 </option>
+          <option value ="1609"> 9 </option>
+          <option value ="1692"> 10 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptoPoints" id="CryptoPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCrypto" id="TripleCrypto" DISABLED></td>  
+        </tr>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/2048coin.PNG" alt="2048 Coins" width="206" height="100"><BR><A class="oyunaçıklama">1 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="TwentyFourtyEight-lvl" name="TwentyFourtyEight-lvl" onclick="TwentyFourtyEightSelect();TripleTwentyFourtyEight();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="336"> 1 </option>
+          </select></td>
+           <td><input title="sssss" class="roller-input-number" type="text" name="TwentyFourtyEightPoints" id="TwentyFourtyEightPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleTwentyFourtyEight" id="TripleTwentyFourtyEight" DISABLED></td>  
+        </tr>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/coinflip.PNG" alt="Coin-Flip" width="206" height="100"><BR><A class="oyunaçıklama">4 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Flip-lvl" name="Flip-lvl" onclick="FlipSelect();TripleFlip();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="252"> 1 </option>
+          <option value ="252"> 2 </option>
+          <option value ="252"> 3 </option>
+          <option value ="336"> 4 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlipPoints" id="FlipPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleFlip" id="TripleFlip" DISABLED></td>  
+        </tr>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/drhamster.PNG" alt="Dr.Hamster" width="206" height="100"><BR><A class="oyunaçıklama">6 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Dr-lvl" name="Dr-lvl" onclick="DrSelect();TripleDr();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="502"> 1 </option>
+          <option value ="549 "> 2 </option>
+          <option value ="593"> 3 </option>
+          <option value ="634"> 4 </option>
+          <option value ="671"> 5 </option>
+          <option value ="705"> 6 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="DrPoints" id="DrPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleDr" id="TripleDr" DISABLED></td>  
+        </tr>
+        <tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/tokensurfer.PNG" alt="Token Surfer" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="Surfer-lvl" name="Surfer-lvl" onclick="SurferSelect();TripleSurfer();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="588"> 1 </option>
+          <option value ="637"> 2 </option>
+          <option value ="686"> 3 </option>
+          <option value ="735"> 4 </option>
+          <option value ="784"> 5 </option>
+          <option value ="833"> 6 </option>
+          <option value ="882"> 7 </option>
+          <option value ="931"> 8 </option>
+          <option value ="980"> 9 </option>
+          <option value ="1024"> 10 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="SurferPoints" id="SurferPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleSurfer" id="TripleSurfer" DISABLED></td>  
+        </tr>
+		<tr>
+        <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/lamborider.PNG" alt="Lambo Rider" width="206" height="100"><BR><A class="oyunaçıklama">7 level eklendi!</A></td>
+        <td><select class="roller-select" size="1" id="LamboRider-lvl" name="LamboRider-lvl" onclick="LamboSelect();TripleLambo();">
+          <option value ="0"> Zorluk Seç </option>
+          <option value="680"> 1 </option>
+          <option value ="727"> 2 </option>
+		  <option value ="773"> 3 </option>
+		  <option value ="820"> 4 </option>
+		  <option value ="867"> 5 </option>
+		  <option value ="913"> 6 </option>
+		  <option value ="960"> 7 </option>
+          </select></td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="LamboRiderPoints" id="LamboRiderPoints" DISABLED></td>
+           <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleLambo" id="TripleLambo" DISABLED></td>  
+        </tr>
+      </tbody>
+    </table></main>
+<!--===============================================================================================-->
+    <footer>
+        <section class="top-footer">
+<div id="cpcontainer">&nbsp;</div>
+<div id="clock"></div>
+        </section>
+        
+        <section class="bottom-footer">
+            <p><iframe src="https://fatihcelikofficialtr.github.io/rchesapla/kriptocanl%C4%B1/index.html" width="100%" height="90px" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe></p>
+        </section>
+    </footer>
+<script type="text/javascript">
+function dcountup(startingdate, baseunit){
+    this.currentTime=new Date()
+    this.startingdate=new Date(startingdate)
+    this.timesup=false
+    this.baseunit=baseunit
+    this.start()
+}
+dcountup.prototype.oncountup=function(){} //default action for "oncountup"
+dcountup.prototype.start=function(){
+    var thisobj=this
+    this.currentTime.setSeconds(this.currentTime.getSeconds()+1)
+    var timediff=(this.currentTime-this.startingdate)/1000 //difference btw target date and current date, in seconds
+    var oneMinute=60 //minute unit in seconds
+    var oneHour=60*60 //hour unit in seconds
+    var oneDay=60*60*24 //day unit in seconds
+    var dayfield=Math.floor(timediff/oneDay)
+    var hourfield=Math.floor((timediff-dayfield*oneDay)/oneHour)
+    var minutefield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour)/oneMinute)
+    var secondfield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour-minutefield*oneMinute))
+    if (this.baseunit=="hours"){ //if base unit is hours, set "hourfield" to be topmost level
+        hourfield=dayfield*24+hourfield
+        dayfield="n/a"
+    }
+    else if (this.baseunit=="minutes"){ //if base unit is minutes, set "minutefield" to be topmost level
+        minutefield=dayfield*24*60+hourfield*60+minutefield
+        dayfield=hourfield="n/a"
+    }
+    else if (this.baseunit=="seconds"){ //if base unit is seconds, set "secondfield" to be topmost level
+        var secondfield=timediff
+        dayfield=hourfield=minutefield="n/a"
+    }
+    var result={days: dayfield, hours:hourfield, minutes:minutefield, seconds:secondfield}
+    this.oncountup(result)
+    setTimeout(function(){thisobj.start()}, 1000) //update results every second
+}
+</script>
+<!--===============================================================================================-->
+    <script src="https://fatihcelikofficialtr.github.io/rchesapla/v3/js/index.js" type="module"></script>
+<!--===============================================================================================-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://fatihcelikofficialtr.github.io/rchesapla/js/js.js"></script>
+	<script src="https://fatihcelikofficialtr.github.io/rchesapla/js/saya%C3%A7.js"></script>
+<!--===============================================================================================-->
+</body>
+</html>
