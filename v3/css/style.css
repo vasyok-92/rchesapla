@@ -75,8 +75,21 @@ h1::after {
 }
 
 aggucu::before {
-    content: "Ağ Gücü";
+    content: "ağ gücünü";
 }
+kazimgucu::before {
+    content: "kazım gücünü";
+}
+blokodulu::before {
+    content: "blok ödülünü";
+}
+blokodulleri::before {
+    content: "Blok Ödüllerin";
+}
+hesaplamaturleri::before {
+    content: "Hesaplama Türleri";
+}
+
 
 h2, h3{
     display: none
