@@ -74,6 +74,10 @@ h1::after {
     content: " - Kişisel Hesaplama Aracı";
 }
 
+aggucu::before {
+    content: "Ağ Gücü";
+}
+
 h2, h3{
     display: none
 }
