@@ -71,7 +71,7 @@ h1::before {
     content: "RCHesaplaV3";
 }
 h1::after {
-    content: " - Kişisel Hesaplama Aracı";
+    content: " - Kişisel Kazım Hesaplama Aracı";
 }
 
 aggucu::before {
@@ -84,10 +84,13 @@ blokodulu::before {
     content: "blok ödülünü";
 }
 blokodulleri::before {
-    content: "Blok Ödüllerin";
+    content: "Tahmini Kazanç";
 }
 hesaplamaturleri::before {
     content: "Hesaplama Türleri";
+}
+rcistatistik::before {
+    content: "İstatistiklerin";
 }
 
 
