@@ -71,6 +71,10 @@ h1::before {
     content: "RCHesapla - Kişisel Oyun Hesaplama Sitesi!";
 }
 
+coinclick::before {
+    content: "YENİ TASARIMI İLE KARŞINIZDA";
+}
+
 h2, h3{
     display: none
 }
@@ -317,16 +321,12 @@ footer ul li {
 .roller-select {
     /*-webkit-appearance: none;*/
     font-family: var(--font-family-sans-serif);
-    outline: none;
     font-size: 1.2rem;
     border: 2px solid var(--rum);
     color: var(--white);
     background-color: var(--black-russian);
     border-radius: 4px;
     padding: .9rem;
-    
-    border-left: none;
-    border-radius: 0 4px 4px 0;
 }
 
 aside.apps-promotion {

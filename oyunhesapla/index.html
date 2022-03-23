@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--===============================================================================================-->
     <link rel="stylesheet" href="./css/style.css">
 	<script src="https://fatihcelikofficialtr.github.io/rchesaplabeta/js/rchesapla.js"></script>
 	<script src="https://fatihcelikofficialtr.github.io/rchesaplabeta/css/tabloba%C5%9Fl%C4%B1k.css"></script>
-    <title>RCHesapla - Kişisel Oyun Hesaplama Sitesi!</title>
+    <title>RCHesapla - Kişisel Kazım Gücünü Hesapla!</title>
 <!--===============================================================================================-->
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
@@ -16,10 +17,10 @@
 	<meta name="author" content="Fatih ÇELİK">
 	<link rel="canonical" href="https://fatihcelikofficialtr.github.io/rchesapla/">
 	<meta name="keywords" content="rchesapla, turkcraft01, pb01adana, rollercoin, rollercoin hesapla, rollercoin calculator, rollercoin güç hesaplama"/>
-	<meta name="description" content="Kişisel oyun hesaplama aracı sizler için tasarlanmıştır!">
+	<meta name="description" content="Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın! 🧮">
 <!--===============================================================================================-->
-    <meta property="og:title" content="RCHesapla - Kişisel Oyun Hesaplama Sitesi!">
-    <meta property="og:description" content="Kişisel oyun hesaplama aracı sizler için tasarlanmıştır!">
+    <meta property="og:title" content="RCHesapla - Kişisel Kazım Gücünü Hesapla!">
+    <meta property="og:description" content="🧮 ► Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001 BTC ile başlarsın!">
     <meta property="og:image" content="https://raw.githubusercontent.com/FatihCelikOfficialTR/rchesapla/main/nasilkullanilir/rchesapla.png">
     <meta property="og:url" content="https://fatihcelikofficialtr.github.io/rchesapla/">
 <!--===============================================================================================-->
@@ -28,8 +29,23 @@
     <header>
         <h1></h1>
     </header>
-	<main>
-    <table id="table" class="display">
+	
+    <main>
+        <div>
+            <div class="form-content roller-section">
+				<div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <p><coinclick></coinclick></p>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div></br>
+<!--===============================================================================================-->
+<table id="table" class="display">
       <tbody>
         <tr>
         <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/coinclick.PNG" alt="Coinclick" width="206" height="100"><BR><A class="oyunaçıklama">6 level eklendi!</A></td>
@@ -41,10 +57,10 @@
           <option value ="440"> 4 </option>
           <option value ="440"> 5 </option>
           <option value ="480"> 6 </option>
-          </select></td>
-          <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CoinPoints" id="CoinPoints" DISABLED></td>
-          <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCoin" id="TripleCoin" DISABLED></td>
-        </tr> 
+          </select>►</td>
+          <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CoinPoints" id="CoinPoints" DISABLED>=</td>
+          <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCoin" id="TripleCoin" DISABLED> </td>
+        </tr>
       <tr> <!-- TAMAMLANDI -->
         <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/tokenblaster.PNG" alt="Token Blaster" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
         <td><select class="roller-select" size="1" id="Blaster-lvl" name="Blaster-lvl" onclick="BlasterSelect();TripleBlaster();">
@@ -59,9 +75,9 @@
           <option value ="1274"> 8 </option>
           <option value ="1344"> 9 </option>
           <option value ="1680"> 10 </option>
-          </select></td>
-         <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="BlasterPoints" id="BlasterPoints" DISABLED></td>
-         <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleBlaster" id="TripleBlaster" DISABLED></td>
+          </select>►</td>
+         <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="BlasterPoints" id="BlasterPoints" DISABLED>=</td>
+         <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleBlaster" id="TripleBlaster" DISABLED> </td>
         </tr>
         <tr> <!-- TAMAMLANDI -->
           <td><img src="https://fatihcelikofficialtr.github.io/rchesaplabeta/img/flappyrocket.PNG" alt="Flappy Rocket" width="206" height="100"><BR><A class="oyunaçıklama">Bütün leveller eklendi!</A></td>
@@ -77,8 +93,8 @@
           <option value ="774"> 8 </option>
           <option value ="798"> 9 </option>
           <option value ="840"> 10 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlappyPoints" id="FlappyPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlappyPoints" id="FlappyPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleFlappy" id="TripleFlappy" DISABLED></td>
         </tr>
         <tr> <!-- TAMAMLANDI -->
@@ -95,8 +111,8 @@
           <option value ="1856"> 8 </option>
           <option value ="1920"> 9 </option>
           <option value ="1952"> 10 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptonoidPoints" id="CryptonoidPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptonoidPoints" id="CryptonoidPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCryptonoid" id="TripleCryptonoid" DISABLED></td>  
         </tr>
         <tr>
@@ -110,8 +126,8 @@
           <option value ="448"> 5 </option>
           <option value ="455"> 6 </option>
 		  <option value ="462"> 7 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="MatchPoints" id="MatchPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="MatchPoints" id="MatchPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleMatch" id="TripleMatch" DISABLED></td>  
         </tr>
         <tr> <!-- TAMAMLANDI -->
@@ -128,8 +144,8 @@
           <option value ="1527"> 8 </option>
           <option value ="1609"> 9 </option>
           <option value ="1692"> 10 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptoPoints" id="CryptoPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="CryptoPoints" id="CryptoPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleCrypto" id="TripleCrypto" DISABLED></td>  
         </tr>
         <tr>
@@ -138,7 +154,7 @@
           <option value ="0"> Zorluk Seç </option>
           <option value="336"> 1 </option>
           </select></td>
-           <td><input title="sssss" class="roller-input-number" type="text" name="TwentyFourtyEightPoints" id="TwentyFourtyEightPoints" DISABLED></td>
+           <td><input title="sssss" class="roller-input-number" type="text" name="TwentyFourtyEightPoints" id="TwentyFourtyEightPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleTwentyFourtyEight" id="TripleTwentyFourtyEight" DISABLED></td>  
         </tr>
         <tr>
@@ -149,8 +165,8 @@
           <option value ="252"> 2 </option>
           <option value ="252"> 3 </option>
           <option value ="336"> 4 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlipPoints" id="FlipPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="FlipPoints" id="FlipPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleFlip" id="TripleFlip" DISABLED></td>  
         </tr>
         <tr>
@@ -163,8 +179,8 @@
           <option value ="634"> 4 </option>
           <option value ="671"> 5 </option>
           <option value ="705"> 6 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="DrPoints" id="DrPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="DrPoints" id="DrPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleDr" id="TripleDr" DISABLED></td>  
         </tr>
         <tr>
@@ -181,8 +197,8 @@
           <option value ="931"> 8 </option>
           <option value ="980"> 9 </option>
           <option value ="1024"> 10 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="SurferPoints" id="SurferPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="SurferPoints" id="SurferPoints" DISABLED>=</td>
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleSurfer" id="TripleSurfer" DISABLED></td>  
         </tr>
 		<tr>
@@ -196,12 +212,16 @@
 		  <option value ="867"> 5 </option>
 		  <option value ="913"> 6 </option>
 		  <option value ="960"> 7 </option>
-          </select></td>
-           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="LamboRiderPoints" id="LamboRiderPoints" DISABLED></td>
+          </select>►</td>
+           <td><input title="Zorluk başına alınacak puan" class="roller-input-number" type="text" name="LamboRiderPoints" id="LamboRiderPoints" DISABLED>=</td> 
            <td><input title="Seviye sonu alınacak toplam puan" class="roller-input-number" type="text" name="TripleLambo" id="TripleLambo" DISABLED></td>  
         </tr>
       </tbody>
-    </table></main>
+    </table><hr></hr>
+	RCHesapla ile kişisel oyununuzu hesaplayabilirsiniz.
+            </div>
+        </div>
+    </main>
 <!--===============================================================================================-->
     <footer>
         <section class="top-footer">
