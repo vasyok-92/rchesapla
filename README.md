@@ -5,8 +5,3 @@
 - Satoshi hesaplama aracı eklenmiştir. | [Tıkla!](https://fatihcelikofficialtr.github.io/rchesapla/satoshihesapla/)
 - 2m Çekiliş video tanıtımı eklendi! | [Tıkla!](https://fatihcelikofficialtr.github.io/rchesapla/v2/2m/)
 
-
-# TOPLAM GÖRÜNTÜLENME SAYISI
-
-<img src="https://count.getloli.com/get/@:FatihCelikOfficialTR?theme=rule34" alt=":FatihCelikOfficialTR" />
-
