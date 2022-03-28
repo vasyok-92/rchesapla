@@ -6,18 +6,18 @@ function blockAmount() {
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
             // BITCOIN BLOK ÖDÜLÜ | 30000 SAT
-            var blockreward = 48000;
-            document.getElementById("block-reward").value = 48000;
+            var blockreward = 30000;
+            document.getElementById("block-reward").value = 30000;
             break;
         case 1:
-            // DOGE BLOK ÖDÜLÜ | 20DOGE
-            var blockreward = 53;
-            document.getElementById("block-reward").value = 53;
+            // DOGE BLOK ÖDÜLÜ | 20 DOGE
+            var blockreward = 60;
+            document.getElementById("block-reward").value = 60;
             break;
         case 2:
             // ETH BLOK ÖDÜLÜ | 0.005 ETH
-            var blockreward = 0.005;
-            document.getElementById("block-reward").value = 0.005;
+            var blockreward = 0.006;
+            document.getElementById("block-reward").value = 0.006;
             break;
         case 3:
             // BNB BLOK ÖDÜLÜ | 0.012 BNB
@@ -26,15 +26,15 @@ function blockAmount() {
             break;
         case 4: 
             // MATIC BLOK ÖDÜLÜ | 3 MATIC
-            var blockreward = 3;
-            document.getElementById("block-reward").value = 3;
+            var blockreward = 5;
+            document.getElementById("block-reward").value = 5;
             console.log("matic end");
             break;
         default:
-            // RLT BLOK ÖDÜLÜ | 20 RLT
+            // RLT BLOK ÖDÜLÜ | 30 RLT
             console.log("rlt start");
-            var blockreward = 45;
-            document.getElementById("block-reward").value = 45;
+            var blockreward = 30;
+            document.getElementById("block-reward").value = 30;
             break;
     }
 }
