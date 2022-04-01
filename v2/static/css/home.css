@@ -153,7 +153,7 @@ input::-webkit-inner-spin-button {
   -ms-grid-row: 2;
   -ms-grid-column: 13;
   grid-area: sol;
-  color: #5530ac;
+  color: #4ba6cf;
   padding: 0.5rem 0.2rem 0.5rem 0.35rem;
 }
 
@@ -261,7 +261,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hero .tabs-layout .tab1-content table .td-sol {
-  color: #5530ac;
+  color: #4ba6cf;
 }
 
 .hero .tabs-layout .tab1-content table .td-rlt {
@@ -357,12 +357,12 @@ input::-webkit-inner-spin-button {
 }
 
 .hero .tabs-layout .tab2-content .sol-box {
-  background: #5550a6;
+  background: #412775;
 }
 
 .hero .tabs-layout .tab2-content .sol-box .table-headers {
   font-weight: bold;
-  color: #2a1eee;
+  color: #805bef;
 }
 
 .hero .tabs-layout .tab2-content .rlt-box {
