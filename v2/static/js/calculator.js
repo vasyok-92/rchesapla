@@ -10,6 +10,7 @@ calc = function(){
         distEth = document.getElementById("distEth").value,
 		distbnb = document.getElementById("distbnb").value,
 		distmatic = document.getElementById("distmatic").value,
+		distsol = document.getElementById("distsol").value,
         distRlt = document.getElementById("distRlt").value;
 
     var netBtc = document.getElementById("netBtc").value,
@@ -17,9 +18,10 @@ calc = function(){
         netEth = document.getElementById("netEth").value,
 		netbnb = document.getElementById("netbnb").value,
 		netmatic = document.getElementById("netmatic").value,
+		netsol = document.getElementById("netsol").value,
         netRlt = document.getElementById("netRlt").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netRlt);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netsol) + Number(netRlt);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
@@ -27,6 +29,7 @@ calc = function(){
         blockEth = document.getElementById("blockEth").innerText,
 		blockbnb = document.getElementById("blockbnb").innerText,
 		blockmatic = document.getElementById("blockmatic").innerText,
+		blocksol = document.getElementById("blocksol").innerText,
         blockRlt = document.getElementById("blockRlt").innerText;
     
 //BITCOIN HESAPLAMA ARACI//
@@ -401,6 +404,83 @@ calc = function(){
         else {
             document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
+        }
+//SOLANA HESAPLAMA ARACI//
+    var solPower = ((Number(totalRate)/1000) * Number(distsol))/100
+        solPrice1 = document.getElementById('sol-price-api').innerHTML
+        solPrice = Number(solPrice1.substring(1))
+        minsol = (Number(solPower)*blocksol)/(Number(netsol)*1000)
+        minsolD = Number(minsol) * solPrice
+        hoursol = Number(minsol) * 6
+        hoursolD = Number(hoursol) * solPrice
+        daysol = Number(hoursol) * 24 
+        daysolD = Number(daysol) * solPrice
+        weeksol = Number(daysol) * 7
+        weeksolD = Number(weeksol) * solPrice
+        monthsol = Number(daysol) * 30
+        monthsolD = Number(monthsol) * solPrice
+        yearsol = Number(daysol) * 365
+        yearsolD = Number(yearsol) * solPrice
+
+    if ((isNaN(minsol))||!(isFinite(minsol))) {
+        document.getElementById("minsol").innerText = "-"}
+        else {
+            document.getElementById("minsol").innerText = minsol.toFixed(10);
+        }
+    if ((isNaN(hoursol))||!(isFinite(hoursol))) {
+        document.getElementById("hoursol").innerText = "-"}
+        else {
+            document.getElementById("hoursol").innerText = hoursol.toFixed(10);
+        }
+    if ((isNaN(daysol))||!(isFinite(daysol))) {
+        document.getElementById("daysol").innerText = "-"}
+        else {
+            document.getElementById("daysol").innerText = daysol.toFixed(10);
+        }
+    if ((isNaN(weeksol))||!(isFinite(weeksol))) {
+        document.getElementById("weeksol").innerText = "-"}
+        else {
+            document.getElementById("weeksol").innerText = weeksol.toFixed(10);
+        }
+    if ((isNaN(monthsol))||!(isFinite(monthsol))) {
+        document.getElementById("monthsol").innerText = "-"}
+        else {
+            document.getElementById("monthsol").innerText = monthsol.toFixed(10);
+        }
+    if ((isNaN(yearsol))||!(isFinite(yearsol))) {
+        document.getElementById("yearsol").innerText = "-"}
+        else {
+            document.getElementById("yearsol").innerText = yearsol.toFixed(10);
+        }
+    if ((isNaN(minsolD))||!(isFinite(minsolD))) {
+        document.getElementById("minsolD").innerText = "-"}
+        else {
+            document.getElementById("minsolD").innerText = "$" + minsolD.toFixed(5);
+        }
+    if ((isNaN(hoursolD))||!(isFinite(hoursolD))) {
+        document.getElementById("hoursolD").innerText = "-"}
+        else {
+            document.getElementById("hoursolD").innerText = "$" + hoursolD.toFixed(5);
+        }
+    if ((isNaN(daysolD))||!(isFinite(daysolD))) {
+        document.getElementById("daysolD").innerText = "-"}
+        else {
+            document.getElementById("daysolD").innerText = "$" + daysolD.toFixed(5);
+        }
+    if ((isNaN(weeksolD))||!(isFinite(weeksolD))) {
+        document.getElementById("weeksolD").innerText = "-"}
+        else {
+            document.getElementById("weeksolD").innerText = "$" + weeksolD.toFixed(5);
+        }
+    if ((isNaN(monthsolD))||!(isFinite(monthsolD))) {
+        document.getElementById("monthsolD").innerText = "-"}
+        else {
+            document.getElementById("monthsolD").innerText = "$" + monthsolD.toFixed(5);
+        }
+    if ((isNaN(yearsolD))||!(isFinite(yearsolD))) {
+        document.getElementById("yearsolD").innerText = "-"}
+        else {
+            document.getElementById("yearsolD").innerText = "$" + yearsolD.toFixed(5);
         }
 //ROLLERTOKEN HESAPLAMA ARACI//
     var rltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
