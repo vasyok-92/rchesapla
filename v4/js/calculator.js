@@ -306,10 +306,10 @@ function blockAmount() {
       var blockreward = 30000;
       document.getElementById("block-reward").value = 30000;
 
-      document.getElementById("exp_reward").innerHTML = "NaN Satoshi";
-      document.getElementById("daily").innerHTML = "NaN Satoshi";
-      document.getElementById("weekly").innerHTML = "NaN Satoshi";
-      document.getElementById("monthly").innerHTML = "NaN Satoshi";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("satoshi-value").value = "";
       document.getElementById("btc-resultado").value = "";
@@ -322,10 +322,10 @@ function blockAmount() {
       var blockreward = 20;
       document.getElementById("block-reward").value = 20;
 
-      document.getElementById("exp_reward").innerHTML = "NaN Doge";
-      document.getElementById("daily").innerHTML = "NaN Doge";
-      document.getElementById("weekly").innerHTML = "NaN Doge";
-      document.getElementById("monthly").innerHTML = "NaN Doge";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("btc-value").value = "";
       document.getElementById("coin-resultado").value = "";
@@ -336,10 +336,10 @@ function blockAmount() {
       var blockreward = 0.005;
       document.getElementById("block-reward").value = 0.005;
 
-      document.getElementById("exp_reward").innerHTML = "NaN Ethereum";
-      document.getElementById("daily").innerHTML = "NaN Ethereum";
-      document.getElementById("weekly").innerHTML = "NaN Ethereum";
-      document.getElementById("monthly").innerHTML = "NaN Ethereum";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("btc-value").value = "";
       document.getElementById("coin-resultado").value = "";
@@ -349,10 +349,10 @@ function blockAmount() {
       var blockreward = 0.012;
       document.getElementById("block-reward").value = 0.012;
 
-      document.getElementById("exp_reward").innerHTML = "NaN BNB";
-      document.getElementById("daily").innerHTML = "NaN BNB";
-      document.getElementById("weekly").innerHTML = "NaN BNB";
-      document.getElementById("monthly").innerHTML = "NaN BNB";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("btc-value").value = "";
       document.getElementById("coin-resultado").value = "";
@@ -362,14 +362,28 @@ function blockAmount() {
       var blockreward = 3;
       document.getElementById("block-reward").value = 3;
 
-      document.getElementById("exp_reward").innerHTML = "NaN MATIC";
-      document.getElementById("daily").innerHTML = "NaN MATIC";
-      document.getElementById("weekly").innerHTML = "NaN MATIC";
-      document.getElementById("monthly").innerHTML = "NaN MATIC";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("btc-value").value = "";
       document.getElementById("coin-resultado").value = "";
       console.log("matic end");
+      break;
+	case 5:
+      //SOL
+      var blockreward = 0.05;
+      document.getElementById("block-reward").value = 0.05;
+
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+
+      document.getElementById("btc-value").value = "";
+      document.getElementById("coin-resultado").value = "";
+      console.log("SOL end");
       break;
     default:
       //RLT
@@ -377,10 +391,10 @@ function blockAmount() {
       var blockreward = 30;
       document.getElementById("block-reward").value = 30;
 
-      document.getElementById("exp_reward").innerHTML = "NaN Rollertoken";
-      document.getElementById("daily").innerHTML = "NaN Rollertoken";
-      document.getElementById("weekly").innerHTML = "NaN Rollertoken";
-      document.getElementById("monthly").innerHTML = "NaN Rollertoken";
+      document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+      document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+      document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+      document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
 
       document.getElementById("btc-value").value = "";
       document.getElementById("coin-resultado").value = "";
@@ -453,6 +467,7 @@ function calculateGoalPower() {
   const dailyEthBlocks = secFullDay / BlockTimer;
   const dailyBnbBlocks = secFullDay / BlockTimer;
   const dailyMaticBlocks = secFullDay / BlockTimer;
+  const dailySolBlocks = secFullDay / BlockTimer;
   console.log(dailyBtcBlocks + ", " + dailyDogeBlocks + ", " + dailyEthBlocks);
 
   console.log("DailyBTC " + dailyBtcBlocks);
@@ -510,6 +525,16 @@ function calculateGoalPower() {
         (maticResult * 7).toFixed(8) + " MATIC";
       document.getElementById("monthly").innerHTML =
         (maticResult * 30).toFixed(8) + " MATIC";
+      break;
+	case 5:
+      document.getElementById("exp_reward").innerHTML =
+        exp_reward.toFixed(8) + " SOL";
+      var solResult = (exp_reward * dailySolBlocks).toFixed(4);
+      document.getElementById("daily").innerHTML = + solResult + " SOL";
+      document.getElementById("weekly").innerHTML =
+        (solResult * 7).toFixed(4) + " SOL";
+      document.getElementById("monthly").innerHTML =
+        (solResult * 30).toFixed(4) + " SOL";
       break;
     default:
       document.getElementById("exp_reward").innerHTML =
