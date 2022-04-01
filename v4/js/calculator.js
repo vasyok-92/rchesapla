@@ -41,7 +41,7 @@ let clickEuro = 0;
 
 //Parametros de RESETBOARD
 const moneda = ["dollar", "euro"];
-const monedaSimbolo = ["$", "€"];
+const monedaSimbolo = ["$", "₺"];
 
 //INICIALIZACION ARREGLOS DE PRECIOS PARA CONVERSION
 const precioDollarMonedas = [];
@@ -96,7 +96,7 @@ btnDollar.addEventListener("click", function () {
 let euroReq = new XMLHttpRequest();
 euroReq.open(
   "GET",
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false",
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=try&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false",
   false
 );
 euroReq.send(null);
@@ -169,10 +169,10 @@ function Mostrar(moneda) {
 
   if (elem.classList.contains("hidden")) {
     elem.classList.remove("hidden");
-    textBtnMostrar.innerHTML = "Click on the button to hide!";
+    textBtnMostrar.innerHTML = "Gizlemek için düğmeye tıklayın!";
   } else {
     elem.classList.add("hidden");
-    textBtnMostrar.innerHTML = "Click on the button to see coin prices!";
+    textBtnMostrar.innerHTML = "Coin fiyatlarını görmek için butona tıklayın!";
   }
 }
 
