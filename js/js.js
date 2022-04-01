@@ -30,6 +30,12 @@ function blockAmount() {
             document.getElementById("block-reward").value = 5;
             console.log("matic end");
             break;
+		case 5: 
+            // SOL BLOK ÖDÜLÜ | 0.05 SOL
+            var blockreward = 0.05;
+            document.getElementById("block-reward").value = 0.05;
+            console.log("sol end");
+            break;
         default:
             // RLT BLOK ÖDÜLÜ | 30 RLT
             console.log("rlt start");
@@ -104,6 +110,7 @@ function calculateGoalPower() {
     const dailyEthBlocks = secFullDay / BlockTimer;
     const dailyBnbBlocks = secFullDay / BlockTimer;
     const dailyMaticBlocks = secFullDay / BlockTimer;
+	const dailySolBlocks = secFullDay / BlockTimer;
     console.log(dailyBtcBlocks + ", " + dailyDogeBlocks + ", " + dailyEthBlocks)
 
     console.log("DailyBTC " + dailyBtcBlocks);
@@ -151,6 +158,14 @@ function calculateGoalPower() {
             document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " MATIC";
             document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC";
 			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " MATIC";
+            break;
+		case 5:
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " SOL";
+            var maticResult = (exp_reward * dailyMaticBlocks).toFixed(8);
+            document.getElementById("daily").innerHTML = maticResult + " SOL";
+            document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " SOL";
+            document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " SOL";
+			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " SOL";
             break;
         default:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " RLT";
