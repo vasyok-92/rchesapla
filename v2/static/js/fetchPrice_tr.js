@@ -1,6 +1,6 @@
 fetchData = function(){
 
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cbinancecoin%2Ctether%2Czelcash&vs_currencies=try', {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cdogecoin%2Cethereum%2Cbinancecoin%2Ctether%2Czelcash%2Csolana&vs_currencies=try', {
       method: 'GET', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +36,8 @@ getResults = function(fetch_data){
 	bnbPrice = fetch_data.binancecoin.try
 	rltPrice = fetch_data.tether.try
 	maticPrice = fetch_data.zelcash.try
-    return [btcPrice, dogePrice, ethPrice, bnbPrice, rltPrice , maticPrice]
+	solPrice = fetch_data.solana.try
+    return [btcPrice, dogePrice, ethPrice, bnbPrice, rltPrice , maticPrice, solPrice]
 }
 
 postResults = function(prices){
@@ -46,6 +47,7 @@ postResults = function(prices){
 	document.getElementById("bnb-price-api").innerHTML = prices[3] + " ₺";
 	document.getElementById("rlt-price-api").innerHTML = prices[4] + " ₺";
 	document.getElementById("matic-price-api").innerHTML = prices[5] + " ₺";
+	document.getElementById("sol-price-api").innerHTML = prices[6] + " ₺";
 	
 }
 
@@ -57,6 +59,7 @@ calculate = function(prices){
 		bnbPrice = prices[3]
 		rltPrice = prices[4]
 		maticPrice = prices[5]
+		solPrice = prices[6]
 		
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
@@ -351,6 +354,55 @@ calculate = function(prices){
         document.getElementById("yearRltD").innerText = "-"}
         else {
             document.getElementById("yearRltD").innerText = yearRltD.toFixed(5) + " ₺";
+        }
+/////////////////////////////////////////////////
+    // sol CALC 10 MIN
+    minsol = document.getElementById("minsol").innerHTML;
+    minsolD = Number(minsol) * solPrice
+    if (isNaN(minsolD)) {
+        document.getElementById("minsolD").innerText = "-"}
+        else {
+            document.getElementById("minsolD").innerText = minsolD.toFixed(5) + " ₺";
+        }
+    // sol CALC HOUR
+    hoursol = document.getElementById("hoursol").innerHTML;
+    hoursolD = Number(hoursol) * solPrice
+    if (isNaN(hoursolD)) {
+        document.getElementById("hoursolD").innerText = "-"}
+        else {
+            document.getElementById("hoursolD").innerText = hoursolD.toFixed(5) + " ₺";
+        }
+    // sol CALC DAY
+    daysol = document.getElementById("daysol").innerHTML;
+    daysolD = Number(daysol) * solPrice
+    if (isNaN(daysolD)) {
+        document.getElementById("daysolD").innerText = "-"}
+        else {
+            document.getElementById("daysolD").innerText = daysolD.toFixed(5) + " ₺";
+        }
+    // sol CALC WEEK
+    weeksol = document.getElementById("weeksol").innerHTML;
+    weeksolD = Number(weeksol) * solPrice
+    if (isNaN(weeksolD)) {
+        document.getElementById("weeksolD").innerText = "-"}
+        else {
+            document.getElementById("weeksolD").innerText = weeksolD.toFixed(5) + " ₺";
+        }    
+    // sol CALC MONTH
+    monthsol = document.getElementById("monthsol").innerHTML;
+    monthsolD = Number(monthsol) * solPrice
+    if (isNaN(minsolD)) {
+        document.getElementById("monthsolD").innerText = "-"}
+        else {
+            document.getElementById("monthsolD").innerText = monthsolD.toFixed(5) + " ₺";
+        }    
+    // sol CALC YEAR
+    yearsol = document.getElementById("yearsol").innerHTML;
+    yearsolD = Number(yearsol) * solPrice
+    if (isNaN(yearsolD)) {
+        document.getElementById("yearsolD").innerText = "-"}
+        else {
+            document.getElementById("yearsolD").innerText = yearsolD.toFixed(5) + " ₺";
         }
     }
 
