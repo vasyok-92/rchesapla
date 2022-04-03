@@ -1,47 +1,71 @@
 const { Block } = require("strip-comments/lib/Node");
 
+console.log("Hello World");
+
 function blockAmount() {
     // Returns pre-set block rewards based on block selected
     // Update if updated on rollercoin
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            // BITCOIN BLOK ÖDÜLÜ | 30000 SAT
+            //bitcoin
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
             break;
         case 1:
-            // DOGE BLOK ÖDÜLÜ | 20 DOGE
-            var blockreward = 60;
-            document.getElementById("block-reward").value = 60;
+            //Doge
+            var blockreward = 20;
+            document.getElementById("block-reward").value = 20;
             break;
         case 2:
-            // ETH BLOK ÖDÜLÜ | 0.005 ETH
-            var blockreward = 0.006;
-            document.getElementById("block-reward").value = 0.006;
+            //eth
+            var blockreward = 0.005;
+            document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
-            // BNB BLOK ÖDÜLÜ | 0.012 BNB
+            //bnb
             var blockreward = 0.012;
             document.getElementById("block-reward").value = 0.012;
             break;
         case 4: 
-            // MATIC BLOK ÖDÜLÜ | 3 MATIC
-            var blockreward = 5;
-            document.getElementById("block-reward").value = 5;
+            //matic
+            var blockreward = 3;
+            document.getElementById("block-reward").value = 3;
             console.log("matic end");
             break;
-		case 5: 
-            // SOL BLOK ÖDÜLÜ | 0.05 SOL
-            var blockreward = 0.05;
+        case 5: 
+            //SOL
+            var blockreward = 0.5;
             document.getElementById("block-reward").value = 0.05;
             console.log("sol end");
             break;
-        default:
-            // RLT BLOK ÖDÜLÜ | 30 RLT
+    default:
+            //RLT
             console.log("rlt start");
             var blockreward = 30;
             document.getElementById("block-reward").value = 30;
             break;
+    }
+}
+
+function showHashpowerHelp() {
+    var x = document.querySelector("body > div.row.no-gutters.hashinput > div > div:nth-child(1) > img");
+    if (x.classList.contains("hide")) {
+        x.classList.remove("hide");
+    } else {
+        x.classList.add("hide");
+    }
+}
+
+function supportMeToggle() {
+    var x = document.querySelector("body > div.supportMe");
+    if (x.classList.contains("hidden")) {
+        x.classList.add("animate__animate", "animate__fadeInLeft");
+        x.classList.remove("hidden");
+        console.log("revealed SupportMe")
+        // x.classList.add("animate__animated", "animate__bounceOutLeft"); 
+    } else {
+        x.classList.add("hidden");
+        console.log("Hide SupportMe")
     }
 }
 
@@ -96,56 +120,41 @@ function calculateGoalPower() {
 
     console.log("exp. reward " + exp_reward.toFixed(4));
 
-    /* const btcBlockTimer = 600;
-    const dogeBlockTimer = 600;
-    console.log(dogeBlockTimer + "seconds doge")
-    const ethBlockTimer = 600; */
-
     //All timers are now the same 2021-04-19
     const BlockTimer = 600;
     const secFullDay = 86400;
 
-    const dailyBtcBlocks = secFullDay / BlockTimer;
-    const dailyDogeBlocks = secFullDay / BlockTimer;
-    const dailyEthBlocks = secFullDay / BlockTimer;
-    const dailyBnbBlocks = secFullDay / BlockTimer;
-    const dailyMaticBlocks = secFullDay / BlockTimer;
-	const dailySolBlocks = secFullDay / BlockTimer;
-    console.log(dailyBtcBlocks + ", " + dailyDogeBlocks + ", " + dailyEthBlocks)
-
-    console.log("DailyBTC " + dailyBtcBlocks);
-    console.log("DailyDOGE " + dailyDogeBlocks);
-    console.log("DailyETH " + dailyEthBlocks);
+    const dailyBlocks = secFullDay / BlockTimer;
     console.log(exp_reward);
 
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " SAT";
-            var btcResult = (exp_reward * dailyBtcBlocks).toFixed(4);
-            document.getElementById("daily").innerHTML = btcResult + " SAT";
-            document.getElementById("weekly").innerHTML = (btcResult * 7).toFixed(4) + " SAT";
-            document.getElementById("monthly").innerHTML = (btcResult * 30).toFixed(4) + " SAT";
-			document.getElementById("yearly").innerHTML = (btcResult * 365).toFixed(4) + " SAT";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " Satoshi";
+            var btcResult = (exp_reward * dailyBlocks).toFixed(4);
+            document.getElementById("daily").innerHTML = btcResult + " Satoshi";
+            document.getElementById("weekly").innerHTML = (btcResult * 7).toFixed(4) + " Satoshi";
+            document.getElementById("monthly").innerHTML = (btcResult * 30).toFixed(4) + " Satoshi";
+			document.getElementById("yearly").innerHTML = (btcResult * 365).toFixed(4) + " Satoshi";
             break;
         case 1:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " DOGE";
-            var dogeResult = (exp_reward * dailyDogeBlocks).toFixed(4);
+            var dogeResult = (exp_reward * dailyBlocks).toFixed(6);
             document.getElementById("daily").innerHTML = dogeResult + " DOGE";
             document.getElementById("weekly").innerHTML = (dogeResult * 7).toFixed(4) + " DOGE";
             document.getElementById("monthly").innerHTML = (dogeResult * 30).toFixed(4) + " DOGE";
 			document.getElementById("yearly").innerHTML = (dogeResult * 365).toFixed(4) + " DOGE";
             break;
         case 2:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " ETH";
-            var ethResult = (exp_reward * dailyEthBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = ethResult + " ETH";
-            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " ETH";
-            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " ETH";
-			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " ETH";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Ethereum";
+            var ethResult = (exp_reward * dailyBlocks).toFixed(8);
+            document.getElementById("daily").innerHTML = ethResult + " Ethereum";
+            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " Ethereum";
+            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " Ethereum";
+			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " Satoshi";
             break;
         case 3:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " BNB";
-            var bnbResult = (exp_reward * dailyBnbBlocks).toFixed(8);
+            var bnbResult = (exp_reward * dailyBlocks).toFixed(8);
             document.getElementById("daily").innerHTML = bnbResult + " BNB";
             document.getElementById("weekly").innerHTML = (bnbResult * 7).toFixed(8) + " BNB";
             document.getElementById("monthly").innerHTML = (bnbResult * 30).toFixed(8) + " BNB";
@@ -153,27 +162,29 @@ function calculateGoalPower() {
             break;
         case 4:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " MATIC";
-            var maticResult = (exp_reward * dailyMaticBlocks).toFixed(8);
+            var maticResult = (exp_reward * dailyBlocks).toFixed(8);
             document.getElementById("daily").innerHTML = maticResult + " MATIC";
             document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " MATIC";
             document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC";
-			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " MATIC";
+			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " Satoshi";
             break;
-		case 5:
+        case 5:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " SOL";
-            var maticResult = (exp_reward * dailyMaticBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = maticResult + " SOL";
-            document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " SOL";
-            document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " SOL";
-			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " SOL";
+            var solResult = (exp_reward * dailyBlocks).toFixed(8);
+            document.getElementById("daily").innerHTML = solResult + " SOL";
+            document.getElementById("weekly").innerHTML = (solResult * 7).toFixed(8) + " SOL";
+            document.getElementById("monthly").innerHTML = (solResult * 30).toFixed(8) + " SOL";
+			document.getElementById("yearly").innerHTML = (solResult * 365).toFixed(8) + " SOL";
             break;
         default:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " RLT";
-            var rltResult = (exp_reward * dailyEthBlocks).toFixed(4);
-            document.getElementById("daily").innerHTML = rltResult + " RLT";
-            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " RLT";
-            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " RLT";
-			document.getElementById("yearly").innerHTML = (rltResult * 365).toFixed(4) + " RLT";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Rollertoken";
+            var rltResult = (exp_reward * dailyBlocks).toFixed(4);
+            document.getElementById("daily").innerHTML = rltResult + " Rollertoken";
+            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " Rollertoken";
+            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " Rollertoken";
+			document.getElementById("yearly").innerHTML = (rltResult * 365).toFixed(4) + " Rollertoken";
             break;
     }
 }
+
+// Arc.io Div appender
