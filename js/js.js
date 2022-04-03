@@ -150,7 +150,7 @@ function calculateGoalPower() {
             document.getElementById("daily").innerHTML = ethResult + " Ethereum";
             document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " Ethereum";
             document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " Ethereum";
-			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " Satoshi";
+			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " Ethereum";
             break;
         case 3:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " BNB";
@@ -166,7 +166,7 @@ function calculateGoalPower() {
             document.getElementById("daily").innerHTML = maticResult + " MATIC";
             document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " MATIC";
             document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC";
-			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " Satoshi";
+			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " MATIC";
             break;
         case 5:
             document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " SOL";
