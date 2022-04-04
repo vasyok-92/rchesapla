@@ -7,42 +7,42 @@ function blockAmount() {
     // Update if updated on rollercoin
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            //Bitcoin
-            var blockreward = 30000;
-            document.getElementById("block-reward").value = 30000;
+            //Bitcoin - 30000
+            var blockreward = 34500;
+            document.getElementById("block-reward").value = 34500;
             break;
         case 1:
-            //Doge
+            //Doge - 20
             var blockreward = 20;
             document.getElementById("block-reward").value = 20;
             break;
         case 2:
-            //Eth
+            //Eth - 0.005
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
-            //Bnb
-            var blockreward = 0.012;
-            document.getElementById("block-reward").value = 0.012;
+            //Bnb - 0.012
+            var blockreward = 0.021;
+            document.getElementById("block-reward").value = 0.021;
             break;
         case 4: 
-            //Matic
+            //Matic - 3
             var blockreward = 3;
             document.getElementById("block-reward").value = 3;
             console.log("matic end");
             break;
         case 5: 
-            //SOL
-            var blockreward = 0.5;
-            document.getElementById("block-reward").value = 0.05;
+            //SOL - 0.05
+            var blockreward = 0.06;
+            document.getElementById("block-reward").value = 0.06;
             console.log("sol end");
             break;
     default:
-            //RLT
+            //RLT - 20
             console.log("rlt start");
-            var blockreward = 30;
-            document.getElementById("block-reward").value = 30;
+            var blockreward = 40;
+            document.getElementById("block-reward").value = 40;
             break;
     }
 }
