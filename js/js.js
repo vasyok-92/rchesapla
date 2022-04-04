@@ -7,7 +7,7 @@ function blockAmount() {
     // Update if updated on rollercoin
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            //bitcoin
+            //Bitcoin
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
             break;
@@ -17,17 +17,17 @@ function blockAmount() {
             document.getElementById("block-reward").value = 20;
             break;
         case 2:
-            //eth
+            //Eth
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
-            //bnb
+            //Bnb
             var blockreward = 0.012;
             document.getElementById("block-reward").value = 0.012;
             break;
         case 4: 
-            //matic
+            //Matic
             var blockreward = 3;
             document.getElementById("block-reward").value = 3;
             console.log("matic end");
@@ -186,5 +186,3 @@ function calculateGoalPower() {
             break;
     }
 }
-
-// Arc.io Div appender
