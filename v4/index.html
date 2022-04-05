@@ -128,9 +128,10 @@
                         <div class="container-convert">
 <!--===============================================================================================-->
 						<div class="card my-4 shadow">
-                                <h6 class="card-header head">RCHESAPLA DİĞER HESAPLAMA ARAÇLARIMIZ</h6>
-                                <div class="card-body my-3">
-								<span id="text2"></span>
+                                <h6 class="card-header head">DUYURU BÖLÜMÜ / HAFTALIK ÖDÜL</h6>
+                                <div class="card-body my-1">
+								<span id="text2"></span><br/>
+								<span id="haftalıködüller"></span>
                                 </div>
                             </div>
 <!--===============================================================================================-->
@@ -328,6 +329,16 @@
 	<script type="text/javascript">
         var typed2 = new Typed('#text2', {
             strings: ["RCHesapla olarak sizlere daha iyi hizmet sunabilmek adına bu sürümümüzü güncel tutmaya gayret göstereceğiz. Diğer sürümümüzü de ister kullanabilirsiniz. (V1,V2,V3)"],
+            typeSpeed: 70,
+            backSpeed: 30,
+            backDelay: 10000,
+            fadeOut: true,
+            loop: true
+        });
+    </script>
+	<script type="text/javascript">
+        var typed2 = new Typed('#haftalıködüller', {
+            strings: ["BTC: 30000 SAT → 34500", "BNB: 0.012 → 0.021", "SOL: 0.05 → 0.06", "RLT: 30 → 40"],
             typeSpeed: 70,
             backSpeed: 30,
             backDelay: 10000,
