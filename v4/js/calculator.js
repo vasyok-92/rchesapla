@@ -236,8 +236,7 @@ function calculated$() {
     case 0:
       switch (document.getElementById("coin-type").selectedIndex) {
         case 0:
-          document.getElementById("coin-resultado").value =
-            btc_dolar.toFixed(2);
+          document.getElementById("coin-resultado").value = btc_dolar.toFixed(2);
           break;
         default:
           document.getElementById("coin-resultado").value = btc_euro.toFixed(2);
@@ -247,8 +246,7 @@ function calculated$() {
     case 1:
       switch (document.getElementById("coin-type").selectedIndex) {
         case 0:
-          document.getElementById("coin-resultado").value =
-            eth_dolar.toFixed(2);
+          document.getElementById("coin-resultado").value = eth_dolar.toFixed(2);
           break;
         default:
           document.getElementById("coin-resultado").value = eth_euro.toFixed(2);
@@ -258,8 +256,7 @@ function calculated$() {
     case 2:
       switch (document.getElementById("coin-type").selectedIndex) {
         case 0:
-          document.getElementById("coin-resultado").value =
-            bnb_dolar.toFixed(2);
+          document.getElementById("coin-resultado").value = bnb_dolar.toFixed(2);
           break;
         default:
           document.getElementById("coin-resultado").value = bnb_euro.toFixed(2);
@@ -269,24 +266,20 @@ function calculated$() {
     case 3:
       switch (document.getElementById("coin-type").selectedIndex) {
         case 0:
-          document.getElementById("coin-resultado").value =
-            doge_dolar.toFixed(2);
+          document.getElementById("coin-resultado").value = doge_dolar.toFixed(2);
           break;
         default:
-          document.getElementById("coin-resultado").value =
-            doge_euro.toFixed(2);
+          document.getElementById("coin-resultado").value = doge_euro.toFixed(2);
           break;
       }
       break;
     default:
       switch (document.getElementById("coin-type").selectedIndex) {
         case 0:
-          document.getElementById("coin-resultado").value =
-            matic_dolar.toFixed(2);
+          document.getElementById("coin-resultado").value = matic_dolar.toFixed(2);
           break;
         default:
-          document.getElementById("coin-resultado").value =
-            matic_euro.toFixed(2);
+          document.getElementById("coin-resultado").value = matic_euro.toFixed(2);
           break;
       }
       break;
@@ -345,7 +338,7 @@ function blockAmount() {
       document.getElementById("coin-resultado").value = "";
       break;
     case 3:
-      //BNB BLOK ÖDÜLÜ > 
+      //BNB BLOK ÖDÜLÜ > 0.012
       var blockreward = 0.021;
       document.getElementById("block-reward").value = 0.021;
 
@@ -358,7 +351,7 @@ function blockAmount() {
       document.getElementById("coin-resultado").value = "";
       break;
     case 4:
-      //MATIC BLOK ÖDÜLÜ > 
+      //MATIC BLOK ÖDÜLÜ > 3
       var blockreward = 3;
       document.getElementById("block-reward").value = 3;
 
