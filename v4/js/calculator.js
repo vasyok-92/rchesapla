@@ -76,7 +76,7 @@ selectCrypto.addEventListener("change", (e) => {
 let xhReq = new XMLHttpRequest();
 xhReq.open(
   "GET",
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false",
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin,solana&order=market_cap_desc&per_page=100&page=1&sparkline=false",
   false
 );
 xhReq.send(null);
@@ -96,7 +96,7 @@ btnDollar.addEventListener("click", function () {
 let euroReq = new XMLHttpRequest();
 euroReq.open(
   "GET",
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=try&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false",
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=try&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20matic-network%2C%20binancecoin,solana&order=market_cap_desc&per_page=100&page=1&sparkline=false",
   false
 );
 euroReq.send(null);
@@ -118,7 +118,7 @@ function resetBoard(data, moneda, monedaSimbolo) {
   $list.find(".crytocurrency").remove();
   const dataMoneda = [];
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     dataMoneda.push({
       name: data[i].name,
       symbol: data[i].symbol,
