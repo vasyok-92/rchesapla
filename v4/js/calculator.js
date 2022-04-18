@@ -308,8 +308,8 @@ function blockAmount() {
   switch (document.getElementById("block-type").selectedIndex) {
     case 0:
       //BITCOIN BLOK ÖDÜLÜ > 30000
-      var blockreward = 30000;
-      document.getElementById("block-reward").value = 30000;
+      var blockreward = 42000;
+      document.getElementById("block-reward").value = 42000;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -324,8 +324,8 @@ function blockAmount() {
       break;
     case 1:
       //DOGE BLOK ÖDÜLÜ > 20
-      var blockreward = 40;
-      document.getElementById("block-reward").value = 40;
+      var blockreward = 60;
+      document.getElementById("block-reward").value = 60;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -338,8 +338,8 @@ function blockAmount() {
       break;
     case 2:
       //ETH BLOK ÖDÜLÜ > 0.005
-      var blockreward = 0.007;
-      document.getElementById("block-reward").value = 0.007;
+      var blockreward = 0.005;
+      document.getElementById("block-reward").value = 0.005;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -364,8 +364,8 @@ function blockAmount() {
       break;
     case 4:
       //MATIC BLOK ÖDÜLÜ > 3
-      var blockreward = 5;
-      document.getElementById("block-reward").value = 5;
+      var blockreward = 3;
+      document.getElementById("block-reward").value = 3;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -393,8 +393,8 @@ function blockAmount() {
     default:
       //RLT BLOK ÖDÜLÜ > 30
       console.log("rlt start");
-      var blockreward = 30;
-      document.getElementById("block-reward").value = 30;
+      var blockreward = 40;
+      document.getElementById("block-reward").value = 40;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
