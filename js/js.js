@@ -121,7 +121,9 @@ function calculateGoalPower() {
     console.log("exp. reward " + exp_reward.toFixed(4));
 
     //All timers are now the same 2021-04-19
-    const BlockTimer = 600;
+    let blockInput = parseFloat(document.getElementById("block-timer").value);
+    const BlockTimer = blockInput * 60;
+    console.log("Blocktimer is: " + BlockTimer + ". (" + blockInput + " * 60");
     const secFullDay = 86400;
 
     const dailyBlocks = secFullDay / BlockTimer;
