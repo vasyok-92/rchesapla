@@ -89,7 +89,7 @@ footer {
 
 /* <<<<<<<<<<<<<<<<<<< Media Query >>>>>>>>>>>>>>>>>>> */
 
-@media (max-width: 767px) {
+@media (max-width: auto) {
     .edger {
         margin: auto;
         text-align: center;
