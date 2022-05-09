@@ -31,7 +31,7 @@
 				<a class="link-calc" href="../v3"><img src="../img/rchesaplav3.png" width="25" height="25"></a>
 				<a class="link-calc" href="../v4"><img src="../img/rchesaplav4.png" width="25" height="25"></a>
 				<!--<a class="link-calc" href="../uygulamamiz/RCHesapla_APP.apk"><img src="../img/rchesaplaapk.png" width="25" height="25"></a>-->
-				<a class="link-calc" href="./index.htm">Dolar Hesapla</a>
+				<a class="link-calc" href="./">Dolar Hesapla</a>
 				<a class="link-calc" href="https://bit.ly/RollerCoinTR">Ücretsiz kayıt ol</a>
 			</div>
 		</div>
@@ -49,6 +49,8 @@
 				<li id="eth-price-api" class="price-eth-price">Yükleniyor..</li>
 				<li class="price-bnb">BNB:</li>
 				<li id="bnb-price-api" class="price-bnb-price">Yükleniyor..</li>
+				<li class="price-matic">MATIC:</li>
+				<li id="matic-price-api" class="price-matic-price">Yükleniyor..</li>
 				<li class="price-sol">SOL:</li>
 				<li id="sol-price-api" class="price-sol-price">Yükleniyor..</li>
 				<li class="price-rlt">RLT:</li>
@@ -171,11 +173,11 @@
 							<td>%</td>
 						</tr>
 						<tr>
-							<td class="td-rlt">RLT:</td>
+							<td class="td-rlt">rlt:</td>
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="distRlt" class="input-box" type="number" onchange="calc(), getData('distRlt')">
+									<input id="distrlt" class="input-box" type="number" onchange="calc(), getData('distrlt')">
 									
 								</form>
 							</td>
@@ -255,11 +257,11 @@
 							<td>EH/s</td>
 						</tr>
 						<tr>
-							<td class="td-rlt">RLT:</td>
+							<td class="td-rlt">rlt:</td>
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="netRlt" class="input-box" type="number" onchange="calc(), getData('netRlt')">
+									<input id="netrlt" class="input-box" type="number" onchange="calc(), getData('netrlt')">
 									
 								</form>
 							</td>
@@ -278,39 +280,39 @@
 				<div class="box-content">
 					<table>
 						<tr>
-							<td class="td-btc">BTC:</td>
-							<td class="no-input" id="blockBtc">30000</td>
+							<td class="td-btc">BTC:</td><!-- 30000 -->
+							<td class="no-input" id="blockBtc">45000</td>
 							<td>SAT <!--(<script src="js/x2.js"></script>)--></td>
 						</tr>
 						<tr>
-							<td class="td-doge">DOGE:</td>
-							<td class="no-input" id="blockDoge">60</td>
+							<td class="td-doge">DOGE:</td><!-- 20 -->
+							<td class="no-input" id="blockDoge">40</td>
 							<td>DOGE</td>
 						</tr>
 						<tr>
-							<td class="td-eth">ETH:</td>
-							<td class="no-input" id="blockEth">0.006</td>
+							<td class="td-eth">ETH:</td><!-- 0.005 -->
+							<td class="no-input" id="blockEth">0.005</td>
 							<td>ETH</td>
 						</tr>
 						<tr>
-							<td class="td-bnb">BNB:</td>
+							<td class="td-bnb">BNB:</td><!-- 0.012 -->
 							<td class="no-input" id="blockbnb">0.012</td>
 							<td>BNB</td>
 						</tr>
 						<tr>
-							<td class="td-matic">MATIC:</td>
-							<td class="no-input" id="blockmatic">5</td>
+							<td class="td-matic">MATIC:</td><!-- 3 -->
+							<td class="no-input" id="blockmatic">3</td>
 							<td>MATIC</td>
 						</tr>
 						<tr>
-							<td class="td-sol">SOL:</td>
+							<td class="td-sol">SOL:</td><!-- 0.05 -->
 							<td class="no-input" id="blocksol">0.05</td>
 							<td>SOL</td>
 						</tr>
 						<tr>
-							<td class="td-rlt">RLT:</td>
-							<td class="no-input" id="blockRlt">30</td>
-							<td>RLT</td>
+							<td class="td-rlt">rlt:</td><!-- 30 -->
+							<td class="no-input" id="blockrlt">30</td>
+							<td>rlt</td>
 						</tr>
 					</table>
 				</div>
@@ -513,7 +515,7 @@
 						</tr>
 						<tr>
 							<td id="minsol">-</td>
-							<td id="hourmsol">-</td>
+							<td id="hoursol">-</td>
 							<td id="daysol">-</td>
 						</tr>
 						<tr>
@@ -540,7 +542,7 @@
 				</div>
 			</div>
 			<div class="coin-box rlt-box">
-				<div class="box-title">ROLLERTOKEN (RLT)</div>
+				<div class="box-title">ROLLERTOKEN (rlt)</div>
 				<div class="tab-content">
 					<table>
 						<tr>
@@ -549,14 +551,14 @@
 							<td class="table-headers">GÜNLÜK</td>
 						</tr>
 						<tr>
-							<td id="minRlt">-</td>
-							<td id="hourRlt">-</td>
-							<td id="dayRlt">-</td>
+							<td id="minrlt">-</td>
+							<td id="hourrlt">-</td>
+							<td id="dayrlt">-</td>
 						</tr>
 						<tr>
-							<td id="minRltD">-</td>
-							<td id="hourRltD">-</td>
-							<td id="dayRltD">-</td>
+							<td id="minrltD">-</td>
+							<td id="hourrltD">-</td>
+							<td id="dayrltD">-</td>
 						</tr>
 						<tr>
 							<td class="table-headers">HAFTALIK</td>
@@ -564,14 +566,14 @@
 							<td class="table-headers">YILLIK</td>
 						</tr>
 						<tr>
-							<td id="weekRlt">-</td>
-							<td id="monthRlt">-</td>
-							<td id="yearRlt">-</td>
+							<td id="weekrlt">-</td>
+							<td id="monthrlt">-</td>
+							<td id="yearrlt">-</td>
 						</tr>
 						<tr>
-							<td id="weekRltD">-</td>
-							<td id="monthRltD">-</td>
-							<td id="yearRltD">-</td>
+							<td id="weekrltD">-</td>
+							<td id="monthrltD">-</td>
+							<td id="yearrltD">-</td>
 						</tr>
 					</table>
 				</div>
@@ -610,5 +612,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 </style>
+
 </body>
 </html>

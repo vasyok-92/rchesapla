@@ -11,7 +11,7 @@ calc = function(){
 		distbnb = document.getElementById("distbnb").value,
 		distmatic = document.getElementById("distmatic").value,
 		distsol = document.getElementById("distsol").value,
-        distRlt = document.getElementById("distRlt").value;
+        distrlt = document.getElementById("distrlt").value;
 
     var netBtc = document.getElementById("netBtc").value,
         netDoge = document.getElementById("netDoge").value,
@@ -19,9 +19,9 @@ calc = function(){
 		netbnb = document.getElementById("netbnb").value,
 		netmatic = document.getElementById("netmatic").value,
 		netsol = document.getElementById("netsol").value,
-        netRlt = document.getElementById("netRlt").value;
+        netrlt = document.getElementById("netrlt").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netsol) + Number(netRlt);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netsol) + Number(netrlt);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
@@ -30,7 +30,7 @@ calc = function(){
 		blockbnb = document.getElementById("blockbnb").innerText,
 		blockmatic = document.getElementById("blockmatic").innerText,
 		blocksol = document.getElementById("blocksol").innerText,
-        blockRlt = document.getElementById("blockRlt").innerText;
+        blockrlt = document.getElementById("blockrlt").innerText;
     
 //BITCOIN HESAPLAMA ARACI//
     var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
@@ -344,65 +344,79 @@ calc = function(){
         }
 //POLYGON (MATIC) HESAPLAMA ARACI//
     var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
+        maticPrice1 = document.getElementById('matic-price-api').innerHTML
+        maticPrice = Number(maticPrice1.substring(1))
         minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
-        minmaticD = Number(minmatic) * 1
+        minmaticD = Number(minmatic) * maticPrice
         hourmatic = Number(minmatic) * 6
-        hourmaticD = Number(hourmatic) * 1
+        hourmaticD = Number(hourmatic) * maticPrice
         daymatic = Number(hourmatic) * 24 
-        daymaticD = Number(daymatic) * 1
+        daymaticD = Number(daymatic) * maticPrice
         weekmatic = Number(daymatic) * 7
-        weekmaticD = Number(weekmatic) * 1
+        weekmaticD = Number(weekmatic) * maticPrice
         monthmatic = Number(daymatic) * 30
-        monthmaticD = Number(monthmatic) * 1
+        monthmaticD = Number(monthmatic) * maticPrice
         yearmatic = Number(daymatic) * 365
-        yearmaticD = Number(yearmatic) * 1
+        yearmaticD = Number(yearmatic) * maticPrice
 
     if ((isNaN(minmatic))||!(isFinite(minmatic))) {
-        document.getElementById("minmatic").innerText = "-";
-        document.getElementById("minmaticD").innerText = "-"}
-
+        document.getElementById("minmatic").innerText = "-"}
         else {
             document.getElementById("minmatic").innerText = minmatic.toFixed(10);
-            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
         }
     if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
-        document.getElementById("hourmatic").innerText = "-";
-        document.getElementById("hourmaticD").innerText = "-"}
-
+        document.getElementById("hourmatic").innerText = "-"}
         else {
             document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
-            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
         }
     if ((isNaN(daymatic))||!(isFinite(daymatic))) {
-        document.getElementById("daymatic").innerText = "-";
-        document.getElementById("daymaticD").innerText = "-"}
-
+        document.getElementById("daymatic").innerText = "-"}
         else {
             document.getElementById("daymatic").innerText = daymatic.toFixed(10);
-            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
         }
     if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
-        document.getElementById("weekmatic").innerText = "-";
-        document.getElementById("weekmaticD").innerText = "-"}
-
+        document.getElementById("weekmatic").innerText = "-"}
         else {
             document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
-            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
         }
     if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
-        document.getElementById("monthmatic").innerText = "-";
-        document.getElementById("monthmaticD").innerText = "-"}
-
+        document.getElementById("monthmatic").innerText = "-"}
         else {
             document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
-            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
         }
     if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
-        document.getElementById("yearmatic").innerText = "-";
-        document.getElementById("yearmaticD").innerText = "-"}
-
+        document.getElementById("yearmatic").innerText = "-"}
         else {
             document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
+        }
+    if ((isNaN(minmaticD))||!(isFinite(minmaticD))) {
+        document.getElementById("minmaticD").innerText = "-"}
+        else {
+            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
+        }
+    if ((isNaN(hourmaticD))||!(isFinite(hourmaticD))) {
+        document.getElementById("hourmaticD").innerText = "-"}
+        else {
+            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
+        }
+    if ((isNaN(daymaticD))||!(isFinite(daymaticD))) {
+        document.getElementById("daymaticD").innerText = "-"}
+        else {
+            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
+        }
+    if ((isNaN(weekmaticD))||!(isFinite(weekmaticD))) {
+        document.getElementById("weekmaticD").innerText = "-"}
+        else {
+            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
+        }
+    if ((isNaN(monthmaticD))||!(isFinite(monthmaticD))) {
+        document.getElementById("monthmaticD").innerText = "-"}
+        else {
+            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
+        }
+    if ((isNaN(yearmaticD))||!(isFinite(yearmaticD))) {
+        document.getElementById("yearmaticD").innerText = "-"}
+        else {
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
 //SOLANA HESAPLAMA ARACI//
@@ -483,67 +497,69 @@ calc = function(){
             document.getElementById("yearsolD").innerText = "$" + yearsolD.toFixed(5);
         }
 //ROLLERTOKEN HESAPLAMA ARACI//
-    var rltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
-        minRlt = (Number(rltPower)*blockRlt)/(Number(netRlt)*1000)
-        minRltD = Number(minRlt) * 1
-        hourRlt = Number(minRlt) * 6
-        hourRltD = Number(hourRlt) * 1
-        dayRlt = Number(hourRlt) * 24 
-        dayRltD = Number(dayRlt) * 1
-        weekRlt = Number(dayRlt) * 7
-        weekRltD = Number(weekRlt) * 1
-        monthRlt = Number(dayRlt) * 30
-        monthRltD = Number(monthRlt) * 1
-        yearRlt = Number(dayRlt) * 365
-        yearRltD = Number(yearRlt) * 1
+    var rltPower = ((Number(totalRate)/1000) * Number(distrlt))/100
+		rltPrice1 = document.getElementById('rlt-price-api').innerHTML
+        rltPrice = Number(rltPrice1.substring(1))
+        minrlt = (Number(rltPower)*blockrlt)/(Number(netrlt)*1000)
+        minrltD = Number(minrlt) * rltPrice
+        hourrlt = Number(minrlt) * 6
+        hourrltD = Number(hourrlt) * rltPrice
+        dayrlt = Number(hourrlt) * 24 
+        dayrltD = Number(dayrlt) * rltPrice
+        weekrlt = Number(dayrlt) * 7
+        weekrltD = Number(weekrlt) * rltPrice
+        monthrlt = Number(dayrlt) * 30
+        monthrltD = Number(monthrlt) * rltPrice
+        yearrlt = Number(dayrlt) * 365
+        yearrltD = Number(yearrlt) * rltPrice
 
-    if ((isNaN(minRlt))||!(isFinite(minRlt))) {
-        document.getElementById("minRlt").innerText = "-";
-        document.getElementById("minRltD").innerText = "-"}
+    if ((isNaN(minrlt))||!(isFinite(minrlt))) {
+        document.getElementById("minrlt").innerText = "-";
+        document.getElementById("minrltD").innerText = "-"}
 
         else {
-            document.getElementById("minRlt").innerText = minRlt.toFixed(10);
-            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
+            document.getElementById("minrlt").innerText = minrlt.toFixed(10);
+            document.getElementById("minrltD").innerText = "$" + minrltD.toFixed(5);
         }
-    if ((isNaN(hourRlt))||!(isFinite(hourRlt))) {
-        document.getElementById("hourRlt").innerText = "-";
-        document.getElementById("hourRltD").innerText = "-"}
+    if ((isNaN(hourrlt))||!(isFinite(hourrlt))) {
+        document.getElementById("hourrlt").innerText = "-";
+        document.getElementById("hourrltD").innerText = "-"}
 
         else {
-            document.getElementById("hourRlt").innerText = hourRlt.toFixed(10);
-            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
+            document.getElementById("hourrlt").innerText = hourrlt.toFixed(10);
+            document.getElementById("hourrltD").innerText = "$" + hourrltD.toFixed(5);
         }
-    if ((isNaN(dayRlt))||!(isFinite(dayRlt))) {
-        document.getElementById("dayRlt").innerText = "-";
-        document.getElementById("dayRltD").innerText = "-"}
+    if ((isNaN(dayrlt))||!(isFinite(dayrlt))) {
+        document.getElementById("dayrlt").innerText = "-";
+        document.getElementById("dayrltD").innerText = "-"}
 
         else {
-            document.getElementById("dayRlt").innerText = dayRlt.toFixed(10);
-            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
+            document.getElementById("dayrlt").innerText = dayrlt.toFixed(10);
+            document.getElementById("dayrltD").innerText = "$" + dayrltD.toFixed(5);
         }
-    if ((isNaN(weekRlt))||!(isFinite(weekRlt))) {
-        document.getElementById("weekRlt").innerText = "-";
-        document.getElementById("weekRltD").innerText = "-"}
+    if ((isNaN(weekrlt))||!(isFinite(weekrlt))) {
+        document.getElementById("weekrlt").innerText = "-";
+        document.getElementById("weekrltD").innerText = "-"}
 
         else {
-            document.getElementById("weekRlt").innerText = weekRlt.toFixed(10);
-            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
+            document.getElementById("weekrlt").innerText = weekrlt.toFixed(10);
+            document.getElementById("weekrltD").innerText = "$" + weekrltD.toFixed(5);
         }
-    if ((isNaN(monthRlt))||!(isFinite(monthRlt))) {
-        document.getElementById("monthRlt").innerText = "-";
-        document.getElementById("monthRltD").innerText = "-"}
+    if ((isNaN(monthrlt))||!(isFinite(monthrlt))) {
+        document.getElementById("monthrlt").innerText = "-";
+        document.getElementById("monthrltD").innerText = "-"}
 
         else {
-            document.getElementById("monthRlt").innerText = monthRlt.toFixed(10);
-            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
+            document.getElementById("monthrlt").innerText = monthrlt.toFixed(10);
+            document.getElementById("monthrltD").innerText = "$" + monthrltD.toFixed(5);
         }
-    if ((isNaN(yearRlt))||!(isFinite(yearRlt))) {
-        document.getElementById("yearRlt").innerText = "-";
-        document.getElementById("yearRltD").innerText = "-"}
+    if ((isNaN(yearrlt))||!(isFinite(yearrlt))) {
+        document.getElementById("yearrlt").innerText = "-";
+        document.getElementById("yearrltD").innerText = "-"}
 
         else {
-            document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
-            document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
+            document.getElementById("yearrlt").innerText = yearrlt.toFixed(10);
+            document.getElementById("yearrltD").innerText = "$" + yearrltD.toFixed(5);
         }
     }
     
