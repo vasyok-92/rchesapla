@@ -18,31 +18,31 @@ function blockAmount() {
             break;
         case 2:
             //Eth - 0.005
-            var blockreward = 0.008;
-            document.getElementById("block-reward").value = 0.008;
+            var blockreward = 0.005;
+            document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
             //Bnb - 0.012
-            var blockreward = 0.012;
-            document.getElementById("block-reward").value = 0.012;
+            var blockreward = 0.018;
+            document.getElementById("block-reward").value = 0.018;
             break;
         case 4: 
             //Matic - 3
-            var blockreward = 3;
-            document.getElementById("block-reward").value = 3;
+            var blockreward = 5;
+            document.getElementById("block-reward").value = 5;
             console.log("matic end");
             break;
         case 5: 
             //SOL - 0.05
-            var blockreward = 0.09;
-            document.getElementById("block-reward").value = 0.09;
+            var blockreward = 0.05;
+            document.getElementById("block-reward").value = 0.05;
             console.log("sol end");
             break;
     default:
             //RLT - 30
             console.log("rlt start");
-            var blockreward = 30;
-            document.getElementById("block-reward").value = 30;
+            var blockreward = 40;
+            document.getElementById("block-reward").value = 40;
             break;
     }
 }
