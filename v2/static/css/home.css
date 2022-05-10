@@ -225,7 +225,7 @@ input::-webkit-inner-spin-button {
 .hero .tabs-layout .tab1-content .box-title {
   background: #1f1f2c;
   padding: 0.3rem 0.5rem;
-  color: white;
+  color: #a9d924;
   border-radius: 0.3rem 0.3rem 0 0;
   font-weight: bold;
 }
@@ -307,6 +307,7 @@ input::-webkit-inner-spin-button {
   background: #1f1f2c;
   border-bottom: none;
   font-weight: bold;
+  color: #a9d924;
   border-radius: 0.3em 0.3em 0 0;
   text-align: center;
 }
