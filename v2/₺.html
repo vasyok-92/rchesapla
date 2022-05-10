@@ -349,12 +349,58 @@
 			</div>
 			<div class="box">
 				<div class="box-title">Kripto Hesapla</div>
-				<div class="box-content">
+<div class="box-content">
 					<table>
 						<tr>
-							<td>YAKINDA EKLENECEK</td>
+							<td class="td-btc">Miktar:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input type="number" class="input-box" id="btc-value" oninput="calculated$()">
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-doge">Tutar:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input class="input-box" type="number" class="form-control" disabled id="coin-resultado">
+									
+								</form>
+							</td>
 						</tr>
 					</table>
+					<table>
+						<tr>
+							<td class="td-btc">Kripto:</td>
+							<td>
+<div class="col-5 col-sm-5 col-md-3">
+                                            <select  id="crypto-type"
+                                                onchange="calculated$()">
+                                                <option value="btc">BTC</option>
+                                                <option value="eth">ETH</option>
+                                                <option value="bnb">BNB </option>
+                                                <option value="doge">DOGE</option>
+                                                <option value="matic">MATIC</option>
+												<option value="sol">SOL</option>
+                                            </select>
+                                        </div>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-doge">Biçim:</td>
+							<td>
+<select class="form-select fs-6" name="coin-type" id="coin-type"
+                                                onchange="calculated$()">
+                                                <option id="euro" value="dolar">USD</option>
+                                                <option id="dollar" value="euro">TRY</option>
+                                            </select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="box-content">
 				</div>
 			</div>
 		</div>
@@ -630,6 +676,7 @@
 	</div>
 </div>
 </section>
+<script src="https://fatihcelikofficialtr.github.io/rchesapla/v2/js/kriptohesapla.js"></script>
 <script src="static/js/alerts.js"></script>		
 <script src="static/js/activateTab.js"></script>
 <script src="static/js/calculator_tr.js"></script>
