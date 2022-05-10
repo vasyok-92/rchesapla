@@ -47,30 +47,6 @@ const monedaSimbolo = ["$", "₺"];
 const precioDollarMonedas = [];
 const precioEuroMonedas = [];
 
-//SELECTORES DE MONEDAS
-let selectBlock = document.getElementById("block-type");
-let selectCrypto = document.getElementById("crypto-type");
-
-//AUTO SELECCIONAR MONEDA PARA CONVERSION
-selectBlock.addEventListener("change", (e) => {
-  if (selectBlock.value === "btc") {
-    document.getElementById("hidden-satoshi").style.display = "block";
-    document.getElementById("hidden-crypto").style.display = "block";
-  } else if(selectBlock.value === "rlt") {
-    document.getElementById("hidden-satoshi").style.display = "none";
-    document.getElementById("hidden-crypto").style.display = "none";
-  } else {
-    document.getElementById("hidden-satoshi").style.display = "none";
-    document.getElementById("hidden-crypto").style.display = "block";
-  }
-
-  selectCrypto.value = selectBlock.value;
-});
-
-//AUTO SELECCIONAR MONEDA PARA CONVERSION INVERSO
-selectCrypto.addEventListener("change", (e) => {
-  selectBlock.value = selectCrypto.value;
-});
 
 //CONSULTA DOLARES API
 let xhReq = new XMLHttpRequest();
