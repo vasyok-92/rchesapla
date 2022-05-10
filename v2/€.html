@@ -31,8 +31,7 @@
 				<a class="link-calc" href="../v3"><img src="../img/rchesaplav3.png" width="25" height="25"></a>
 				<a class="link-calc" href="../v4"><img src="../img/rchesaplav4.png" width="25" height="25"></a>
 				<!--<a class="link-calc" href="../uygulamamiz/RCHesapla_APP.apk"><img src="../img/rchesaplaapk.png" width="25" height="25"></a>-->
-				<a class="link-calc" href="./₺.html">TL Hesapla</a>
-				<a class="link-calc" href="./€.html">Euro Hesapla</a>
+				<a class="link-calc" href="./">Dolar Hesapla</a>
 				<a class="link-calc" href="https://bit.ly/RollerCoinTR">Ücretsiz kayıt ol</a>
 			</div>
 		</div>
@@ -50,10 +49,12 @@
 				<li id="eth-price-api" class="price-eth-price">Yükleniyor..</li>
 				<li class="price-bnb">BNB:</li>
 				<li id="bnb-price-api" class="price-bnb-price">Yükleniyor..</li>
+				<li class="price-matic">MATIC:</li>
+				<li id="matic-price-api" class="price-matic-price">Yükleniyor..</li>
 				<li class="price-sol">SOL:</li>
 				<li id="sol-price-api" class="price-sol-price">Yükleniyor..</li>
 				<li class="price-rlt">RLT:</li>
-				<li class="price-rlt-price">$1</li>
+				<li id="rlt-price-api" class="price-rlt-price">Yükleniyor..</li>
 			</ul>
 		</div>
 	</div>
@@ -205,7 +206,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="distRlt" class="input-box" type="number" onchange="calc(), getData('distRlt')">
+									<input id="distrlt" class="input-box" type="number" onchange="calc(), getData('distrlt')">
 									
 								</form>
 							</td>
@@ -289,7 +290,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="netRlt" class="input-box" type="number" onchange="calc(), getData('netRlt')">
+									<input id="netrlt" class="input-box" type="number" onchange="calc(), getData('netrlt')">
 									
 								</form>
 							</td>
@@ -339,7 +340,7 @@
 						</tr>
 						<tr>
 							<td class="td-rlt">RLT:</td><!-- 30 -->
-							<td class="no-input" id="blockRlt">30</td>
+							<td class="no-input" id="blockrlt">30</td>
 							<td>RLT</td>
 						</tr>
 					</table>
@@ -579,14 +580,14 @@
 							<td class="table-headers">GÜNLÜK</td>
 						</tr>
 						<tr>
-							<td id="minRlt">-</td>
-							<td id="hourRlt">-</td>
-							<td id="dayRlt">-</td>
+							<td id="minrlt">-</td>
+							<td id="hourrlt">-</td>
+							<td id="dayrlt">-</td>
 						</tr>
 						<tr>
-							<td id="minRltD">-</td>
-							<td id="hourRltD">-</td>
-							<td id="dayRltD">-</td>
+							<td id="minrltD">-</td>
+							<td id="hourrltD">-</td>
+							<td id="dayrltD">-</td>
 						</tr>
 						<tr>
 							<td class="table-headers">HAFTALIK</td>
@@ -594,14 +595,14 @@
 							<td class="table-headers">YILLIK</td>
 						</tr>
 						<tr>
-							<td id="weekRlt">-</td>
-							<td id="monthRlt">-</td>
-							<td id="yearRlt">-</td>
+							<td id="weekrlt">-</td>
+							<td id="monthrlt">-</td>
+							<td id="yearrlt">-</td>
 						</tr>
 						<tr>
-							<td id="weekRltD">-</td>
-							<td id="monthRltD">-</td>
-							<td id="yearRltD">-</td>
+							<td id="weekrltD">-</td>
+							<td id="monthrltD">-</td>
+							<td id="yearrltD">-</td>
 						</tr>
 					</table>
 				</div>
@@ -620,7 +621,7 @@
 </section>
 <script src="static/js/alerts.js"></script>		
 <script src="static/js/activateTab.js"></script>
-<script src="static/js/calculator.js"></script>
+<script src="static/js/calculator_eur.js"></script>
 <script>
 	// self executing function here
 	(function () {
@@ -629,7 +630,7 @@
 		calc();
 	})();
 </script>
-<script src="static/js/fetchPrice.js"></script>
+<script src="static/js/fetchPrice_eur.js"></script>
 <script src="static/js/inputPost.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
