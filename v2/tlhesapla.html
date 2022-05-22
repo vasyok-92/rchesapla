@@ -26,19 +26,17 @@
 		<div class="navbar">
 			<div class="container-nav">
 				<a class="logo">RC<span>Hesapla</span>V2</a>
-				<a class="link-calc" href="./nasilkullanilir"><img src="../img/nasilkullanilir.png" width="25" height="25"></a>
-				<a class="link-calc" href="../"><img src="../img/rchesaplav1.png" width="25" height="25"></a>
-				<a class="link-calc" href="../v3"><img src="../img/rchesaplav3.png" width="25" height="25"></a>
-				<a class="link-calc" href="../v4"><img src="../img/rchesaplav4.png" width="25" height="25"></a>
-				<!--<a class="link-calc" href="../uygulamamiz/RCHesapla_APP.apk"><img src="../img/rchesaplaapk.png" width="25" height="25"></a>-->
-				<a class="link-calc" href="./">Dolar Hesapla</a>
+				<a class="link-calc" href="./nasilkullanilir"><img src="../img/nasilkullanilir.png" width="25" height="25"/></a>
+				<a class="link-calc" href="../"><img src="../img/rchesaplav1.png" width="25" height="25"/></a>
+				<a class="link-calc" href="../v3"><img src="../img/rchesaplav3.png" width="25" height="25"/></a>
+				<a class="link-calc" href="../v4"><img src="../img/rchesaplav4.png" width="25" height="25"/></a>
 				<a class="link-calc" href="https://bit.ly/RollerCoinTR">Ücretsiz kayıt ol</a>
 			</div>
 		</div>
 <section class="hero">
 <div class="container">
 	<div class="crypto-price">
-		<div class="price-title">Güncel Döviz</div>
+		<div class="price-title">Güncel Kripto</div>
 		<div class="price-content">
 			<ul>
 				<li class="price-btc">BTC:</li>
@@ -55,6 +53,72 @@
 				<li id="sol-price-api" class="price-sol-price">Yükleniyor..</li>
 				<li class="price-rlt">RLT:</li>
 				<li id="rlt-price-api" class="price-rlt-price">Yükleniyor..</li>
+			</ul>
+		</div>
+	</div>
+	<div class="crypto-price">
+		<div class="price-title">Kripto Hesapla</div>
+		<div class="price-content">
+			<ul>
+				<li class="price-btc">
+					<table>
+						<tr>
+							<td class="td-btc">Miktar:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input type="number" class="input-box" id="btc-value" oninput="calculated$()">
+								</form>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li class="price-btc-price">
+					<table>
+						<tr>
+							<td class="td-btc">Tutar:</td>
+							<td>
+								<form action="text" onsubmit="return false">
+									
+									<input class="input-box" type="number" class="form-control" disabled id="coin-resultado">
+									
+								</form>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li class="price-doge">
+				<table>
+						<tr>
+							<td class="td-btc">Kripto:</td>
+							<td>
+<div class="col-5 col-sm-5 col-md-3">
+                                            <select  id="crypto-type"
+                                                onchange="calculated$()">
+                                                <option value="btc">BTC</option>
+                                                <option value="eth">ETH</option>
+                                                <option value="bnb">BNB </option>
+                                                <option value="doge">DOGE</option>
+                                                <option value="matic">MATIC</option>
+												<option value="sol">SOL</option>
+                                            </select>
+                                        </div>
+							</td>
+						</tr>
+				</table>
+				</li>
+				<li class="price-doge-price">				<table>
+						<tr>
+							<td class="td-doge">Biçim:</td>
+							<td>
+<select class="form-select fs-6" name="coin-type" id="coin-type"
+                                                onchange="calculated$()">
+                                                <option id="euro" value="dolar">USD</option>
+                                                <option id="dollar" value="euro">TRY</option>
+                                            </select>
+							</td>
+						</tr>
+				</table></li>
 			</ul>
 		</div>
 	</div>
@@ -206,7 +270,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="distrlt" class="input-box" type="number" onchange="calc(), getData('distrlt')">
+									<input id="distRlt" class="input-box" type="number" onchange="calc(), getData('distRlt')">
 									
 								</form>
 							</td>
@@ -290,7 +354,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input id="netrlt" class="input-box" type="number" onchange="calc(), getData('netrlt')">
+									<input id="netRlt" class="input-box" type="number" onchange="calc(), getData('netRlt')">
 									
 								</form>
 							</td>
@@ -310,17 +374,17 @@
 					<table>
 						<tr>
 							<td class="td-btc">BTC:</td><!-- 30000 -->
-							<td class="no-input" id="blockBtc">45000</td>
+							<td class="no-input" id="blockBtc">30000</td>
 							<td>SAT <!--(<script src="js/x2.js"></script>)--></td>
 						</tr>
 						<tr>
 							<td class="td-doge">DOGE:</td><!-- 20 -->
-							<td class="no-input" id="blockDoge">40</td>
+							<td class="no-input" id="blockDoge">20</td>
 							<td>DOGE</td>
 						</tr>
 						<tr>
 							<td class="td-eth">ETH:</td><!-- 0.005 -->
-							<td class="no-input" id="blockEth">0.005</td>
+							<td class="no-input" id="blockEth">0.008</td>
 							<td>ETH</td>
 						</tr>
 						<tr>
@@ -335,17 +399,18 @@
 						</tr>
 						<tr>
 							<td class="td-sol">SOL:</td><!-- 0.05 -->
-							<td class="no-input" id="blocksol">0.05</td>
+							<td class="no-input" id="blocksol">0.07</td>
 							<td>SOL</td>
 						</tr>
 						<tr>
 							<td class="td-rlt">RLT:</td><!-- 30 -->
-							<td class="no-input" id="blockrlt">30</td>
+							<td class="no-input" id="blockRlt">45</td>
 							<td>RLT</td>
 						</tr>
 					</table>
 				</div>
 			</div>
+
 		</div>
 		<div id="tab2-content" class="tab2-content">
 			<div class="coin-box btc-box">
@@ -580,14 +645,14 @@
 							<td class="table-headers">GÜNLÜK</td>
 						</tr>
 						<tr>
-							<td id="minrlt">-</td>
-							<td id="hourrlt">-</td>
-							<td id="dayrlt">-</td>
+							<td id="minRlt">-</td>
+							<td id="hourRlt">-</td>
+							<td id="dayRlt">-</td>
 						</tr>
 						<tr>
-							<td id="minrltD">-</td>
-							<td id="hourrltD">-</td>
-							<td id="dayrltD">-</td>
+							<td id="minRltD">-</td>
+							<td id="hourRltD">-</td>
+							<td id="dayRltD">-</td>
 						</tr>
 						<tr>
 							<td class="table-headers">HAFTALIK</td>
@@ -595,14 +660,14 @@
 							<td class="table-headers">YILLIK</td>
 						</tr>
 						<tr>
-							<td id="weekrlt">-</td>
-							<td id="monthrlt">-</td>
-							<td id="yearrlt">-</td>
+							<td id="weekRlt">-</td>
+							<td id="monthRlt">-</td>
+							<td id="yearRlt">-</td>
 						</tr>
 						<tr>
-							<td id="weekrltD">-</td>
-							<td id="monthrltD">-</td>
-							<td id="yearrltD">-</td>
+							<td id="weekRltD">-</td>
+							<td id="monthRltD">-</td>
+							<td id="yearRltD">-</td>
 						</tr>
 					</table>
 				</div>
@@ -619,6 +684,7 @@
 	</div>
 </div>
 </section>
+<script src="https://fatihcelikofficialtr.github.io/rchesapla/v2/js/kriptohesapla.js"></script>
 <script src="static/js/alerts.js"></script>		
 <script src="static/js/activateTab.js"></script>
 <script src="static/js/calculator_tr.js"></script>
