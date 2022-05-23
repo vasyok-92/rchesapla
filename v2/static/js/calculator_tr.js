@@ -483,21 +483,21 @@ calc = function(){
             document.getElementById("yearsolD").innerText = "₺" + yearsolD.toFixed(5);
         }
 //ROLLERTOKEN HESAPLAMA ARACI//
-    var rltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
-        rltPrice1 = document.getElementById('rlt-price-api').innerHTML
-        rltPrice = Number(rltPrice1.substring(1))
-        minRlt = (Number(rltPower)*blockRlt)/(Number(netRlt)*1000)
-        minRltD = Number(minRlt) * rltPrice
+    var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
+        RltPrice1 = document.getElementById('Rlt-price-api').innerHTML
+        RltPrice = Number(RltPrice1.substring(1))
+        minRlt = (Number(RltPower)*blockRlt)/(Number(netRlt)*1000)
+        minRltD = Number(minRlt) * RltPrice
         hourRlt = Number(minRlt) * 6
-        hourRltD = Number(hourRlt) * rltPrice
+        hourRltD = Number(hourRlt) * RltPrice
         dayRlt = Number(hourRlt) * 24 
-        dayRltD = Number(dayRlt) * rltPrice
+        dayRltD = Number(dayRlt) * RltPrice
         weekRlt = Number(dayRlt) * 7
-        weekRltD = Number(weekRlt) * rltPrice
+        weekRltD = Number(weekRlt) * RltPrice
         monthRlt = Number(dayRlt) * 30
-        monthRltD = Number(monthRlt) * rltPrice
+        monthRltD = Number(monthRlt) * RltPrice
         yearRlt = Number(dayRlt) * 365
-        yearRltD = Number(yearRlt) * rltPrice
+        yearRltD = Number(yearRlt) * RltPrice
 
     if ((isNaN(minRlt))||!(isFinite(minRlt))) {
         document.getElementById("minRlt").innerText = "● ● ●"}

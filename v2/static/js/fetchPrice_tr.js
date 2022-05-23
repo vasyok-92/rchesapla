@@ -356,53 +356,53 @@ calculate = function(prices){
             document.getElementById("yearsolD").innerText = "₺" + yearsolD.toFixed(5);
         }
 	/////////////////////////////////////////////////
-    // rlt CALC 10 MIN
-    minrlt = document.getElementById("minrlt").innerHTML;
-    minrltD = Number(minrlt) * rltPrice
-    if (isNaN(minrltD)) {
-        document.getElementById("minrltD").innerText = "● ● ●"}
+    // Rlt CALC 10 MIN
+    minRlt = document.getElementById("minRlt").innerHTML;
+    minRltD = Number(minRlt) * RltPrice
+    if (isNaN(minRltD)) {
+        document.getElementById("minRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("minrltD").innerText = "₺" + minrltD.toFixed(5);
+            document.getElementById("minRltD").innerText = "₺" + minRltD.toFixed(5);
         }
-    // rlt CALC HOUR
-    hourrlt = document.getElementById("hourrlt").innerHTML;
-    hourrltD = Number(hourrlt) * rltPrice
-    if (isNaN(hourrltD)) {
-        document.getElementById("hourrltD").innerText = "● ● ●"}
+    // Rlt CALC HOUR
+    hourRlt = document.getElementById("hourRlt").innerHTML;
+    hourRltD = Number(hourRlt) * RltPrice
+    if (isNaN(hourRltD)) {
+        document.getElementById("hourRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("hourrltD").innerText = "₺" + hourrltD.toFixed(5);
+            document.getElementById("hourRltD").innerText = "₺" + hourRltD.toFixed(5);
         }
-    // rlt CALC DAY
-    dayrlt = document.getElementById("dayrlt").innerHTML;
-    dayrltD = Number(dayrlt) * rltPrice
-    if (isNaN(dayrltD)) {
-        document.getElementById("dayrltD").innerText = "● ● ●"}
+    // Rlt CALC DAY
+    dayRlt = document.getElementById("dayRlt").innerHTML;
+    dayRltD = Number(dayRlt) * RltPrice
+    if (isNaN(dayRltD)) {
+        document.getElementById("dayRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("dayrltD").innerText = "₺" + dayrltD.toFixed(5);
+            document.getElementById("dayRltD").innerText = "₺" + dayRltD.toFixed(5);
         }
-    // rlt CALC WEEK
-    weekrlt = document.getElementById("weekrlt").innerHTML;
-    weekrltD = Number(weekrlt) * rltPrice
-    if (isNaN(weekrltD)) {
-        document.getElementById("weekrltD").innerText = "● ● ●"}
+    // Rlt CALC WEEK
+    weekRlt = document.getElementById("weekRlt").innerHTML;
+    weekRltD = Number(weekRlt) * RltPrice
+    if (isNaN(weekRltD)) {
+        document.getElementById("weekRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("weekrltD").innerText = "₺" + weekrltD.toFixed(5);
+            document.getElementById("weekRltD").innerText = "₺" + weekRltD.toFixed(5);
         }    
-    // rlt CALC MONTH
-    monthrlt = document.getElementById("monthrlt").innerHTML;
-    monthrltD = Number(monthrlt) * rltPrice
-    if (isNaN(minrltD)) {
-        document.getElementById("monthrltD").innerText = "● ● ●"}
+    // Rlt CALC MONTH
+    monthRlt = document.getElementById("monthRlt").innerHTML;
+    monthRltD = Number(monthRlt) * RltPrice
+    if (isNaN(minRltD)) {
+        document.getElementById("monthRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("monthrltD").innerText = "₺" + monthrltD.toFixed(5);
+            document.getElementById("monthRltD").innerText = "₺" + monthRltD.toFixed(5);
         }    
-    // rlt CALC YEAR
-    yearrlt = document.getElementById("yearrlt").innerHTML;
-    yearrltD = Number(yearrlt) * rltPrice
-    if (isNaN(yearrltD)) {
-        document.getElementById("yearrltD").innerText = "● ● ●"}
+    // Rlt CALC YEAR
+    yearRlt = document.getElementById("yearRlt").innerHTML;
+    yearRltD = Number(yearRlt) * RltPrice
+    if (isNaN(yearRltD)) {
+        document.getElementById("yearRltD").innerText = "● ● ●"}
         else {
-            document.getElementById("yearrltD").innerText = "₺" + yearrltD.toFixed(5);
+            document.getElementById("yearRltD").innerText = "₺" + yearRltD.toFixed(5);
         }
     }
 
