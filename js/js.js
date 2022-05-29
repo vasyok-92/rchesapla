@@ -19,7 +19,7 @@ function blockAmount() {
         case 2:
             //Eth - 0.005
             var blockreward = 0.005;
-            document.getElementById("block-reward").value = 0.0085;
+            document.getElementById("block-reward").value = 0.005;
             break;
         case 3:
             //Bnb - 0.012

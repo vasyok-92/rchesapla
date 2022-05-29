@@ -8,23 +8,23 @@ function blockAmount() {
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
             //Bitcoin - 30000
-            var blockreward = 30000;
-            document.getElementById("block-reward").value = 30000;
+            var blockreward = 40000;
+            document.getElementById("block-reward").value = 40000;
             break;
         case 1:
             //Doge - 20
-            var blockreward = 20;
-            document.getElementById("block-reward").value = 20;
+            var blockreward = 25;
+            document.getElementById("block-reward").value = 25;
             break;
         case 2:
             //Eth - 0.005
-            var blockreward = 0.008;
-            document.getElementById("block-reward").value = 0.008;
+            var blockreward = 0.005;
+            document.getElementById("block-reward").value = 0.0085;
             break;
         case 3:
             //Bnb - 0.012
-            var blockreward = 0.012;
-            document.getElementById("block-reward").value = 0.012;
+            var blockreward = 0.018;
+            document.getElementById("block-reward").value = 0.018;
             break;
         case 4: 
             //Matic - 3
@@ -41,8 +41,8 @@ function blockAmount() {
     default:
             //RLT - 30
             console.log("rlt start");
-            var blockreward = 45;
-            document.getElementById("block-reward").value = 45;
+            var blockreward = 30;
+            document.getElementById("block-reward").value = 30;
             break;
     }
 }
