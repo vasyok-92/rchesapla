@@ -13,8 +13,8 @@ function blockAmount() {
             break;
         case 1:
             //Doge - 20
-            var blockreward = 25;
-            document.getElementById("block-reward").value = 25;
+            var blockreward = 20;
+            document.getElementById("block-reward").value = 20;
             break;
         case 2:
             //Eth - 0.005
@@ -23,8 +23,8 @@ function blockAmount() {
             break;
         case 3:
             //Bnb - 0.012
-            var blockreward = 0.018;
-            document.getElementById("block-reward").value = 0.018;
+            var blockreward = 0.012;
+            document.getElementById("block-reward").value = 0.012;
             break;
         case 4: 
             //Matic - 3
@@ -34,15 +34,15 @@ function blockAmount() {
             break;
         case 5: 
             //SOL - 0.05
-            var blockreward = 0.07;
-            document.getElementById("block-reward").value = 0.07;
+            var blockreward = 0.1;
+            document.getElementById("block-reward").value = 0.1;
             console.log("sol end");
             break;
     default:
             //RLT - 30
             console.log("rlt start");
-            var blockreward = 30;
-            document.getElementById("block-reward").value = 30;
+            var blockreward = 45;
+            document.getElementById("block-reward").value = 45;
             break;
     }
 }
