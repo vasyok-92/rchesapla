@@ -12,6 +12,7 @@
 <!--===============================================================================================-->
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sosyalmedya.css">
+	<link rel="stylesheet" href="css/menüler.css">
 <!--===============================================================================================-->
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
 	<link rel="icon" href="https://rollercoin.com/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
@@ -22,8 +23,14 @@
 	<meta name="keywords" content="rchesapla, turkcraft01, pb01adana, rollercoin, rollercoin hesapla, rollercoin calculator, rollercoin güç hesaplama"/>
 	<meta name="description" content="Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001000 BTC ile başlarsın! 🧮">
 <!--===============================================================================================-->
-	<img border="0" style="position: absolute; top: 0px;" alt="TÜRKİYE CANIM FEDA"
-	src="https://img.webme.com/pic/h/htmlweb-master/sol_bayrak.gif" />
+<div class="mobiluyumlumenu" id="benimmenum">
+  <a href="./" class="aktif">Ana Sayfa</a>
+  <a href="https://fatihcelikofficialtr.github.io/rchesapla/nasilkullanilir/">Nasıl Kullanılır?</a>
+  <a href="./az.html">Azerbaycan Dili</a>
+  <a href="javascript:void(0);" class="simge" onclick="menuacmafonksiyonu()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>	
 <!--===============================================================================================-->
     <meta property="og:title" content="RCHesapla - Kişisel Kazım Gücünü Hesapla!">
     <meta property="og:description" content="🧮 ► Kişisel kazım gücünü hesapla! | Anlık, günlük, haftalık, aylık aynı zamanda yıllık olarak hesaplama yapabilirsin. | Ayrıca https://bit.ly/RollerCoinTR referans linkiyle kayıt olursan 0,00001000 BTC ile başlarsın!">
@@ -34,6 +41,10 @@
 <script src="./js/kriptolistesi.js"></script>	
 <!--===============================================================================================-->
 </head>
+<!--===============================================================================================
+<img border="0" style="position: absolute; top: 0px;" alt="TÜRKİYE CANIM FEDA"
+	src="https://img.webme.com/pic/h/htmlweb-master/sol_bayrak.gif" />
+<!--===============================================================================================-->
 <body onload="calculateGoalPower(), blockAmount()">
     <div class="jumbotron jumbotron-fluid">
         <div class="row no-gutters">
@@ -41,6 +52,7 @@
                 <img class="img-fluid header-margin" src="img/logo.png" alt="">
 				<!--<img src="./img/hamster_loader3.gif" alt="Avatar" class="avatar">-->
             </div>
+
 <!--===============================================================================================-->
             <div class="header-margin">
                 <div class="container">

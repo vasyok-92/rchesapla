@@ -62,3 +62,13 @@ document.getElementById("clock").innerHTML= "<b>Tarih:</b> " + date + " " + mont
 setTimeout("refrClock()",1000);
 }
 refrClock();
+
+
+function menuacmafonksiyonu() {
+    var x = document.getElementById("benimmenum");
+    if (x.className === "mobiluyumlumenu") {
+        x.className += " responsive";
+    } else {
+        x.className = "mobiluyumlumenu";
+    }
+}
