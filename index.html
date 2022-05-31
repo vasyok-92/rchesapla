@@ -31,62 +31,7 @@
     <meta property="og:url" content="https://fatihcelikofficialtr.github.io/rchesapla/">
 <!--===============================================================================================-->
 <coinyep-widget-marquee list="BTC,ETH,BNB,DOGE,MATIC,SOL" currency="TRY" lang="tr"></coinyep-widget-marquee>
-<script src="./js/kriptolistesi.js"></script>
-<!--===============================================================================================-->
-<script type="text/javascript">
-function dcountup(startingdate, baseunit){
-    this.currentTime=new Date()
-    this.startingdate=new Date(startingdate)
-    this.timesup=false
-    this.baseunit=baseunit
-    this.start()
-}
-dcountup.prototype.oncountup=function(){} //default action for "oncountup"
-dcountup.prototype.start=function(){
-    var thisobj=this
-    this.currentTime.setSeconds(this.currentTime.getSeconds()+1)
-    var timediff=(this.currentTime-this.startingdate)/1000 //difference btw target date and current date, in seconds
-    var oneMinute=60 //minute unit in seconds
-    var oneHour=60*60 //hour unit in seconds
-    var oneDay=60*60*24 //day unit in seconds
-    var dayfield=Math.floor(timediff/oneDay)
-    var hourfield=Math.floor((timediff-dayfield*oneDay)/oneHour)
-    var minutefield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour)/oneMinute)
-    var secondfield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour-minutefield*oneMinute))
-    if (this.baseunit=="hours"){ //if base unit is hours, set "hourfield" to be topmost level
-        hourfield=dayfield*24+hourfield
-        dayfield="n/a"
-    }
-    else if (this.baseunit=="minutes"){ //if base unit is minutes, set "minutefield" to be topmost level
-        minutefield=dayfield*24*60+hourfield*60+minutefield
-        dayfield=hourfield="n/a"
-    }
-    else if (this.baseunit=="seconds"){ //if base unit is seconds, set "secondfield" to be topmost level
-        var secondfield=timediff
-        dayfield=hourfield=minutefield="n/a"
-    }
-    var result={days: dayfield, hours:hourfield, minutes:minutefield, seconds:secondfield}
-    this.oncountup(result)
-    setTimeout(function(){thisobj.start()}, 1000) //update results every second
-}
-</script>	
-<!--===============================================================================================-->
-<!--<link rel="stylesheet" media="screen, print, handheld" type="text/css" href="https://www.eniyisozler.net/Html-Kodlari/duyuru-panosu-ekle-7.css">
-<div class="css3droppanel">
-<input type="checkbox" id="paneltoggle" />
-<label for="paneltoggle"></label>
-<div class="content">
-<font size="4" color="#333333">
-<p><b>RCHesapla - Güncelleme! (27.12.2021)™</b><br><br>
-
-Eklenen özellikler:<br>
-► <a href="./v2"><img name="sasdasd"src="img/rchesaplav2.png" width="35" height="35"></a> | Daha ayrıntılı şekilde kazım gücünü öğrenebilirsin.<br>
-► <a href="./v3"><img name="sasdasd"src="img/rchesaplav3.png" width="35" height="35"></a> | Basit şekilde tasarlanıp olup kazım gücünüze göre hangisi daha iyi olduğunuzu öğrenin.<br>
-Resimlere tıklayarak yeni sürümlere ulaşabilirsiniz.!
-</p>
-</font>
-</div>
-</div>-->
+<script src="./js/kriptolistesi.js"></script>	
 <!--===============================================================================================-->
 </head>
 <body onload="calculateGoalPower(), blockAmount()">
@@ -110,7 +55,7 @@ Resimlere tıklayarak yeni sürümlere ulaşabilirsiniz.!
             </div>
         </div>
     </div>
-
+<!--===============================================================================================-->
 	<div class="edger row no-gutters">
         <div class="col-md-6 no-gutters inputWrapper">
             <!-- Network power input and select -->
@@ -192,6 +137,7 @@ Resimlere tıklayarak yeni sürümlere ulaşabilirsiniz.!
 <a href="./v4"><img src="img/rchesaplav4.png" width="25" height="25"></a>
 <!--<a href="./uygulamamiz/RCHesapla_APP.apk"><img src="img/rchesaplaapk.png" width="25" height="25"></a>-->
 </p>
+<!--===============================================================================================-->
 			<!--<div class="social-menu">
                 <ul>
                     <li><a title="Tik Tok" href="https://www.tiktok.com/@fatihcelikofficial" target="blank"><i class="fab fa-tiktok"></i></a></li>
@@ -204,7 +150,7 @@ Resimlere tıklayarak yeni sürümlere ulaşabilirsiniz.!
 
 		</div>
     </div>
-
+<!--===============================================================================================-->
 	<footer class="page-footer spacing font-small gray"><hr class="new4"/>
             <div class="text-center">
                 <p>RCHesapla, Rollercoin tarafından desteklenmemektedir ve hizmet(ler)inin üretimi ve
