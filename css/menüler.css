@@ -34,8 +34,15 @@ body {
   color: black;
 }
 
-.active {
+.logo {
   background-color: #04AA6D;
+  color: white;
+  max-width: auto;
+  max-height: auto;
+}
+
+.active {
+  background-color: orange;
   color: white;
   max-width: auto;
   max-height: auto;
