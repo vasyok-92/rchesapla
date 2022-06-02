@@ -10,32 +10,62 @@ function blockAmount() {
             //Bitcoin - 30000
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             break;
         case 1:
             //Doge - 20
             var blockreward = 20;
             document.getElementById("block-reward").value = 20;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             break;
         case 2:
             //Eth - 0.005
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             break;
         case 3:
             //Bnb - 0.012
             var blockreward = 0.012;
             document.getElementById("block-reward").value = 0.012;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             break;
         case 4: 
             //Matic - 3
             var blockreward = 3;
             document.getElementById("block-reward").value = 3;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             console.log("matic end");
             break;
         case 5: 
             //SOL - 0.05
             var blockreward = 0.1;
             document.getElementById("block-reward").value = 0.1;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             console.log("sol end");
             break;
     default:
@@ -43,6 +73,11 @@ function blockAmount() {
             console.log("rlt start");
             var blockreward = 45;
             document.getElementById("block-reward").value = 45;
+			document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
+			document.getElementById("daily").innerHTML = "Hesaplanmadı!";
+			document.getElementById("weekly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("monthly").innerHTML = "Hesaplanmadı!";
+			document.getElementById("yearly").innerHTML = "Hesaplanmadı!";
             break;
     }
 }
