@@ -308,8 +308,8 @@ function blockAmount() {
   switch (document.getElementById("block-type").selectedIndex) {
     case 0:
       //BITCOIN BLOK ÖDÜLÜ > 30000
-      var blockreward = 40000;
-      document.getElementById("block-reward").value = 40000;
+      var blockreward = 45000;
+      document.getElementById("block-reward").value = 45000;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -324,8 +324,8 @@ function blockAmount() {
       break;
     case 1:
       //DOGE BLOK ÖDÜLÜ > 20
-      var blockreward = 25;
-      document.getElementById("block-reward").value = 25;
+      var blockreward = 30;
+      document.getElementById("block-reward").value = 30;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -351,8 +351,8 @@ function blockAmount() {
       break;
     case 3:
       //BNB BLOK ÖDÜLÜ > 0.012
-      var blockreward = 0.018;
-      document.getElementById("block-reward").value = 0.018;
+      var blockreward = 0.012;
+      document.getElementById("block-reward").value = 0.012;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -378,8 +378,8 @@ function blockAmount() {
       break;
 	case 5:
       //SOL BLOK ÖDÜLÜ > 0.05
-      var blockreward = 0.07;
-      document.getElementById("block-reward").value = 0.07;
+      var blockreward = 0.05;
+      document.getElementById("block-reward").value = 0.05;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
