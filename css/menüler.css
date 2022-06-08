@@ -18,7 +18,6 @@ body {
   max-width: auto;
   max-height: auto;
 }
-
 .topnav a {
   float: left;
   color: white;
@@ -28,8 +27,28 @@ body {
   max-width: auto;
   max-height: auto;
 }
-
 .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sag {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  max-width: auto;
+  max-height: auto;
+}
+.sag a {
+  float: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  max-width: auto;
+  max-height: auto;
+}
+.sag a:hover {
   background-color: #ddd;
   color: black;
 }
