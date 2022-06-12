@@ -324,8 +324,8 @@ function blockAmount() {
       break;
     case 1:
       //DOGE BLOK ÖDÜLÜ > 20
-      var blockreward = 20;
-      document.getElementById("block-reward").value = 20;
+      var blockreward = 30;
+      document.getElementById("block-reward").value = 30;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
