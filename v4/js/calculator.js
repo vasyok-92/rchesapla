@@ -338,8 +338,8 @@ function blockAmount() {
       break;
     case 2:
       //ETH BLOK ÖDÜLÜ > 0.005
-      var blockreward = 0.005;
-      document.getElementById("block-reward").value = 0.005;
+      var blockreward = 0.0075;
+      document.getElementById("block-reward").value = 0.0075;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
