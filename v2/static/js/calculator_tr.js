@@ -10,18 +10,16 @@ calc = function(){
         distEth = document.getElementById("distEth").value,
 		distbnb = document.getElementById("distbnb").value,
 		distmatic = document.getElementById("distmatic").value,
-		distsol = document.getElementById("distsol").value,
-        distRlt = document.getElementById("distRlt").value;
+		distsol = document.getElementById("distsol").value;
 
     var netBtc = document.getElementById("netBtc").value,
         netDoge = document.getElementById("netDoge").value,
         netEth = document.getElementById("netEth").value,
 		netbnb = document.getElementById("netbnb").value,
 		netmatic = document.getElementById("netmatic").value,
-		netsol = document.getElementById("netsol").value,
-        netRlt = document.getElementById("netRlt").value;
+		netsol = document.getElementById("netsol").value;
         // Calc Total Net Power
-        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netsol) + Number(netRlt);
+        totalNet = Number(netBtc) + Number(netDoge) + Number(netEth) + Number(netbnb) + Number(netmatic) + Number(netsol);
     document.getElementById("totalNet").innerText = totalNet.toFixed(3);
 
     var blockBtc = document.getElementById("blockBtc").innerText/100000000,
@@ -29,8 +27,8 @@ calc = function(){
         blockEth = document.getElementById("blockEth").innerText,
 		blockbnb = document.getElementById("blockbnb").innerText,
 		blockmatic = document.getElementById("blockmatic").innerText,
-		blocksol = document.getElementById("blocksol").innerText,
-        blockRlt = document.getElementById("blockRlt").innerText;
+		blocksol = document.getElementById("blocksol").innerText;
+
     
 //BITCOIN HESAPLAMA ARACI//
     var btcPower = ((Number(totalRate)/1000) * Number(distBtc))/100
@@ -481,83 +479,6 @@ calc = function(){
         document.getElementById("yearsolD").innerText = "● ● ●"}
         else {
             document.getElementById("yearsolD").innerText = "₺" + yearsolD.toFixed(5);
-        }
-//ROLLERTOKEN HESAPLAMA ARACI//
-    var RltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
-        RltPrice1 = document.getElementById('Rlt-price-api').innerHTML
-        RltPrice = Number(RltPrice1.substring(1))
-        minRlt = (Number(RltPower)*blockRlt)/(Number(netRlt)*1000)
-        minRltD = Number(minRlt) * RltPrice
-        hourRlt = Number(minRlt) * 6
-        hourRltD = Number(hourRlt) * RltPrice
-        dayRlt = Number(hourRlt) * 24 
-        dayRltD = Number(dayRlt) * RltPrice
-        weekRlt = Number(dayRlt) * 7
-        weekRltD = Number(weekRlt) * RltPrice
-        monthRlt = Number(dayRlt) * 30
-        monthRltD = Number(monthRlt) * RltPrice
-        yearRlt = Number(dayRlt) * 365
-        yearRltD = Number(yearRlt) * RltPrice
-
-    if ((isNaN(minRlt))||!(isFinite(minRlt))) {
-        document.getElementById("minRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("minRlt").innerText = minRlt.toFixed(10);
-        }
-    if ((isNaN(hourRlt))||!(isFinite(hourRlt))) {
-        document.getElementById("hourRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("hourRlt").innerText = hourRlt.toFixed(10);
-        }
-    if ((isNaN(dayRlt))||!(isFinite(dayRlt))) {
-        document.getElementById("dayRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("dayRlt").innerText = dayRlt.toFixed(10);
-        }
-    if ((isNaN(weekRlt))||!(isFinite(weekRlt))) {
-        document.getElementById("weekRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("weekRlt").innerText = weekRlt.toFixed(10);
-        }
-    if ((isNaN(monthRlt))||!(isFinite(monthRlt))) {
-        document.getElementById("monthRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("monthRlt").innerText = monthRlt.toFixed(10);
-        }
-    if ((isNaN(yearRlt))||!(isFinite(yearRlt))) {
-        document.getElementById("yearRlt").innerText = "● ● ●"}
-        else {
-            document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
-        }
-    if ((isNaN(minRltD))||!(isFinite(minRltD))) {
-        document.getElementById("minRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("minRltD").innerText = "₺" + minRltD.toFixed(5);
-        }
-    if ((isNaN(hourRltD))||!(isFinite(hourRltD))) {
-        document.getElementById("hourRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("hourRltD").innerText = "₺" + hourRltD.toFixed(5);
-        }
-    if ((isNaN(dayRltD))||!(isFinite(dayRltD))) {
-        document.getElementById("dayRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("dayRltD").innerText = "₺" + dayRltD.toFixed(5);
-        }
-    if ((isNaN(weekRltD))||!(isFinite(weekRltD))) {
-        document.getElementById("weekRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("weekRltD").innerText = "₺" + weekRltD.toFixed(5);
-        }
-    if ((isNaN(monthRltD))||!(isFinite(monthRltD))) {
-        document.getElementById("monthRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("monthRltD").innerText = "₺" + monthRltD.toFixed(5);
-        }
-    if ((isNaN(yearRltD))||!(isFinite(yearRltD))) {
-        document.getElementById("yearRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("yearRltD").innerText = "₺" + yearRltD.toFixed(5);
         }
     }
     

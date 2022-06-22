@@ -52,8 +52,6 @@
 				<li id="matic-price-api" class="price-matic-price">Yükleniyor..</li>
 				<li class="price-sol">SOL:</li>
 				<li id="sol-price-api" class="price-sol-price">Yükleniyor..</li>
-				<li class="price-rlt">RLT:</li>
-				<li id="rlt-price-api" class="price-rlt-price">Yükleniyor..</li>
 			</ul>
 		</div>
 	</div>
@@ -172,7 +170,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input class="input-box" value="1 PH = 1000 TH" disabled>
+									<input class="input-box" value="1 PH = 1000" disabled>
 									
 								</form>
 							</td>
@@ -183,7 +181,7 @@
 							<td>
 								<form action="text" onsubmit="return false">
 									
-									<input class="input-box" value="1 PH = 1000 TH" disabled>
+									<input class="input-box" value="1 PH = 1000" disabled>
 									
 								</form>
 							</td>
@@ -266,17 +264,6 @@
 							</td>
 							<td>%</td>
 						</tr>
-						<tr>
-							<td class="td-rlt">RLT:</td>
-							<td>
-								<form action="text" onsubmit="return false">
-									
-									<input id="distRlt" class="input-box" type="number" onchange="calc(), getData('distRlt')">
-									
-								</form>
-							</td>
-							<td>%</td>
-						</tr>
 					</table>
 				</div>
 			</div>
@@ -351,17 +338,6 @@
 							<td>EH/s</td>
 						</tr>
 						<tr>
-							<td class="td-rlt">RLT:</td>
-							<td>
-								<form action="text" onsubmit="return false">
-									
-									<input id="netRlt" class="input-box" type="number" onchange="calc(), getData('netRlt')">
-									
-								</form>
-							</td>
-							<td>EH/s</td>
-						</tr>
-						<tr>
 							<td>Toplam</td>
 							<td class="no-input" id="totalNet">-</td>
 							<td>EH/s</td>
@@ -402,11 +378,6 @@
 							<td class="td-sol">SOL:</td><!-- 0.05 -->
 							<td class="no-input" id="blocksol">0.05</td>
 							<td>SOL</td>
-						</tr>
-						<tr>
-							<td class="td-rlt">RLT:</td><!-- 30 -->
-							<td class="no-input" id="blockRlt">30</td>
-							<td>RLT</td>
 						</tr>
 					</table>
 				</div>
@@ -636,15 +607,6 @@
 					</table>
 				</div>
 			</div>
-			<div class="coin-box rlt-box">
-				<div class="box-title"><img src="../img/svg_rc/rlt.svg" width="25" height="25"/></div>
-				<div class="tab-content">
-					<table><center>
-					<a><img src="https://rollercoin.com/static/img/icon/hamster_loader.gif" width="auto" height="100"/></a>
-					</center>
-					</table>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div class="info">
@@ -652,7 +614,7 @@
 		<span style="color: red; font-family: Permanent Marker;">RCHesaplaV2 - Kisisel kazım gücünüzü hesaplayın!</span>
 		</p>
 		<p>
-<span style="color: #fcff01; font-family: Yanone Kaffeesatz;">Hesaplama sistemi: <b>BITCOIN</b>, <b>DOGECOIN</b>, <b>ETHEREUM</b>, <b>BINANCECOIN</b>, <b>POLYGON</b>, <b>SOLANA</b> ve <b>ROLLERTOKEN</b>!</span>
+<span style="color: #fcff01; font-family: Yanone Kaffeesatz;">Hesaplama sistemi: <b>BITCOIN</b>, <b>DOGECOIN</b>, <b>ETHEREUM</b>, <b>BINANCECOIN</b>, <b>POLYGON</b> ve <b>SOLANA</b>!</span>
 		</p>
 	</div>
 </div>
