@@ -36,8 +36,7 @@ getResults = function(fetch_data){
 	bnbPrice = fetch_data.binancecoin.try
 	maticPrice = fetch_data.zelcash.try
 	solPrice = fetch_data.solana.try
-	rltPrice = fetch_data.tether.try
-    return [btcPrice, dogePrice, ethPrice, bnbPrice, maticPrice, solPrice, rltPrice]
+    return [btcPrice, dogePrice, ethPrice, bnbPrice, maticPrice, solPrice]
 }
 
 postResults = function(prices){
@@ -47,7 +46,6 @@ postResults = function(prices){
 	document.getElementById("bnb-price-api").innerHTML = prices[3] + "₺";
 	document.getElementById("matic-price-api").innerHTML = prices[4] + "₺";
 	document.getElementById("sol-price-api").innerHTML = prices[5] + "₺";
-	document.getElementById("rlt-price-api").innerHTML = prices[6] + "₺";
 }
 
 //////////////////////////////
@@ -58,14 +56,13 @@ calculate = function(prices){
 		bnbPrice = prices[3]
 		maticPrice = prices[4]
 		solPrice = prices[5]
-		rltPrice = prices[6]
 		
     /////////////////////////////////////////////////
     // BTC CALC 10 MIN
     minBtc = document.getElementById("minBtc").innerHTML;
     minBtcD = Number(minBtc) * btcPrice
     if (isNaN(minBtcD)) {
-        document.getElementById("minBtcD").innerText = "● ● ●"}
+        document.getElementById("minBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minBtcD").innerText = "₺" + minBtcD.toFixed(5);
         }
@@ -73,7 +70,7 @@ calculate = function(prices){
     hourBtc = document.getElementById("hourBtc").innerHTML;
     hourBtcD = Number(hourBtc) * btcPrice
     if (isNaN(hourBtcD)) {
-        document.getElementById("hourBtcD").innerText = "● ● ●"}
+        document.getElementById("hourBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hourBtcD").innerText = "₺" + hourBtcD.toFixed(5);
         }
@@ -81,7 +78,7 @@ calculate = function(prices){
     dayBtc = document.getElementById("dayBtc").innerHTML;
     dayBtcD = Number(dayBtc) * btcPrice
     if (isNaN(dayBtcD)) {
-        document.getElementById("dayBtcD").innerText = "● ● ●"}
+        document.getElementById("dayBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("dayBtcD").innerText = "₺" + dayBtcD.toFixed(5);
         }
@@ -89,7 +86,7 @@ calculate = function(prices){
     weekBtc = document.getElementById("weekBtc").innerHTML;
     weekBtcD = Number(weekBtc) * btcPrice
     if (isNaN(weekBtcD)) {
-        document.getElementById("weekBtcD").innerText = "● ● ●"}
+        document.getElementById("weekBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weekBtcD").innerText = "₺" + weekBtcD.toFixed(5);
         }    
@@ -97,7 +94,7 @@ calculate = function(prices){
     monthBtc = document.getElementById("monthBtc").innerHTML;
     monthBtcD = Number(monthBtc) * btcPrice
     if (isNaN(minBtcD)) {
-        document.getElementById("monthBtcD").innerText = "● ● ●"}
+        document.getElementById("monthBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthBtcD").innerText = "₺" + monthBtcD.toFixed(5);
         }    
@@ -105,7 +102,7 @@ calculate = function(prices){
     yearBtc = document.getElementById("yearBtc").innerHTML;
     yearBtcD = Number(yearBtc) * btcPrice
     if (isNaN(yearBtcD)) {
-        document.getElementById("yearBtcD").innerText = "● ● ●"}
+        document.getElementById("yearBtcD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearBtcD").innerText = "₺" + yearBtcD.toFixed(5);
         }
@@ -114,7 +111,7 @@ calculate = function(prices){
     minDoge = document.getElementById("minDoge").innerHTML;
     minDogeD = Number(minDoge) * dogePrice
     if (isNaN(minDogeD)) {
-        document.getElementById("minDogeD").innerText = "● ● ●"}
+        document.getElementById("minDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minDogeD").innerText = "₺" + minDogeD.toFixed(5);
         }
@@ -122,7 +119,7 @@ calculate = function(prices){
     hourDoge = document.getElementById("hourDoge").innerHTML;
     hourDogeD = Number(hourDoge) * dogePrice
     if (isNaN(hourDogeD)) {
-        document.getElementById("hourDogeD").innerText = "● ● ●"}
+        document.getElementById("hourDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hourDogeD").innerText = "₺" + hourDogeD.toFixed(5);
         }
@@ -130,7 +127,7 @@ calculate = function(prices){
     dayDoge = document.getElementById("dayDoge").innerHTML;
     dayDogeD = Number(dayDoge) * dogePrice
     if (isNaN(dayDogeD)) {
-        document.getElementById("dayDogeD").innerText = "● ● ●"}
+        document.getElementById("dayDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("dayDogeD").innerText = "₺" + dayDogeD.toFixed(5);
         }
@@ -138,7 +135,7 @@ calculate = function(prices){
     weekDoge = document.getElementById("weekDoge").innerHTML;
     weekDogeD = Number(weekDoge) * dogePrice
     if (isNaN(weekDogeD)) {
-        document.getElementById("weekDogeD").innerText = "● ● ●"}
+        document.getElementById("weekDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weekDogeD").innerText = "₺" + weekDogeD.toFixed(5);
         }    
@@ -146,7 +143,7 @@ calculate = function(prices){
     monthDoge = document.getElementById("monthDoge").innerHTML;
     monthDogeD = Number(monthDoge) * dogePrice
     if (isNaN(minDogeD)) {
-        document.getElementById("monthDogeD").innerText = "● ● ●"}
+        document.getElementById("monthDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthDogeD").innerText = "₺" + monthDogeD.toFixed(5);
         }    
@@ -154,7 +151,7 @@ calculate = function(prices){
     yearDoge = document.getElementById("yearDoge").innerHTML;
     yearDogeD = Number(yearDoge) * dogePrice
     if (isNaN(yearDogeD)) {
-        document.getElementById("yearDogeD").innerText = "● ● ●"}
+        document.getElementById("yearDogeD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearDogeD").innerText = "₺" + yearDogeD.toFixed(5);
         }
@@ -163,7 +160,7 @@ calculate = function(prices){
     minEth = document.getElementById("minEth").innerHTML;
     minEthD = Number(minEth) * ethPrice
     if (isNaN(minEthD)) {
-        document.getElementById("minEthD").innerText = "● ● ●"}
+        document.getElementById("minEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minEthD").innerText = "₺" + minEthD.toFixed(5);
         }
@@ -171,7 +168,7 @@ calculate = function(prices){
     hourEth = document.getElementById("hourEth").innerHTML;
     hourEthD = Number(hourEth) * ethPrice
     if (isNaN(hourEthD)) {
-        document.getElementById("hourEthD").innerText = "● ● ●"}
+        document.getElementById("hourEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hourEthD").innerText = "₺" + hourEthD.toFixed(5);
         }
@@ -179,7 +176,7 @@ calculate = function(prices){
     dayEth = document.getElementById("dayEth").innerHTML;
     dayEthD = Number(dayEth) * ethPrice
     if (isNaN(dayEthD)) {
-        document.getElementById("dayEthD").innerText = "● ● ●"}
+        document.getElementById("dayEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("dayEthD").innerText = "₺" + dayEthD.toFixed(5);
         }
@@ -187,7 +184,7 @@ calculate = function(prices){
     weekEth = document.getElementById("weekEth").innerHTML;
     weekEthD = Number(weekEth) * ethPrice
     if (isNaN(weekEthD)) {
-        document.getElementById("weekEthD").innerText = "● ● ●"}
+        document.getElementById("weekEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weekEthD").innerText = "₺" + weekEthD.toFixed(5);
         }    
@@ -195,7 +192,7 @@ calculate = function(prices){
     monthEth = document.getElementById("monthEth").innerHTML;
     monthEthD = Number(monthEth) * ethPrice
     if (isNaN(minEthD)) {
-        document.getElementById("monthEthD").innerText = "● ● ●"}
+        document.getElementById("monthEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthEthD").innerText = "₺" + monthEthD.toFixed(5);
         }    
@@ -203,7 +200,7 @@ calculate = function(prices){
     yearEth = document.getElementById("yearEth").innerHTML;
     yearEthD = Number(yearEth) * ethPrice
     if (isNaN(yearEthD)) {
-        document.getElementById("yearEthD").innerText = "● ● ●"}
+        document.getElementById("yearEthD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearEthD").innerText = "₺" + yearEthD.toFixed(5);
         }
@@ -213,7 +210,7 @@ calculate = function(prices){
     minbnb = document.getElementById("minbnb").innerHTML;
     minbnbD = Number(minbnb) * bnbPrice
     if (isNaN(minbnbD)) {
-        document.getElementById("minbnbD").innerText = "● ● ●"}
+        document.getElementById("minbnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minbnbD").innerText = "₺" + minbnbD.toFixed(5);
         }
@@ -221,7 +218,7 @@ calculate = function(prices){
     hourbnb = document.getElementById("hourbnb").innerHTML;
     hourbnbD = Number(hourbnb) * bnbPrice
     if (isNaN(hourbnbD)) {
-        document.getElementById("hourbnbD").innerText = "● ● ●"}
+        document.getElementById("hourbnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hourbnbD").innerText = "₺" + hourbnbD.toFixed(5);
         }
@@ -229,7 +226,7 @@ calculate = function(prices){
     daybnb = document.getElementById("daybnb").innerHTML;
     daybnbD = Number(daybnb) * bnbPrice
     if (isNaN(daybnbD)) {
-        document.getElementById("daybnbD").innerText = "● ● ●"}
+        document.getElementById("daybnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("daybnbD").innerText = "₺" + daybnbD.toFixed(5);
         }
@@ -237,7 +234,7 @@ calculate = function(prices){
     weekbnb = document.getElementById("weekbnb").innerHTML;
     weekbnbD = Number(weekbnb) * bnbPrice
     if (isNaN(weekbnbD)) {
-        document.getElementById("weekbnbD").innerText = "● ● ●"}
+        document.getElementById("weekbnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weekbnbD").innerText = "₺" + weekbnbD.toFixed(5);
         }    
@@ -245,7 +242,7 @@ calculate = function(prices){
     monthbnb = document.getElementById("monthbnb").innerHTML;
     monthbnbD = Number(monthbnb) * bnbPrice
     if (isNaN(minbnbD)) {
-        document.getElementById("monthbnbD").innerText = "● ● ●"}
+        document.getElementById("monthbnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthbnbD").innerText = "₺" + monthbnbD.toFixed(5);
         }    
@@ -253,7 +250,7 @@ calculate = function(prices){
     yearbnb = document.getElementById("yearbnb").innerHTML;
     yearbnbD = Number(yearbnb) * bnbPrice
     if (isNaN(yearbnbD)) {
-        document.getElementById("yearbnbD").innerText = "● ● ●"}
+        document.getElementById("yearbnbD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearbnbD").innerText = "₺" + yearbnbD.toFixed(5);
         }
@@ -262,7 +259,7 @@ calculate = function(prices){
     minmatic = document.getElementById("minmatic").innerHTML;
     minmaticD = Number(minmatic) * maticPrice
     if (isNaN(minmaticD)) {
-        document.getElementById("minmaticD").innerText = "● ● ●"}
+        document.getElementById("minmaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minmaticD").innerText = "₺" + minmaticD.toFixed(5);
         }
@@ -270,7 +267,7 @@ calculate = function(prices){
     hourmatic = document.getElementById("hourmatic").innerHTML;
     hourmaticD = Number(hourmatic) * maticPrice
     if (isNaN(hourmaticD)) {
-        document.getElementById("hourmaticD").innerText = "● ● ●"}
+        document.getElementById("hourmaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hourmaticD").innerText = "₺" + hourmaticD.toFixed(5);
         }
@@ -278,7 +275,7 @@ calculate = function(prices){
     daymatic = document.getElementById("daymatic").innerHTML;
     daymaticD = Number(daymatic) * maticPrice
     if (isNaN(daymaticD)) {
-        document.getElementById("daymaticD").innerText = "● ● ●"}
+        document.getElementById("daymaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("daymaticD").innerText = "₺" + daymaticD.toFixed(5);
         }
@@ -286,7 +283,7 @@ calculate = function(prices){
     weekmatic = document.getElementById("weekmatic").innerHTML;
     weekmaticD = Number(weekmatic) * maticPrice
     if (isNaN(weekmaticD)) {
-        document.getElementById("weekmaticD").innerText = "● ● ●"}
+        document.getElementById("weekmaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weekmaticD").innerText = "₺" + weekmaticD.toFixed(5);
         }    
@@ -294,7 +291,7 @@ calculate = function(prices){
     monthmatic = document.getElementById("monthmatic").innerHTML;
     monthmaticD = Number(monthmatic) * maticPrice
     if (isNaN(minmaticD)) {
-        document.getElementById("monthmaticD").innerText = "● ● ●"}
+        document.getElementById("monthmaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthmaticD").innerText = "₺" + monthmaticD.toFixed(5);
         }    
@@ -302,7 +299,7 @@ calculate = function(prices){
     yearmatic = document.getElementById("yearmatic").innerHTML;
     yearmaticD = Number(yearmatic) * maticPrice
     if (isNaN(yearmaticD)) {
-        document.getElementById("yearmaticD").innerText = "● ● ●"}
+        document.getElementById("yearmaticD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearmaticD").innerText = "₺" + yearmaticD.toFixed(5);
         }
@@ -311,7 +308,7 @@ calculate = function(prices){
     minsol = document.getElementById("minsol").innerHTML;
     minsolD = Number(minsol) * solPrice
     if (isNaN(minsolD)) {
-        document.getElementById("minsolD").innerText = "● ● ●"}
+        document.getElementById("minsolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("minsolD").innerText = "₺" + minsolD.toFixed(5);
         }
@@ -319,7 +316,7 @@ calculate = function(prices){
     hoursol = document.getElementById("hoursol").innerHTML;
     hoursolD = Number(hoursol) * solPrice
     if (isNaN(hoursolD)) {
-        document.getElementById("hoursolD").innerText = "● ● ●"}
+        document.getElementById("hoursolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("hoursolD").innerText = "₺" + hoursolD.toFixed(5);
         }
@@ -327,7 +324,7 @@ calculate = function(prices){
     daysol = document.getElementById("daysol").innerHTML;
     daysolD = Number(daysol) * solPrice
     if (isNaN(daysolD)) {
-        document.getElementById("daysolD").innerText = "● ● ●"}
+        document.getElementById("daysolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("daysolD").innerText = "₺" + daysolD.toFixed(5);
         }
@@ -335,7 +332,7 @@ calculate = function(prices){
     weeksol = document.getElementById("weeksol").innerHTML;
     weeksolD = Number(weeksol) * solPrice
     if (isNaN(weeksolD)) {
-        document.getElementById("weeksolD").innerText = "● ● ●"}
+        document.getElementById("weeksolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("weeksolD").innerText = "₺" + weeksolD.toFixed(5);
         }    
@@ -343,7 +340,7 @@ calculate = function(prices){
     monthsol = document.getElementById("monthsol").innerHTML;
     monthsolD = Number(monthsol) * solPrice
     if (isNaN(minsolD)) {
-        document.getElementById("monthsolD").innerText = "● ● ●"}
+        document.getElementById("monthsolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("monthsolD").innerText = "₺" + monthsolD.toFixed(5);
         }    
@@ -351,58 +348,9 @@ calculate = function(prices){
     yearsol = document.getElementById("yearsol").innerHTML;
     yearsolD = Number(yearsol) * solPrice
     if (isNaN(yearsolD)) {
-        document.getElementById("yearsolD").innerText = "● ● ●"}
+        document.getElementById("yearsolD").innerText = "∙•●₺●•∙"}
         else {
             document.getElementById("yearsolD").innerText = "₺" + yearsolD.toFixed(5);
-        }
-	/////////////////////////////////////////////////
-    // Rlt CALC 10 MIN
-    minRlt = document.getElementById("minRlt").innerHTML;
-    minRltD = Number(minRlt) * RltPrice
-    if (isNaN(minRltD)) {
-        document.getElementById("minRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("minRltD").innerText = "₺" + minRltD.toFixed(5);
-        }
-    // Rlt CALC HOUR
-    hourRlt = document.getElementById("hourRlt").innerHTML;
-    hourRltD = Number(hourRlt) * RltPrice
-    if (isNaN(hourRltD)) {
-        document.getElementById("hourRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("hourRltD").innerText = "₺" + hourRltD.toFixed(5);
-        }
-    // Rlt CALC DAY
-    dayRlt = document.getElementById("dayRlt").innerHTML;
-    dayRltD = Number(dayRlt) * RltPrice
-    if (isNaN(dayRltD)) {
-        document.getElementById("dayRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("dayRltD").innerText = "₺" + dayRltD.toFixed(5);
-        }
-    // Rlt CALC WEEK
-    weekRlt = document.getElementById("weekRlt").innerHTML;
-    weekRltD = Number(weekRlt) * RltPrice
-    if (isNaN(weekRltD)) {
-        document.getElementById("weekRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("weekRltD").innerText = "₺" + weekRltD.toFixed(5);
-        }    
-    // Rlt CALC MONTH
-    monthRlt = document.getElementById("monthRlt").innerHTML;
-    monthRltD = Number(monthRlt) * RltPrice
-    if (isNaN(minRltD)) {
-        document.getElementById("monthRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("monthRltD").innerText = "₺" + monthRltD.toFixed(5);
-        }    
-    // Rlt CALC YEAR
-    yearRlt = document.getElementById("yearRlt").innerHTML;
-    yearRltD = Number(yearRlt) * RltPrice
-    if (isNaN(yearRltD)) {
-        document.getElementById("yearRltD").innerText = "● ● ●"}
-        else {
-            document.getElementById("yearRltD").innerText = "₺" + yearRltD.toFixed(5);
         }
     }
 

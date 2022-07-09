@@ -50,62 +50,62 @@ calc = function(){
         yearBtcD = Number(yearBtc) * btcPrice
 
     if ((isNaN(minBtc))||!(isFinite(minBtc))) {
-        document.getElementById("minBtc").innerText = "● ● ●"}
+        document.getElementById("minBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minBtc").innerText = minBtc.toFixed(10);
         }
     if ((isNaN(hourBtc))||!(isFinite(hourBtc))) {
-        document.getElementById("hourBtc").innerText = "● ● ●"}
+        document.getElementById("hourBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourBtc").innerText = hourBtc.toFixed(10);
         }
     if ((isNaN(dayBtc))||!(isFinite(dayBtc))) {
-        document.getElementById("dayBtc").innerText = "● ● ●"}
+        document.getElementById("dayBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayBtc").innerText = dayBtc.toFixed(10);
         }
     if ((isNaN(weekBtc))||!(isFinite(weekBtc))) {
-        document.getElementById("weekBtc").innerText = "● ● ●"}
+        document.getElementById("weekBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekBtc").innerText = weekBtc.toFixed(10);
         }
     if ((isNaN(monthBtc))||!(isFinite(monthBtc))) {
-        document.getElementById("monthBtc").innerText = "● ● ●"}
+        document.getElementById("monthBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthBtc").innerText = monthBtc.toFixed(10);
         }
     if ((isNaN(yearBtc))||!(isFinite(yearBtc))) {
-        document.getElementById("yearBtc").innerText = "● ● ●"}
+        document.getElementById("yearBtc").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearBtc").innerText = yearBtc.toFixed(10);
         }
     if ((isNaN(minBtcD))||!(isFinite(minBtcD))) {
-        document.getElementById("minBtcD").innerText = "● ● ●"}
+        document.getElementById("minBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minBtcD").innerText = "$" + minBtcD.toFixed(5);
         }
     if ((isNaN(hourBtcD))||!(isFinite(hourBtcD))) {
-        document.getElementById("hourBtcD").innerText = "● ● ●"}
+        document.getElementById("hourBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourBtcD").innerText = "$" + hourBtcD.toFixed(5);
         }
     if ((isNaN(dayBtcD))||!(isFinite(dayBtcD))) {
-        document.getElementById("dayBtcD").innerText = "● ● ●"}
+        document.getElementById("dayBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayBtcD").innerText = "$" + dayBtcD.toFixed(5);
         }
     if ((isNaN(weekBtcD))||!(isFinite(weekBtcD))) {
-        document.getElementById("weekBtcD").innerText = "● ● ●"}
+        document.getElementById("weekBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekBtcD").innerText = "$" + weekBtcD.toFixed(5);
         }
     if ((isNaN(monthBtcD))||!(isFinite(monthBtcD))) {
-        document.getElementById("monthBtcD").innerText = "● ● ●"}
+        document.getElementById("monthBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthBtcD").innerText = "$" + monthBtcD.toFixed(5);
         }
     if ((isNaN(yearBtcD))||!(isFinite(yearBtcD))) {
-        document.getElementById("yearBtcD").innerText = "● ● ●"}
+        document.getElementById("yearBtcD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearBtcD").innerText = "$" + yearBtcD.toFixed(5);
         }
@@ -127,63 +127,63 @@ calc = function(){
         yearDogeD = Number(yearDoge) * dogePrice
 
     if ((isNaN(minDoge))||!(isFinite(minDoge))) {
-        document.getElementById("minDoge").innerText = "● ● ●"}
+        document.getElementById("minDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minDoge").innerText = minDoge.toFixed(10);
         }
     if ((isNaN(hourDoge))||!(isFinite(hourDoge))) {
-        document.getElementById("hourDoge").innerText = "● ● ●"}
+        document.getElementById("hourDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourDoge").innerText = hourDoge.toFixed(10);
         }
     if ((isNaN(dayDoge))||!(isFinite(dayDoge))) {
-        document.getElementById("dayDoge").innerText = "● ● ●"}
+        document.getElementById("dayDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayDoge").innerText = dayDoge.toFixed(10);
         }
     if ((isNaN(weekDoge))||!(isFinite(weekDoge))) {
-        document.getElementById("weekDoge").innerText = "● ● ●"}
+        document.getElementById("weekDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekDoge").innerText = weekDoge.toFixed(10);
         }
     if ((isNaN(monthDoge))||!(isFinite(monthDoge))) {
-        document.getElementById("monthDoge").innerText = "● ● ●"}
+        document.getElementById("monthDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthDoge").innerText = monthDoge.toFixed(10);
         }
     if ((isNaN(yearDoge))||!(isFinite(yearDoge))) {
-        document.getElementById("yearDoge").innerText = "● ● ●"}
+        document.getElementById("yearDoge").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearDoge").innerText = yearDoge.toFixed(10);
         }
     
     if ((isNaN(minDogeD))||!(isFinite(minDogeD))) {
-        document.getElementById("minDogeD").innerText = "● ● ●"}
+        document.getElementById("minDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minDogeD").innerText = "$" + minDogeD.toFixed(5);
         }
     if ((isNaN(hourDogeD))||!(isFinite(hourDogeD))) {
-        document.getElementById("hourDogeD").innerText = "● ● ●"}
+        document.getElementById("hourDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourDogeD").innerText = "$" + hourDogeD.toFixed(5);
         }
     if ((isNaN(dayDogeD))||!(isFinite(dayDogeD))) {
-        document.getElementById("dayDogeD").innerText = "● ● ●"}
+        document.getElementById("dayDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayDogeD").innerText = "$" + dayDogeD.toFixed(5);
         }
     if ((isNaN(weekDogeD))||!(isFinite(weekDogeD))) {
-        document.getElementById("weekDogeD").innerText = "● ● ●"}
+        document.getElementById("weekDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekDogeD").innerText = "$" + weekDogeD.toFixed(5);
         }
     if ((isNaN(monthDogeD))||!(isFinite(monthDogeD))) {
-        document.getElementById("monthDogeD").innerText = "● ● ●"}
+        document.getElementById("monthDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthDogeD").innerText = "$" + monthDogeD.toFixed(5);
         }
     if ((isNaN(yearDogeD))||!(isFinite(yearDogeD))) {
-        document.getElementById("yearDogeD").innerText = "● ● ●"}
+        document.getElementById("yearDogeD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearDogeD").innerText = "$" + yearDogeD.toFixed(5);
         }
@@ -205,63 +205,63 @@ calc = function(){
         yearEthD = Number(yearEth) * ethPrice
 
     if ((isNaN(minEth))||!(isFinite(minEth))) {
-        document.getElementById("minEth").innerText = "● ● ●"}
+        document.getElementById("minEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minEth").innerText = minEth.toFixed(10);
         }
     if ((isNaN(hourEth))||!(isFinite(hourEth))) {
-        document.getElementById("hourEth").innerText = "● ● ●"}
+        document.getElementById("hourEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourEth").innerText = hourEth.toFixed(10);
         }
     if ((isNaN(dayEth))||!(isFinite(dayEth))) {
-        document.getElementById("dayEth").innerText = "● ● ●"}
+        document.getElementById("dayEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayEth").innerText = dayEth.toFixed(10);
         }
     if ((isNaN(weekEth))||!(isFinite(weekEth))) {
-        document.getElementById("weekEth").innerText = "● ● ●"}
+        document.getElementById("weekEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekEth").innerText = weekEth.toFixed(10);
         }
     if ((isNaN(monthEth))||!(isFinite(monthEth))) {
-        document.getElementById("monthEth").innerText = "● ● ●"}
+        document.getElementById("monthEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthEth").innerText = monthEth.toFixed(10);
         }
     if ((isNaN(yearEth))||!(isFinite(yearEth))) {
-        document.getElementById("yearEth").innerText = "● ● ●"}
+        document.getElementById("yearEth").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearEth").innerText = yearEth.toFixed(10);
         }
     
     if ((isNaN(minEthD))||!(isFinite(minEthD))) {
-        document.getElementById("minEthD").innerText = "● ● ●"}
+        document.getElementById("minEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minEthD").innerText = "$" + minEthD.toFixed(5);
         }
     if ((isNaN(hourEthD))||!(isFinite(hourEthD))) {
-        document.getElementById("hourEthD").innerText = "● ● ●"}
+        document.getElementById("hourEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourEthD").innerText = "$" + hourEthD.toFixed(5);
         }
     if ((isNaN(dayEthD))||!(isFinite(dayEthD))) {
-        document.getElementById("dayEthD").innerText = "● ● ●"}
+        document.getElementById("dayEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayEthD").innerText = "$" + dayEthD.toFixed(5);
         }
     if ((isNaN(weekEthD))||!(isFinite(weekEthD))) {
-        document.getElementById("weekEthD").innerText = "● ● ●"}
+        document.getElementById("weekEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekEthD").innerText = "$" + weekEthD.toFixed(5);
         }
     if ((isNaN(monthEthD))||!(isFinite(monthEthD))) {
-        document.getElementById("monthEthD").innerText = "● ● ●"}
+        document.getElementById("monthEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthEthD").innerText = "$" + monthEthD.toFixed(5);
         }
     if ((isNaN(yearEthD))||!(isFinite(yearEthD))) {
-        document.getElementById("yearEthD").innerText = "● ● ●"}
+        document.getElementById("yearEthD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearEthD").innerText = "$" + yearEthD.toFixed(5);
         }
@@ -283,126 +283,140 @@ calc = function(){
         yearbnbD = Number(yearbnb) * bnbPrice
 
     if ((isNaN(minbnb))||!(isFinite(minbnb))) {
-        document.getElementById("minbnb").innerText = "● ● ●"}
+        document.getElementById("minbnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minbnb").innerText = minbnb.toFixed(10);
         }
     if ((isNaN(hourbnb))||!(isFinite(hourbnb))) {
-        document.getElementById("hourbnb").innerText = "● ● ●"}
+        document.getElementById("hourbnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourbnb").innerText = hourbnb.toFixed(10);
         }
     if ((isNaN(daybnb))||!(isFinite(daybnb))) {
-        document.getElementById("daybnb").innerText = "● ● ●"}
+        document.getElementById("daybnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("daybnb").innerText = daybnb.toFixed(10);
         }
     if ((isNaN(weekbnb))||!(isFinite(weekbnb))) {
-        document.getElementById("weekbnb").innerText = "● ● ●"}
+        document.getElementById("weekbnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekbnb").innerText = weekbnb.toFixed(10);
         }
     if ((isNaN(monthbnb))||!(isFinite(monthbnb))) {
-        document.getElementById("monthbnb").innerText = "● ● ●"}
+        document.getElementById("monthbnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthbnb").innerText = monthbnb.toFixed(10);
         }
     if ((isNaN(yearbnb))||!(isFinite(yearbnb))) {
-        document.getElementById("yearbnb").innerText = "● ● ●"}
+        document.getElementById("yearbnb").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearbnb").innerText = yearbnb.toFixed(10);
         }
     if ((isNaN(minbnbD))||!(isFinite(minbnbD))) {
-        document.getElementById("minbnbD").innerText = "● ● ●"}
+        document.getElementById("minbnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minbnbD").innerText = "$" + minbnbD.toFixed(5);
         }
     if ((isNaN(hourbnbD))||!(isFinite(hourbnbD))) {
-        document.getElementById("hourbnbD").innerText = "● ● ●"}
+        document.getElementById("hourbnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourbnbD").innerText = "$" + hourbnbD.toFixed(5);
         }
     if ((isNaN(daybnbD))||!(isFinite(daybnbD))) {
-        document.getElementById("daybnbD").innerText = "● ● ●"}
+        document.getElementById("daybnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("daybnbD").innerText = "$" + daybnbD.toFixed(5);
         }
     if ((isNaN(weekbnbD))||!(isFinite(weekbnbD))) {
-        document.getElementById("weekbnbD").innerText = "● ● ●"}
+        document.getElementById("weekbnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekbnbD").innerText = "$" + weekbnbD.toFixed(5);
         }
     if ((isNaN(monthbnbD))||!(isFinite(monthbnbD))) {
-        document.getElementById("monthbnbD").innerText = "● ● ●"}
+        document.getElementById("monthbnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthbnbD").innerText = "$" + monthbnbD.toFixed(5);
         }
     if ((isNaN(yearbnbD))||!(isFinite(yearbnbD))) {
-        document.getElementById("yearbnbD").innerText = "● ● ●"}
+        document.getElementById("yearbnbD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearbnbD").innerText = "$" + yearbnbD.toFixed(5);
         }
 //POLYGON (MATIC) HESAPLAMA ARACI//
     var maticPower = ((Number(totalRate)/1000) * Number(distmatic))/100
+        maticPrice1 = document.getElementById('matic-price-api').innerHTML
+        maticPrice = Number(maticPrice1.substring(1))
         minmatic = (Number(maticPower)*blockmatic)/(Number(netmatic)*1000)
-        minmaticD = Number(minmatic) * 1
+        minmaticD = Number(minmatic) * maticPrice
         hourmatic = Number(minmatic) * 6
-        hourmaticD = Number(hourmatic) * 1
+        hourmaticD = Number(hourmatic) * maticPrice
         daymatic = Number(hourmatic) * 24 
-        daymaticD = Number(daymatic) * 1
+        daymaticD = Number(daymatic) * maticPrice
         weekmatic = Number(daymatic) * 7
-        weekmaticD = Number(weekmatic) * 1
+        weekmaticD = Number(weekmatic) * maticPrice
         monthmatic = Number(daymatic) * 30
-        monthmaticD = Number(monthmatic) * 1
+        monthmaticD = Number(monthmatic) * maticPrice
         yearmatic = Number(daymatic) * 365
-        yearmaticD = Number(yearmatic) * 1
+        yearmaticD = Number(yearmatic) * maticPrice
 
     if ((isNaN(minmatic))||!(isFinite(minmatic))) {
-        document.getElementById("minmatic").innerText = "● ● ●";
-        document.getElementById("minmaticD").innerText = "● ● ●"}
-
+        document.getElementById("minmatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minmatic").innerText = minmatic.toFixed(10);
-            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
         }
     if ((isNaN(hourmatic))||!(isFinite(hourmatic))) {
-        document.getElementById("hourmatic").innerText = "● ● ●";
-        document.getElementById("hourmaticD").innerText = "● ● ●"}
-
+        document.getElementById("hourmatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourmatic").innerText = hourmatic.toFixed(10);
-            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
         }
     if ((isNaN(daymatic))||!(isFinite(daymatic))) {
-        document.getElementById("daymatic").innerText = "● ● ●";
-        document.getElementById("daymaticD").innerText = "● ● ●"}
-
+        document.getElementById("daymatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("daymatic").innerText = daymatic.toFixed(10);
-            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
         }
     if ((isNaN(weekmatic))||!(isFinite(weekmatic))) {
-        document.getElementById("weekmatic").innerText = "● ● ●";
-        document.getElementById("weekmaticD").innerText = "● ● ●"}
-
+        document.getElementById("weekmatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekmatic").innerText = weekmatic.toFixed(10);
-            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
         }
     if ((isNaN(monthmatic))||!(isFinite(monthmatic))) {
-        document.getElementById("monthmatic").innerText = "● ● ●";
-        document.getElementById("monthmaticD").innerText = "● ● ●"}
-
+        document.getElementById("monthmatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthmatic").innerText = monthmatic.toFixed(10);
-            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
         }
     if ((isNaN(yearmatic))||!(isFinite(yearmatic))) {
-        document.getElementById("yearmatic").innerText = "● ● ●";
-        document.getElementById("yearmaticD").innerText = "● ● ●"}
-
+        document.getElementById("yearmatic").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearmatic").innerText = yearmatic.toFixed(10);
+        }
+    if ((isNaN(minmaticD))||!(isFinite(minmaticD))) {
+        document.getElementById("minmaticD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("minmaticD").innerText = "$" + minmaticD.toFixed(5);
+        }
+    if ((isNaN(hourmaticD))||!(isFinite(hourmaticD))) {
+        document.getElementById("hourmaticD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("hourmaticD").innerText = "$" + hourmaticD.toFixed(5);
+        }
+    if ((isNaN(daymaticD))||!(isFinite(daymaticD))) {
+        document.getElementById("daymaticD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("daymaticD").innerText = "$" + daymaticD.toFixed(5);
+        }
+    if ((isNaN(weekmaticD))||!(isFinite(weekmaticD))) {
+        document.getElementById("weekmaticD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("weekmaticD").innerText = "$" + weekmaticD.toFixed(5);
+        }
+    if ((isNaN(monthmaticD))||!(isFinite(monthmaticD))) {
+        document.getElementById("monthmaticD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("monthmaticD").innerText = "$" + monthmaticD.toFixed(5);
+        }
+    if ((isNaN(yearmaticD))||!(isFinite(yearmaticD))) {
+        document.getElementById("yearmaticD").innerText = "【Hesaplanmadı!】"}
+        else {
             document.getElementById("yearmaticD").innerText = "$" + yearmaticD.toFixed(5);
         }
 //SOLANA HESAPLAMA ARACI//
@@ -423,126 +437,140 @@ calc = function(){
         yearsolD = Number(yearsol) * solPrice
 
     if ((isNaN(minsol))||!(isFinite(minsol))) {
-        document.getElementById("minsol").innerText = "● ● ●"}
+        document.getElementById("minsol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minsol").innerText = minsol.toFixed(10);
         }
     if ((isNaN(hoursol))||!(isFinite(hoursol))) {
-        document.getElementById("hoursol").innerText = "● ● ●"}
+        document.getElementById("hoursol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hoursol").innerText = hoursol.toFixed(10);
         }
     if ((isNaN(daysol))||!(isFinite(daysol))) {
-        document.getElementById("daysol").innerText = "● ● ●"}
+        document.getElementById("daysol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("daysol").innerText = daysol.toFixed(10);
         }
     if ((isNaN(weeksol))||!(isFinite(weeksol))) {
-        document.getElementById("weeksol").innerText = "● ● ●"}
+        document.getElementById("weeksol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weeksol").innerText = weeksol.toFixed(10);
         }
     if ((isNaN(monthsol))||!(isFinite(monthsol))) {
-        document.getElementById("monthsol").innerText = "● ● ●"}
+        document.getElementById("monthsol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthsol").innerText = monthsol.toFixed(10);
         }
     if ((isNaN(yearsol))||!(isFinite(yearsol))) {
-        document.getElementById("yearsol").innerText = "● ● ●"}
+        document.getElementById("yearsol").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearsol").innerText = yearsol.toFixed(10);
         }
     if ((isNaN(minsolD))||!(isFinite(minsolD))) {
-        document.getElementById("minsolD").innerText = "● ● ●"}
+        document.getElementById("minsolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minsolD").innerText = "$" + minsolD.toFixed(5);
         }
     if ((isNaN(hoursolD))||!(isFinite(hoursolD))) {
-        document.getElementById("hoursolD").innerText = "● ● ●"}
+        document.getElementById("hoursolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hoursolD").innerText = "$" + hoursolD.toFixed(5);
         }
     if ((isNaN(daysolD))||!(isFinite(daysolD))) {
-        document.getElementById("daysolD").innerText = "● ● ●"}
+        document.getElementById("daysolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("daysolD").innerText = "$" + daysolD.toFixed(5);
         }
     if ((isNaN(weeksolD))||!(isFinite(weeksolD))) {
-        document.getElementById("weeksolD").innerText = "● ● ●"}
+        document.getElementById("weeksolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weeksolD").innerText = "$" + weeksolD.toFixed(5);
         }
     if ((isNaN(monthsolD))||!(isFinite(monthsolD))) {
-        document.getElementById("monthsolD").innerText = "● ● ●"}
+        document.getElementById("monthsolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthsolD").innerText = "$" + monthsolD.toFixed(5);
         }
     if ((isNaN(yearsolD))||!(isFinite(yearsolD))) {
-        document.getElementById("yearsolD").innerText = "● ● ●"}
+        document.getElementById("yearsolD").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearsolD").innerText = "$" + yearsolD.toFixed(5);
         }
 //ROLLERTOKEN HESAPLAMA ARACI//
     var rltPower = ((Number(totalRate)/1000) * Number(distRlt))/100
+        rltPrice1 = document.getElementById('rlt-price-api').innerHTML
+        rltPrice = Number(rltPrice1.substring(1))
         minRlt = (Number(rltPower)*blockRlt)/(Number(netRlt)*1000)
-        minRltD = Number(minRlt) * 1
+        minRltD = Number(minRlt) * rltPrice
         hourRlt = Number(minRlt) * 6
-        hourRltD = Number(hourRlt) * 1
+        hourRltD = Number(hourRlt) * rltPrice
         dayRlt = Number(hourRlt) * 24 
-        dayRltD = Number(dayRlt) * 1
+        dayRltD = Number(dayRlt) * rltPrice
         weekRlt = Number(dayRlt) * 7
-        weekRltD = Number(weekRlt) * 1
+        weekRltD = Number(weekRlt) * rltPrice
         monthRlt = Number(dayRlt) * 30
-        monthRltD = Number(monthRlt) * 1
+        monthRltD = Number(monthRlt) * rltPrice
         yearRlt = Number(dayRlt) * 365
-        yearRltD = Number(yearRlt) * 1
+        yearRltD = Number(yearRlt) * rltPrice
 
     if ((isNaN(minRlt))||!(isFinite(minRlt))) {
-        document.getElementById("minRlt").innerText = "● ● ●";
-        document.getElementById("minRltD").innerText = "● ● ●"}
-
+        document.getElementById("minRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("minRlt").innerText = minRlt.toFixed(10);
-            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
         }
     if ((isNaN(hourRlt))||!(isFinite(hourRlt))) {
-        document.getElementById("hourRlt").innerText = "● ● ●";
-        document.getElementById("hourRltD").innerText = "● ● ●"}
-
+        document.getElementById("hourRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("hourRlt").innerText = hourRlt.toFixed(10);
-            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
         }
     if ((isNaN(dayRlt))||!(isFinite(dayRlt))) {
-        document.getElementById("dayRlt").innerText = "● ● ●";
-        document.getElementById("dayRltD").innerText = "● ● ●"}
-
+        document.getElementById("dayRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("dayRlt").innerText = dayRlt.toFixed(10);
-            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
         }
     if ((isNaN(weekRlt))||!(isFinite(weekRlt))) {
-        document.getElementById("weekRlt").innerText = "● ● ●";
-        document.getElementById("weekRltD").innerText = "● ● ●"}
-
+        document.getElementById("weekRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("weekRlt").innerText = weekRlt.toFixed(10);
-            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
         }
     if ((isNaN(monthRlt))||!(isFinite(monthRlt))) {
-        document.getElementById("monthRlt").innerText = "● ● ●";
-        document.getElementById("monthRltD").innerText = "● ● ●"}
-
+        document.getElementById("monthRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("monthRlt").innerText = monthRlt.toFixed(10);
-            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
         }
     if ((isNaN(yearRlt))||!(isFinite(yearRlt))) {
-        document.getElementById("yearRlt").innerText = "● ● ●";
-        document.getElementById("yearRltD").innerText = "● ● ●"}
-
+        document.getElementById("yearRlt").innerText = "【Hesaplanmadı!】"}
         else {
             document.getElementById("yearRlt").innerText = yearRlt.toFixed(10);
+        }
+    if ((isNaN(minRltD))||!(isFinite(minRltD))) {
+        document.getElementById("minRltD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("minRltD").innerText = "$" + minRltD.toFixed(5);
+        }
+    if ((isNaN(hourRltD))||!(isFinite(hourRltD))) {
+        document.getElementById("hourRltD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("hourRltD").innerText = "$" + hourRltD.toFixed(5);
+        }
+    if ((isNaN(dayRltD))||!(isFinite(dayRltD))) {
+        document.getElementById("dayRltD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("dayRltD").innerText = "$" + dayRltD.toFixed(5);
+        }
+    if ((isNaN(weekRltD))||!(isFinite(weekRltD))) {
+        document.getElementById("weekRltD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("weekRltD").innerText = "$" + weekRltD.toFixed(5);
+        }
+    if ((isNaN(monthRltD))||!(isFinite(monthRltD))) {
+        document.getElementById("monthRltD").innerText = "【Hesaplanmadı!】"}
+        else {
+            document.getElementById("monthRltD").innerText = "$" + monthRltD.toFixed(5);
+        }
+    if ((isNaN(yearRltD))||!(isFinite(yearRltD))) {
+        document.getElementById("yearRltD").innerText = "【Hesaplanmadı!】"}
+        else {
             document.getElementById("yearRltD").innerText = "$" + yearRltD.toFixed(5);
         }
     }
