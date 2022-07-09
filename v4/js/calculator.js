@@ -324,8 +324,8 @@ function blockAmount() {
       break;
     case 1:
       //DOGE BLOK ÖDÜLÜ > 20
-      var blockreward = 30;
-      document.getElementById("block-reward").value = 30;
+      var blockreward = 20;
+      document.getElementById("block-reward").value = 20;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -338,8 +338,8 @@ function blockAmount() {
       break;
     case 2:
       //ETH BLOK ÖDÜLÜ > 0.005
-      var blockreward = 0.005;
-      document.getElementById("block-reward").value = 0.005;
+      var blockreward = 0.008;
+      document.getElementById("block-reward").value = 0.008;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -351,8 +351,8 @@ function blockAmount() {
       break;
     case 3:
       //BNB BLOK ÖDÜLÜ > 0.012
-      var blockreward = 0.012;
-      document.getElementById("block-reward").value = 0.012;
+      var blockreward = 0.018;
+      document.getElementById("block-reward").value = 0.018;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -364,8 +364,8 @@ function blockAmount() {
       break;
     case 4:
       //MATIC BLOK ÖDÜLÜ > 3
-      var blockreward = 5;
-      document.getElementById("block-reward").value = 5;
+      var blockreward = 3;
+      document.getElementById("block-reward").value = 3;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -378,8 +378,8 @@ function blockAmount() {
       break;
 	case 5:
       //SOL BLOK ÖDÜLÜ > 0.05
-      var blockreward = 0.05;
-      document.getElementById("block-reward").value = 0.05;
+      var blockreward = 0.07;
+      document.getElementById("block-reward").value = 0.07;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -393,8 +393,8 @@ function blockAmount() {
     default:
       //RLT BLOK ÖDÜLÜ > 30
       console.log("rlt start");
-      var blockreward = 40;
-      document.getElementById("block-reward").value = 40;
+      var blockreward = 30;
+      document.getElementById("block-reward").value = 30;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
