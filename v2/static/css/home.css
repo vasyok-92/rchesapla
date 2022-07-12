@@ -230,6 +230,12 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
 }
 
+.hero .tabs-layout .tab1-content .box-haftalıködüller {
+  color: #a9d924;
+  font-weight: bold;
+  margin: center;
+}
+
 .hero .tabs-layout .tab1-content table {
   padding: 0.5rem;
   color: white;
