@@ -324,8 +324,8 @@ function blockAmount() {
       break;
     case 1:
       //DOGE BLOK ÖDÜLÜ > 20
-      var blockreward = 100;
-      document.getElementById("block-reward").value = 100;
+      var blockreward = 20;
+      document.getElementById("block-reward").value = 20;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -351,8 +351,8 @@ function blockAmount() {
       break;
     case 3:
       //BNB BLOK ÖDÜLÜ > 0.012
-      var blockreward = 0.012;
-      document.getElementById("block-reward").value = 0.012;
+      var blockreward = 0.018;
+      document.getElementById("block-reward").value = 0.018;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -364,8 +364,8 @@ function blockAmount() {
       break;
     case 4:
       //MATIC BLOK ÖDÜLÜ > 3
-      var blockreward = 3;
-      document.getElementById("block-reward").value = 3;
+      var blockreward = 4.5;
+      document.getElementById("block-reward").value = 4.5;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
@@ -378,8 +378,8 @@ function blockAmount() {
       break;
 	case 5:
       //SOL BLOK ÖDÜLÜ > 0.05
-      var blockreward = 0.05;
-      document.getElementById("block-reward").value = 0.05;
+      var blockreward = 0.07;
+      document.getElementById("block-reward").value = 0.07;
 
       document.getElementById("exp_reward").innerHTML = "Hesaplanmadı!";
       document.getElementById("daily").innerHTML = "Hesaplanmadı!";
