@@ -10,62 +10,62 @@ function blockAmount() {
             //Bitcoin - 30000
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             break;
         case 1:
             //Doge - 20
             var blockreward = 20;
             document.getElementById("block-reward").value = 20;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             break;
         case 2:
             //Eth - 0.005
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             break;
         case 3:
             //Bnb - 0.012
             var blockreward = 0.018;
             document.getElementById("block-reward").value = 0.018;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             break;
         case 4: 
             //Matic - 3
             var blockreward = 4.5;
             document.getElementById("block-reward").value = 4.5;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             console.log("matic end");
             break;
         case 5: 
             //SOL - 0.05
             var blockreward = 0.07;
             document.getElementById("block-reward").value = 0.07;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             console.log("sol end");
             break;
     default:
@@ -73,11 +73,11 @@ function blockAmount() {
             console.log("rlt start");
             var blockreward = 30;
             document.getElementById("block-reward").value = 30;
-			document.getElementById("exp_reward").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("daily").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("weekly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("monthly").innerHTML = "【Hesaplanmadı!】";
-			document.getElementById("yearly").innerHTML = "【Hesaplanmadı!】";
+			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
             break;
     }
 }
@@ -166,60 +166,60 @@ function calculateGoalPower() {
 
     switch (document.getElementById("block-type").selectedIndex) {
         case 0:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " Satoshi";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " Satoshi ⛏";
             var btcResult = (exp_reward * dailyBlocks).toFixed(4);
             document.getElementById("daily").innerHTML = btcResult + " Satoshi";
-            document.getElementById("weekly").innerHTML = (btcResult * 7).toFixed(4) + " Satoshi";
-            document.getElementById("monthly").innerHTML = (btcResult * 30).toFixed(4) + " Satoshi";
-			document.getElementById("yearly").innerHTML = (btcResult * 365).toFixed(4) + " Satoshi";
+            document.getElementById("weekly").innerHTML = (btcResult * 7).toFixed(4) + " Satoshi ⛏";
+            document.getElementById("monthly").innerHTML = (btcResult * 30).toFixed(4) + " Satoshi ⛏";
+			document.getElementById("yearly").innerHTML = (btcResult * 365).toFixed(4) + " Satoshi ⛏";
             break;
         case 1:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " DOGE";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(4) + " DOGE ⛏";
             var dogeResult = (exp_reward * dailyBlocks).toFixed(6);
             document.getElementById("daily").innerHTML = dogeResult + " DOGE";
-            document.getElementById("weekly").innerHTML = (dogeResult * 7).toFixed(4) + " DOGE";
-            document.getElementById("monthly").innerHTML = (dogeResult * 30).toFixed(4) + " DOGE";
-			document.getElementById("yearly").innerHTML = (dogeResult * 365).toFixed(4) + " DOGE";
+            document.getElementById("weekly").innerHTML = (dogeResult * 7).toFixed(4) + " DOGE ⛏";
+            document.getElementById("monthly").innerHTML = (dogeResult * 30).toFixed(4) + " DOGE ⛏";
+			document.getElementById("yearly").innerHTML = (dogeResult * 365).toFixed(4) + " DOGE ⛏";
             break;
         case 2:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Ethereum";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Ethereum ⛏";
             var ethResult = (exp_reward * dailyBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = ethResult + " Ethereum";
-            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " Ethereum";
-            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " Ethereum";
-			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " Ethereum";
+            document.getElementById("daily").innerHTML = ethResult + " Ethereum ⛏";
+            document.getElementById("weekly").innerHTML = (ethResult * 7).toFixed(8) + " Ethereum ⛏";
+            document.getElementById("monthly").innerHTML = (ethResult * 30).toFixed(8) + " Ethereum ⛏";
+			document.getElementById("yearly").innerHTML = (ethResult * 365).toFixed(8) + " Ethereum ⛏";
             break;
         case 3:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " BNB";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " BNB ⛏";
             var bnbResult = (exp_reward * dailyBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = bnbResult + " BNB";
-            document.getElementById("weekly").innerHTML = (bnbResult * 7).toFixed(8) + " BNB";
-            document.getElementById("monthly").innerHTML = (bnbResult * 30).toFixed(8) + " BNB";
-			document.getElementById("yearly").innerHTML = (bnbResult * 365).toFixed(8) + " BNB";
+            document.getElementById("daily").innerHTML = bnbResult + " BNB ⛏";
+            document.getElementById("weekly").innerHTML = (bnbResult * 7).toFixed(8) + " BNB ⛏";
+            document.getElementById("monthly").innerHTML = (bnbResult * 30).toFixed(8) + " BNB ⛏";
+			document.getElementById("yearly").innerHTML = (bnbResult * 365).toFixed(8) + " BNB ⛏";
             break;
         case 4:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " MATIC";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " MATIC ⛏";
             var maticResult = (exp_reward * dailyBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = maticResult + " MATIC";
-            document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " MATIC";
-            document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC";
-			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " MATIC";
+            document.getElementById("daily").innerHTML = maticResult + " MATIC ⛏";
+            document.getElementById("weekly").innerHTML = (maticResult * 7).toFixed(8) + " MATIC ⛏";
+            document.getElementById("monthly").innerHTML = (maticResult * 30).toFixed(8) + " MATIC ⛏";
+			document.getElementById("yearly").innerHTML = (maticResult * 365).toFixed(8) + " MATIC ⛏";
             break;
         case 5:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " SOL";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " SOL ⛏";
             var solResult = (exp_reward * dailyBlocks).toFixed(8);
-            document.getElementById("daily").innerHTML = solResult + " SOL";
-            document.getElementById("weekly").innerHTML = (solResult * 7).toFixed(8) + " SOL";
-            document.getElementById("monthly").innerHTML = (solResult * 30).toFixed(8) + " SOL";
-			document.getElementById("yearly").innerHTML = (solResult * 365).toFixed(8) + " SOL";
+            document.getElementById("daily").innerHTML = solResult + " SOL ⛏";
+            document.getElementById("weekly").innerHTML = (solResult * 7).toFixed(8) + " SOL ⛏";
+            document.getElementById("monthly").innerHTML = (solResult * 30).toFixed(8) + " SOL ⛏";
+			document.getElementById("yearly").innerHTML = (solResult * 365).toFixed(8) + " SOL ⛏";
             break;
         default:
-            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Rollertoken";
+            document.getElementById("exp_reward").innerHTML = exp_reward.toFixed(8) + " Rollertoken ⛏";
             var rltResult = (exp_reward * dailyBlocks).toFixed(4);
-            document.getElementById("daily").innerHTML = rltResult + " Rollertoken";
-            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " Rollertoken";
-            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " Rollertoken";
-			document.getElementById("yearly").innerHTML = (rltResult * 365).toFixed(4) + " Rollertoken";
+            document.getElementById("daily").innerHTML = rltResult + " Rollertoken ⛏";
+            document.getElementById("weekly").innerHTML = (rltResult * 7).toFixed(4) + " Rollertoken ⛏";
+            document.getElementById("monthly").innerHTML = (rltResult * 30).toFixed(4) + " Rollertoken ⛏";
+			document.getElementById("yearly").innerHTML = (rltResult * 365).toFixed(4) + " Rollertoken ⛏";
             break;
     }
 }
