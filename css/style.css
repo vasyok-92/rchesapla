@@ -81,8 +81,11 @@ footer {
 }
 
 .header-margin {
-    padding-left: 80px;
+    padding-left: 50px;
 	font-family: 'Secular One', sans-serif;
+	width: auto;
+    height: 160px;
+	display: block;
 }
 
 .titletext {
@@ -111,7 +114,8 @@ footer {
     }
 
     .img-fluid {
-        margin-left: 30%;
+        margin: auto;
+		display: block;
     }
 
     .inputlabel {
