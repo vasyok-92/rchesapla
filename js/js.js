@@ -18,8 +18,8 @@ function blockAmount() {
             break;
         case 1:
             //Doge - 20
-            var blockreward = 40;
-            document.getElementById("block-reward").value = 40;
+            var blockreward = 20;
+            document.getElementById("block-reward").value = 20;
 			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
@@ -38,8 +38,8 @@ function blockAmount() {
             break;
         case 3:
             //Bnb - 0.012
-            var blockreward = 0.012;
-            document.getElementById("block-reward").value = 0.012;
+            var blockreward = 0.018;
+            document.getElementById("block-reward").value = 0.018;
 			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
@@ -48,8 +48,8 @@ function blockAmount() {
             break;
         case 4: 
             //Matic - 3
-            var blockreward = 3;
-            document.getElementById("block-reward").value = 3;
+            var blockreward = 4.5;
+            document.getElementById("block-reward").value = 4.5;
 			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
@@ -59,8 +59,8 @@ function blockAmount() {
             break;
         case 5: 
             //SOL - 0.05
-            var blockreward = 0.075;
-            document.getElementById("block-reward").value = 0.075;
+            var blockreward = 0.05;
+            document.getElementById("block-reward").value = 0.05;
 			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
 			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
