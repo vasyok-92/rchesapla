@@ -176,10 +176,131 @@
                         </div>
                             </div>
                         </div>
+
+                            <div class="card my-4 shadow" id="hidden-satoshi">
+                                <h6 class="card-header head">SATOSHI'Yİ BITCOIN'E DÖNÜŞTÜR</h6>
+                                <div class="card-body my-1">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id="satoshi-value"
+                                                    oninput="calculateBTC()">
+                                                <div class="input-group-text">Satoshi</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-1">
+                                            <div class="text-center">
+                                                <i class="fas fa-arrow-right arrow-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-5">
+                                            <div class="input-group recompensa">
+
+                                                <input type="number" class="form-control" disabled id="btc-resultado">
+                                                <div class="input-group-text font-weight-bold">BTC</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!--===============================================================================================-->
+                            <div class="card my-4 shadow" id="hidden-crypto">
+                                <h6 class="card-header head">KRİPTO PARA BİRİMİNİ DOLAR VEYA TRY'e DÖNÜŞTÜRÜN</h6>
+                                <div class="card-body my-1">
+                                    <div class="row">
+                                        <div class="col-5 col-sm-5 col-md-3">
+                                            <select class="form-select fs-6" name="crypto-type" id="crypto-type"
+                                                onchange="calculated$()">
+                                                <option value="btc">BTC</option>
+                                                <option value="eth">ETH</option>
+                                                <option value="bnb">BNB </option>
+                                                <option value="doge">DOGE</option>
+                                                <option value="matic">MATIC</option>
+												<option value="sol">SOL</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-7 col-sm-7 col-md-3">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id="btc-value"
+                                                    oninput="calculated$()">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="text-center">
+                                                <i class="fas fa-arrow-right arrow-icon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 col-sm-8 col-md-3">
+                                            <div class="form-group recompensa">
+                                                <input type="number" class="form-control" disabled id="coin-resultado">
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-sm-8 col-md-3">
+                                            <select class="form-select fs-6" name="coin-type" id="coin-type"
+                                                onchange="calculated$()">
+                                                <option value="dolar">USD</option>
+                                                <option value="euro">TRY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------ END CRYPTO TO USD/EUR ------------->
+                            <div class="card my-4 shadow" id="hidden-satoshi">
+                                <h6 class="card-header head">KRİPTO GÜNCEL KUR FİYATLARI</h6>
+                                <div class="card-body my-1">
+                                    <div class="row">
+                        <div class="text-center">
+                            <button id="dollar" class="btn-show mx-2">USD</button>
+                            <button id="euro" class="btn-show mx-2">TRY</button>
+                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!------------FIN BOTONES DE CONSUMO API ------------->
+
+                        <!------------ TABLAS USD/EUR ------------->
+                        <div>
+                            <table class="table tabla--dollar table-dark my-4 shadow hidden">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="rank">#</th>
+                                        <th class="name">İsim</th>
+                                        <!-- <th class="Simbolo">Simbolo</th> -->
+                                        <th class="image">Fiyat</th>
+                                        <th class="price_change">24 saat (%)</th>
+                                        <!-- <th class="price">Icono</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody id="dollar-data">
+
+                                </tbody>
+                            </table>
+                            <table class="table tabla--euro table-dark my-4 shadow hidden">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th class="rank">#</th>
+                                        <th class="name">İsim</th>
+                                        <!-- <th class="Simbolo">Simbolo</th> -->
+                                        <th class="image">Fiyat</th>
+                                        <th class="price_change">24 saat (%)</th>
+                                        <!-- <th class="price">Icono</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody id="euro-data">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!------------END TABLAS USD/EUR ------------->
+
                     </aside>
                 </div>
             </div>
         </div>
+		
+		
+
     </section>
     <!------------ FOOTER ------------->
     <footer>
@@ -203,6 +324,10 @@
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" type="text/javascript" crossorigin="anonymous"></script>
     <!-- Typed -->
     <script src="js/typed.js"></script>
+	
+	
+	<script src="./js/calculator.js"></script>
+
 
 	<script src="https://fatihcelikofficialtr.github.io/rchesapla/js/saya%C3%A7.js"></script>
 	<script src="https://fatihcelikofficialtr.github.io/rchesapla/js/men%C3%BCler.js"></script>
