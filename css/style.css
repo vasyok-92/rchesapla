@@ -99,20 +99,6 @@ footer {
         margin: auto;
         text-align: center;
     }
-    .jumbotron {
-        padding: 1rem 0;
-        margin-bottom: 0.5rem;
-    }
-
-    .titletext {
-        text-align: center;
-        margin: auto;
-    }
-
-    .img-fluid {
-        margin: auto;
-		display: block;
-    }
 
     .inputlabel {
         position: relative;
@@ -126,14 +112,6 @@ footer {
     
 }
 
-
-/* Arcio explainer */
-.arcioexplainer {
-    bottom: 3px;
-    width: 100px;
-    height: 20px;
-    border: 1px;
-}
 
 /* Red border */
 hr.new1 {
@@ -159,12 +137,4 @@ hr.new4 {
 hr.new5 {
   border: 10px solid green;
   border-radius: 5px;
-}
-
-.dcountstyle{ /*Example CSS to style count up output*/
-font: bold 16px Arial;
-padding: 3px;
-}
-.dcountstyle sup{ /*Example CSS to style count up output*/
-font-size: 90%
 }
