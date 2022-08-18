@@ -296,6 +296,5 @@ function calculated$() {
       }
       break;
   }
-  console.log(crypto);
-  console.log(btc_dolar);
+
 }
