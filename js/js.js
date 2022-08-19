@@ -10,62 +10,62 @@ function blockAmount() {
             //Bitcoin - 30000
             var blockreward = 30000;
             document.getElementById("block-reward").value = 30000;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             break;
         case 1:
             //Doge - 20
             var blockreward = 20;
             document.getElementById("block-reward").value = 20;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             break;
         case 2:
             //Eth - 0.005
             var blockreward = 0.005;
             document.getElementById("block-reward").value = 0.005;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             break;
         case 3:
             //Bnb - 0.012
             var blockreward = 0.018;
             document.getElementById("block-reward").value = 0.018;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             break;
         case 4: 
             //Matic - 3
             var blockreward = 4.5;
             document.getElementById("block-reward").value = 4.5;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             console.log("matic end");
             break;
         case 5: 
             //SOL - 0.05
             var blockreward = 0.05;
             document.getElementById("block-reward").value = 0.05;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             console.log("sol end");
             break;
     default:
@@ -73,11 +73,11 @@ function blockAmount() {
             console.log("rlt start");
             var blockreward = 30;
             document.getElementById("block-reward").value = 30;
-			document.getElementById("exp_reward").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("daily").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("weekly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("monthly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
-			document.getElementById("yearly").innerHTML = "【⛏ Kazım Miktarı ⛏】";
+			document.getElementById("exp_reward").innerHTML = "⛏";
+			document.getElementById("daily").innerHTML = "⛏";
+			document.getElementById("weekly").innerHTML = "⛏";
+			document.getElementById("monthly").innerHTML = "⛏";
+			document.getElementById("yearly").innerHTML = "⛏";
             break;
     }
 }
