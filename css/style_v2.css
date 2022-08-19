@@ -259,6 +259,12 @@ tr .name {
 	font-weight:bold;
 	font-size: 39px;
 }
+.bakımmodu {
+	background: #ffffff !important;
+	color: #161d2c;
+	font-weight:bold;
+	font-size: 50px;
+}
 
 /*Flecha*/
 .arrow-icon {
