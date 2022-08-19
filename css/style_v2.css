@@ -27,8 +27,7 @@ rgb(180,180,180),3px 3px 0 rgb(158,158,158), 4px 4px 0 rgb(136,136,136),5px
 
 .container{
   width: 100% !important;
-  max-width: 1600px !important;
-  margin: auto;
+  max-width: 100% !important;
 }
 
 .titulo {
