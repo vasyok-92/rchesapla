@@ -84,14 +84,6 @@ let dataDollar = JSON.parse(xhReq.responseText);
 console.log(dataDollar);
 currentPriceDollar(dataDollar);
 
-btnDollar.addEventListener("click", function () {
-  if (clickDollar === 0) {
-    resetBoard(dataDollar, moneda[0], monedaSimbolo[0]);
-    clickDollar++;
-  }
-  Mostrar(moneda[0]);
-});
-
 //CONSULTA EUROS API
 let euroReq = new XMLHttpRequest();
 euroReq.open(
@@ -104,77 +96,6 @@ let dataEuro = JSON.parse(euroReq.responseText);
 console.log(dataEuro);
 currenPriceEuro(dataEuro);
 
-btnEuro.addEventListener("click", function () {
-  if (clickEuro === 0) {
-    resetBoard(dataEuro, moneda[1], monedaSimbolo[1]);
-    clickEuro++;
-  }
-  Mostrar(moneda[1]);
-});
-
-//IMPRIMIR TABLA
-function resetBoard(data, moneda, monedaSimbolo) {
-  var $list = $(`#${moneda}-data`);
-  $list.find(".crytocurrency").remove();
-  const dataMoneda = [];
-
-  for (let i = 0; i < 6; i++) {
-    dataMoneda.push({
-      name: data[i].name,
-      symbol: data[i].symbol,
-      current_price: data[i].current_price,
-      price_change: data[i].price_change_percentage_24h,
-      image: data[i].image,
-    });
-  }
-  for (var i = 0; i < dataMoneda.length; i++) {
-    var $item = $(
-      "<tr class='text-center'>" +
-        "<td>" +
-        (i + 1) +
-        "</td>" +
-        "<td class='name'>" +
-        "<img class='img__crypto' src='" +
-        dataMoneda[i].image +
-        "'/>" +
-        "<span>" +
-        dataMoneda[i].name +
-        "</span>" +
-        "<span class='symbol'>" +
-        dataMoneda[i].symbol +
-        "</span>" +
-        "</td>" +
-        // "<td class='symbol'>" + crytocurrencies[i].symbol + "</td>" +
-        "<td>" +
-        monedaSimbolo +
-        " " +
-        dataMoneda[i].current_price +
-        "</td>" +
-        "<td class=''>" +
-        dataMoneda[i].price_change +
-        "</td>" +
-        // "<td class='image'>"+"<img class='img__crypto' src='"+ crytocurrencies[i].image+"'/>" + "</td>" +
-        "</tr>"
-    );
-    dataMoneda[i].$item = $item;
-    $list.append($item);
-  }
-}
-
-//Mostrar y ocultas tablas
-function Mostrar(moneda) {
-  let elem = document.querySelector(`.tabla--${moneda}`);
-  // let prom = document.querySelector(".prom");
-  let textBtnMostrar = document.querySelector(".text-btn-mostrar");
-
-  if (elem.classList.contains("hidden")) {
-    elem.classList.remove("hidden");
-    textBtnMostrar.innerHTML = "Gizlemek için düğmeye tıklayın!";
-  } else {
-    elem.classList.add("hidden");
-    textBtnMostrar.innerHTML = "Coin fiyatlarını görmek için butona tıklayın!";
-  }
-}
 
 //CALCULAR - ENTER
 document.addEventListener("keypress", function (e) {
